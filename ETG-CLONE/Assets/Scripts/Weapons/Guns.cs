@@ -10,11 +10,11 @@ public class Guns : MonoBehaviour
 
 
     public int damage, clipSize, bulletsPerTap;
-    public float timeBetweenShooting, spread, timeBetweenShots;
+    public float fireRate, spread, timeBetweenMultiShot, reloadTime;
     public bool allowButtonHold;
 
     int bulletsLeft, bulletsShot;
-    bool shooting, readyToShoot;
+    bool shooting, readyToShoot, reloading;
 
 
     RaycastHit2D hit;
@@ -22,9 +22,9 @@ public class Guns : MonoBehaviour
     bool isEquipped;
 
     AudioSource src;
-    [SerializeField] AudioClip gunShot;
 
-    [SerializeField] AudioClip gunEmpty;
+    [SerializeField] AudioClip weaponShotSound;
+    [SerializeField] AudioClip weaponEmptySound;
 
 
     private void Awake()
@@ -52,30 +52,40 @@ public class Guns : MonoBehaviour
 
     void MyInput()
     {
-            if (allowButtonHold) shooting = Input.GetButton("Fire1");
-            else shooting = Input.GetButtonDown("Fire1");
             if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
             else shooting = Input.GetKeyDown(KeyCode.Mouse0);
-            Debug.Log("shoot");
-        
 
-        if (readyToShoot && shooting && bulletsLeft > 0)
+        if ((Input.GetKeyDown(KeyCode.R) && bulletsLeft < clipSize && !reloading) || (bulletsLeft < clipSize && !reloading))
+        {
+            Reload();
+        }
+
+        if (readyToShoot && shooting && !reloading && bulletsLeft > 0)
         {
             bulletsShot = bulletsPerTap;
             Shoot();
         }
+
+    }
+
+    void Reload() { 
+        reloading = true;
+        Invoke("ReloadFinished", reloadTime);
+    }
+
+    void ReloadFinished()
+    {
+        bulletsLeft = clipSize;
+        reloading = false;
     }
 
 
     void Shoot()
     {
-        Debug.Log("shoot");
         readyToShoot = false;
 
-        GameObject player = bulletSpawnPoint.parent.gameObject;
-
         //Sounds
-        src.clip = gunShot;
+        src.clip = weaponShotSound;
         src.Play();
 
         //Bullet Spread
@@ -92,10 +102,11 @@ public class Guns : MonoBehaviour
 
         bulletsLeft--;
         bulletsShot--;
-        Invoke("ResetShot", timeBetweenShooting);
+
+        Invoke("ResetShot", fireRate);
 
         if (bulletsShot > 0 && bulletsLeft > 0)
-            Invoke("Shoot", timeBetweenShots);
+            Invoke("Shoot", timeBetweenMultiShot);
     }
 
     private void ResetShot()
