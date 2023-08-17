@@ -30,6 +30,7 @@ public class Guns : MonoBehaviour
 
     public GameObject BulletShoot;
     public GameObject BulletSpawn;
+    public GameObject Crossbow;
 
     Vector3 mouse_pos;
     
@@ -48,6 +49,8 @@ public class Guns : MonoBehaviour
         BulletSpawn = GameObject.Find("BulletSpawn ");
         
         BulletShoot = GameObject.Find("WEAPON HOLDER");
+
+        Crossbow = GameObject.Find("CROSSBOW");
         
         player = GameObject.Find("PLAYER").GetComponent<PlayerController>();
     }
@@ -62,14 +65,48 @@ public class Guns : MonoBehaviour
         angle = Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;
         BulletSpawn.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
+        var rotationVector = transform.rotation.eulerAngles;
+       
+        //Delete this if you figure the gun animation out
+        //
         if (player._input.x < 0 && player._input.y == 0)
         {
+            rotationVector.z = 0;
+            
             BulletShoot.transform.localScale = new Vector3(-1, 1, 1);
+            Crossbow.transform.localScale = new Vector3(1, 1, 1);
         }
+        //
         if (player._input.x > 0 && player._input.y == 0)
         {
+            rotationVector.z = 0;
+           
             BulletShoot.transform.localScale = new Vector3(1, 1, 1);
+            Crossbow.transform.localScale = new Vector3(1, 1, 1);
         }
+        //
+        if (player._input.x == 0 && player._input.y > 0)
+        {
+            
+            rotationVector.z = -90;
+            
+            BulletShoot.transform.localScale = new Vector3(-1, 1, 1);
+            Crossbow.transform.localScale = new Vector3(1, -1, 1);
+        }
+        
+        //
+        if (player._input.x == 0 && player._input.y < 0)
+        {
+
+            rotationVector.z = -90;
+            
+            BulletShoot.transform.localScale = new Vector3(1, 1, 1);
+            Crossbow.transform.localScale = new Vector3(1, 1, 1);
+        }
+        //
+        //Only delete the stuff above
+        Crossbow.transform.rotation = Quaternion.Euler(rotationVector);
+
         if (transform.parent != null)
         {
             isEquipped = true;

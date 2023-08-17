@@ -19,7 +19,7 @@ public class Health : MonoBehaviour
     public Text BlankAmount;
 
     [SerializeField] float startHealth;
-    public float currentHealth {  get; private set; }
+    public float currentHealth /*{  get; private set; }*/;
 
     private void Start()
     {
@@ -38,6 +38,8 @@ public class Health : MonoBehaviour
     }
     private void Update()
     {
+        BlankAmount.text = Blanks.ToString();
+        KeyAmount.text = Keys.ToString();
         if(currentHealth == 6)
         {
             Heart1.SetActive(true);
