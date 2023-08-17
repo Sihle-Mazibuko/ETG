@@ -1,0 +1,927 @@
+fileFormatVersion: 2
+guid: 9cec4be121fc0f947a54e28e2e5f7cc3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_NW_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 132
+        width: 13
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d5c81c0bc7a31479fd38d942dfc36b
+      internalID: 1806403946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_NW_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 132
+        width: 13
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfcb462ef7007744f86562cfa58ed912
+      internalID: -2094713289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_NW_3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 136
+        width: 13
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d8a135513ab0449af90dff0acb9b87
+      internalID: 252409841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_NW_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 132
+        width: 13
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b54a069dce4a8e4ab09715af73dc406
+      internalID: -1802286766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_NW_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 132
+        width: 13
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed897f77d961d4f48a95578ee64be482
+      internalID: -709338843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_NW_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 135
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92473525795a9ed4187908c40a3d80d5
+      internalID: 1355460095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_N_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 108
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188300c0100d03946aff54268ea46414
+      internalID: -1425015581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_N_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 106
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f952b007d3cf3146bc73d6369b624b5
+      internalID: 356551943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_N_3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 106
+        width: 14
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e53d3bdf6a3a084cb2038ce366ec173
+      internalID: -1385880573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_N_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 108
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617f781296a4e3540846833771df4ee8
+      internalID: 41215484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_N_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 106
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c490a3cd8d70944b32fd76e663bdf4
+      internalID: -1657400746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_N_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 106
+        width: 14
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b01eff77b14a34688f97e78ec1c71a
+      internalID: 1507811023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_NE_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 83
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f95b66340fa9c47a4f5232f1e41fb9
+      internalID: -955080759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_NE_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 80
+        width: 13
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed136022a5b2bf948ad8cf77f51c15fe
+      internalID: 1980307885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_NE_3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 80
+        width: 13
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8251e658444ec4d8e01a5c54d6726f
+      internalID: -411458384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_NE_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 84
+        width: 13
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b61378e67f71bd4d90e323397b97335
+      internalID: -484133087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_NE_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 80
+        width: 13
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc71004fd643643459d4d95ca7a5831a
+      internalID: 1453764415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_NE_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 80
+        width: 13
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63e6d5ce17971e4fb82359be8307c84
+      internalID: -1444618908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_SE_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 56
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18da087057eadc24ebff29505b47866b
+      internalID: -600479448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_SE_2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 54
+        width: 15
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec3657611eee7e4cb4aaf6396ce9d89
+      internalID: -1192783771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_SE_3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 53
+        width: 15
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005080687639056439c685999858822b
+      internalID: -1842467997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_SE_4
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 56
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f416c45358fef44fa50fdee5ff89be5
+      internalID: -2078885644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_SE_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 53
+        width: 14
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7799ab4d7af7b45a83e5144f13ba71
+      internalID: -903642266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_SE_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 53
+        width: 14
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a7b444b91e8484497d9b46e36e66f6
+      internalID: 427333953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_S_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 30
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677b64f1d6497f24e9f7a5ce4e5d4b32
+      internalID: -270242418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_S_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 29
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96db628035cebdf498588b5b6ea10e2c
+      internalID: 1590870831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_S_3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 29
+        width: 14
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca530e76e19a675428fdb08c2c6c0a5f
+      internalID: 494040658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_S_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 30
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7893adedd66b674d867eac186f7278b
+      internalID: -1380152737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_S_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 29
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b3c1fde85bb6b47be0347dd0e09cdb
+      internalID: -1725631578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_S_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 29
+        width: 14
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9c5d77bf679cc46b5e15b056119770
+      internalID: -1230791640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_SW_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2
+        width: 14
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ea82ad3ffda2844991ee711c69898b
+      internalID: -2011430098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_SW_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 2
+        width: 14
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6327cecad2b494fb5634eabb1b001e
+      internalID: -1144127880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_SW_3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 5
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c7d7e679ac3734eb6f11147587ba7a
+      internalID: -1037299431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_SW_4
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 2
+        width: 15
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07846f62cd5f9940bc47e06eb414820
+      internalID: 710467437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_SW_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 3
+        width: 15
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060e78889f8b0ee4e8f6c230891941fc
+      internalID: -1403654953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHunter_WalkWithWeapon_SW_6
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 5
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ed24df92236e14490af892b2309d80
+      internalID: 318997766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TheHunter_WalkWithWeapon_NE_1: -955080759
+      TheHunter_WalkWithWeapon_NE_2: 1980307885
+      TheHunter_WalkWithWeapon_NE_3: -411458384
+      TheHunter_WalkWithWeapon_NE_4: -484133087
+      TheHunter_WalkWithWeapon_NE_5: 1453764415
+      TheHunter_WalkWithWeapon_NE_6: -1444618908
+      TheHunter_WalkWithWeapon_NW_1: 1806403946
+      TheHunter_WalkWithWeapon_NW_2: -2094713289
+      TheHunter_WalkWithWeapon_NW_3: 252409841
+      TheHunter_WalkWithWeapon_NW_4: -1802286766
+      TheHunter_WalkWithWeapon_NW_5: -709338843
+      TheHunter_WalkWithWeapon_NW_6: 1355460095
+      TheHunter_WalkWithWeapon_N_1: -1425015581
+      TheHunter_WalkWithWeapon_N_2: 356551943
+      TheHunter_WalkWithWeapon_N_3: -1385880573
+      TheHunter_WalkWithWeapon_N_4: 41215484
+      TheHunter_WalkWithWeapon_N_5: -1657400746
+      TheHunter_WalkWithWeapon_N_6: 1507811023
+      TheHunter_WalkWithWeapon_SE_1: -600479448
+      TheHunter_WalkWithWeapon_SE_2: -1192783771
+      TheHunter_WalkWithWeapon_SE_3: -1842467997
+      TheHunter_WalkWithWeapon_SE_4: -2078885644
+      TheHunter_WalkWithWeapon_SE_5: -903642266
+      TheHunter_WalkWithWeapon_SE_6: 427333953
+      TheHunter_WalkWithWeapon_SW_1: -2011430098
+      TheHunter_WalkWithWeapon_SW_2: -1144127880
+      TheHunter_WalkWithWeapon_SW_3: -1037299431
+      TheHunter_WalkWithWeapon_SW_4: 710467437
+      TheHunter_WalkWithWeapon_SW_5: -1403654953
+      TheHunter_WalkWithWeapon_SW_6: 318997766
+      TheHunter_WalkWithWeapon_S_1: -270242418
+      TheHunter_WalkWithWeapon_S_2: 1590870831
+      TheHunter_WalkWithWeapon_S_3: 494040658
+      TheHunter_WalkWithWeapon_S_4: -1380152737
+      TheHunter_WalkWithWeapon_S_5: -1725631578
+      TheHunter_WalkWithWeapon_S_6: -1230791640
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
