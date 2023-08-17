@@ -25,7 +25,8 @@ public class Projectile : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
-    {
+    {      
+
         Health hitCharacter = collision.gameObject.GetComponent<Health>();
         //Instantiate(bloodSplatter, collision.transform.position, Quaternion.identity);
 
@@ -33,6 +34,7 @@ public class Projectile : MonoBehaviour
         {
             hitCharacter.TakeDamage(damage);
         }
-        Destroy(gameObject, lifetime);
+        Destroy(gameObject,.1f);
+
     }
 }

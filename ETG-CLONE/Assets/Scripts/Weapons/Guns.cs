@@ -9,7 +9,7 @@ public class Guns : MonoBehaviour
     [SerializeField] Transform bulletSpawnPoint;
 
 
-    public int damage, clipSize, bulletsPerTap;
+    public int clipSize, bulletsPerTap;
     public float fireRate, spread, timeBetweenMultiShot, reloadTime;
     public bool allowButtonHold;
 
