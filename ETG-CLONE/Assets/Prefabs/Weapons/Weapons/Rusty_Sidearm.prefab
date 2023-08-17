@@ -58,7 +58,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7230848614897585116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.24840334, y: -0.036513984, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -107,12 +107,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 259d84cdb6be3d5409be681d273503c1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9ecbd33683b1fd54394498db86542e70, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.18, y: 0.1}
+  m_Size: {x: 0.72, y: 0.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -134,12 +134,14 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 5383303394965118570}
   clipSize: 0
   bulletsPerTap: 0
+  totalBullets: 0
   fireRate: 0
   spread: 0
   bulletSpawnInterval: 0
   reloadTime: 0
   allowButtonHold: 0
   weaponShotSound: {fileID: 0}
+  weaponEmpty: {fileID: 0}
 --- !u!82 &-1208790526081807831
 AudioSource:
   m_ObjectHideFlags: 0

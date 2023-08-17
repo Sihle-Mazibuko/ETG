@@ -84,6 +84,8 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        HandleRotation();
+
         // Set the _isMoving parameter for Walk
         _animator.SetBool("isMoving", _isMoving);
     }
@@ -144,4 +146,20 @@ public class PlayerController : MonoBehaviour
         }
     }
     #endregion
+
+    #region Aim
+    //Aim
+    [SerializeField] Transform weaponHolder;
+    [SerializeField] float offset;
+
+    void HandleRotation()
+    {
+        Vector3 displacement = weaponHolder.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        float angle = Mathf.Atan2(displacement.y, displacement.x) * Mathf.Rad2Deg;
+        weaponHolder.rotation = Quaternion.Euler(0, 0, angle - 180);
+
+        Debug.Log(angle);
+    }
+    #endregion
+
 }

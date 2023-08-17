@@ -8,8 +8,6 @@ public class Projectile : MonoBehaviour
     [SerializeField] float lifetime;
     [SerializeField] float damage;
 
-    public GameObject WeaponHolster;
-
 
     Rigidbody2D rb;
     //[SerializeField] GameObject bloodSplatter;
@@ -23,19 +21,8 @@ public class Projectile : MonoBehaviour
 
     private void Start()
     {
-        WeaponHolster = GameObject.Find("WEAPON HOLDER");
-        //if (WeaponHolster.transform.localScale == new Vector3(-1, 1, 1))
-        //{
-            //rb.velocity = -transform.right * speed;
-            rb.velocity = transform.right * speed;
-        //}
-        //if (WeaponHolster.transform.localScale == new Vector3(1, 1, 1))
-        //{
-        //    rb.velocity = transform.right * speed;
-        //}
-        
-
-    }
+        rb.velocity = transform.right * speed;
+            }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {      

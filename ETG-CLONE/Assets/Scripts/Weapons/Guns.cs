@@ -16,8 +16,6 @@ public class Guns : MonoBehaviour
     int currentAmmo, bulletsShot;
     bool shooting, readyToShoot, reloading;
 
-    public PlayerController player;
-
 
     RaycastHit2D hit;
 
@@ -28,14 +26,6 @@ public class Guns : MonoBehaviour
     [SerializeField] AudioClip weaponShotSound;
     [SerializeField] AudioClip weaponEmpty;
 
-    public GameObject BulletShoot;
-    public GameObject BulletSpawn;
-    public GameObject Crossbow;
-
-    Vector3 mouse_pos;
-    
-    Vector3 object_pos;
-    float angle;
 
     private void Awake()
     {
@@ -44,68 +34,9 @@ public class Guns : MonoBehaviour
         src = GetComponent<AudioSource>();
     }
 
-    private void Start()
-    {
-        BulletSpawn = GameObject.Find("BulletSpawn ");
-        
-        BulletShoot = GameObject.Find("WEAPON HOLDER");
-
-        Crossbow = GameObject.Find("CROSSBOW");
-        
-        player = GameObject.Find("PLAYER").GetComponent<PlayerController>();
-    }
 
     private void Update()
     {
-        mouse_pos = Input.mousePosition;
-        mouse_pos.z = 5.23f; //The distance between the camera and object
-        object_pos = Camera.main.WorldToScreenPoint(BulletSpawn.transform.position);
-        mouse_pos.x = mouse_pos.x - object_pos.x;
-        mouse_pos.y = mouse_pos.y - object_pos.y;
-        angle = Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;
-        BulletSpawn.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-
-        var rotationVector = transform.rotation.eulerAngles;
-       
-        //Delete this if you figure the gun animation out
-        //
-        if (player._input.x < 0 && player._input.y == 0)
-        {
-            rotationVector.z = 0;
-            
-            BulletShoot.transform.localScale = new Vector3(-1, 1, 1);
-            Crossbow.transform.localScale = new Vector3(1, 1, 1);
-        }
-        //
-        if (player._input.x > 0 && player._input.y == 0)
-        {
-            rotationVector.z = 0;
-           
-            BulletShoot.transform.localScale = new Vector3(1, 1, 1);
-            Crossbow.transform.localScale = new Vector3(1, 1, 1);
-        }
-        //
-        if (player._input.x == 0 && player._input.y > 0)
-        {
-            
-            rotationVector.z = -90;
-            
-            BulletShoot.transform.localScale = new Vector3(-1, 1, 1);
-            Crossbow.transform.localScale = new Vector3(1, -1, 1);
-        }
-        
-        //
-        if (player._input.x == 0 && player._input.y < 0)
-        {
-
-            rotationVector.z = -90;
-            
-            BulletShoot.transform.localScale = new Vector3(1, 1, 1);
-            Crossbow.transform.localScale = new Vector3(1, 1, 1);
-        }
-        //
-        //Only delete the stuff above
-        Crossbow.transform.rotation = Quaternion.Euler(rotationVector);
 
         if (transform.parent != null)
         {
@@ -168,7 +99,7 @@ public class Guns : MonoBehaviour
 
 
             //Prefab shooting
-            Instantiate(bulletPref, BulletSpawn.transform.position, BulletSpawn.transform.rotation);
+            Instantiate(bulletPref, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
 
 
             currentAmmo--;
