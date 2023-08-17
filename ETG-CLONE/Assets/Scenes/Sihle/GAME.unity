@@ -388,6 +388,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -125.69995
       objectReference: {fileID: 0}
+    - target: {fileID: 4031121603082355919, guid: 719b36f8ca543614b8044b500e101c8a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 038b6453401641f4e841a300749d99eb, type: 3}
+    - target: {fileID: 4031121603083305054, guid: 719b36f8ca543614b8044b500e101c8a, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4031121603083305054, guid: 719b36f8ca543614b8044b500e101c8a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4031121603095003247, guid: 719b36f8ca543614b8044b500e101c8a, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4031121603095003247, guid: 719b36f8ca543614b8044b500e101c8a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b24024ff74f66bb40bafe349977d49d7, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 719b36f8ca543614b8044b500e101c8a, type: 3}
 --- !u!1 &1668724122
@@ -444,8 +464,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
-  weaponHolder: {fileID: 1897925828}
-  offset: 0
+  solidObjectsLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  levelGeoLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &1668724125
 MonoBehaviour:
   m_ObjectHideFlags: 0
