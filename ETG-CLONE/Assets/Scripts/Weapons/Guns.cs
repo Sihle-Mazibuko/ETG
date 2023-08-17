@@ -9,11 +9,11 @@ public class Guns : MonoBehaviour
     [SerializeField] Transform bulletSpawnPoint;
 
 
-    public int clipSize, bulletsPerTap;
-    public float fireRate, spread, timeBetweenMultiShot, reloadTime;
+    public int clipSize, bulletsPerTap, totalBullets;
+    public float fireRate, spread, bulletSpawnInterval, reloadTime;
     public bool allowButtonHold;
 
-    int bulletsLeft, bulletsShot;
+    int currentAmmo, bulletsShot;
     bool shooting, readyToShoot, reloading;
 
 
@@ -24,24 +24,22 @@ public class Guns : MonoBehaviour
     AudioSource src;
 
     [SerializeField] AudioClip weaponShotSound;
-    [SerializeField] AudioClip weaponEmptySound;
+    [SerializeField] AudioClip weaponEmpty;
 
 
     private void Awake()
     {
-        bulletsLeft = clipSize;
+        currentAmmo = clipSize;
         readyToShoot = true;
         src = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
-        Debug.Log(readyToShoot);
-
         if (transform.parent != null)
         {
-            readyToShoot = true;
             isEquipped = true;
+            readyToShoot = true;
             MyInput();
         }
         else
@@ -55,17 +53,16 @@ public class Guns : MonoBehaviour
             if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
             else shooting = Input.GetKeyDown(KeyCode.Mouse0);
 
-        if ((Input.GetKeyDown(KeyCode.R) && bulletsLeft < clipSize && !reloading) || (bulletsLeft < clipSize && !reloading))
+        if ((Input.GetKeyDown(KeyCode.R) && currentAmmo < clipSize && !reloading) || (currentAmmo < clipSize && !reloading))
         {
             Reload();
         }
 
-        if (readyToShoot && shooting && !reloading && bulletsLeft > 0)
+        if (readyToShoot && shooting && !reloading && currentAmmo > 0)
         {
-            bulletsShot = bulletsPerTap;
+            bulletsPerTap = bulletsShot;
             Shoot();
         }
-
     }
 
     void Reload() { 
@@ -75,38 +72,54 @@ public class Guns : MonoBehaviour
 
     void ReloadFinished()
     {
-        bulletsLeft = clipSize;
+        currentAmmo = clipSize;
         reloading = false;
     }
 
 
     void Shoot()
     {
-        readyToShoot = false;
 
-        //Sounds
-        src.clip = weaponShotSound;
-        src.Play();
+        if (bulletsShot < totalBullets)
+        {
+            readyToShoot = false;
 
-        //Bullet Spread
-        float x = Random.Range(-spread, spread);
-        float y = Random.Range(-spread, spread);
+            //Sounds
+            src.clip = weaponShotSound;
+            src.Play();
 
-        Vector3 _direction = transform.position + new Vector3(x, y, 0);
+            //Bullet Spread
+            float x = Random.Range(-spread, spread);
+            float y = Random.Range(-spread, spread);
 
-
-
-        //Prefab shooting
-        Instantiate(bulletPref, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+            Vector3 _direction = transform.position + new Vector3(x, y, 0);
 
 
-        bulletsLeft--;
-        bulletsShot--;
 
-        Invoke("ResetShot", fireRate);
+            //Prefab shooting
+            Instantiate(bulletPref, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
 
-        if (bulletsShot > 0 && bulletsLeft > 0)
-            Invoke("Shoot", timeBetweenMultiShot);
+
+            currentAmmo--;
+            bulletsShot++;
+
+
+            Invoke("ResetShot", fireRate);
+
+            if (currentAmmo > 0)
+            {
+                //Sounds
+                Invoke("Shoot", bulletSpawnInterval);
+
+            }
+
+        }
+        else
+        {
+            src.clip = weaponEmpty;
+            src.Play();
+
+        }
     }
 
     private void ResetShot()
