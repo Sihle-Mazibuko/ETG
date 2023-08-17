@@ -679,6 +679,7 @@ MonoBehaviour:
   Blanks: 0
   BlankAmount: {fileID: 0}
   startHealth: 6
+  currentHealth: 0
 --- !u!212 &1668724126
 SpriteRenderer:
   m_ObjectHideFlags: 0
