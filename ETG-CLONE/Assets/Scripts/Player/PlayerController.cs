@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     private bool _isMoving;
 
     // Input
-    private Vector2 _input;
+    public Vector2 _input;
 
     // Animator controller
     private Animator _animator;
