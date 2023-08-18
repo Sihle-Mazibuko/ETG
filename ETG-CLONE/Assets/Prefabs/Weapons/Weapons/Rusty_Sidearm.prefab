@@ -132,16 +132,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPref: {fileID: 0}
   bulletSpawnPoint: {fileID: 5383303394965118570}
-  clipSize: 0
-  bulletsPerTap: 0
-  totalBullets: 0
-  fireRate: 0
-  spread: 0
+  clipSize: 6
+  bulletsPerTap: 1
+  totalBullets: 9999999
+  fireRate: 0.2
+  spread: 7
   bulletSpawnInterval: 0
-  reloadTime: 0
+  reloadTime: 1.2
   allowButtonHold: 0
-  weaponShotSound: {fileID: 0}
-  weaponEmpty: {fileID: 0}
+  weaponShotSound: {fileID: 8300000, guid: 44e5d135748d8c4478b1311e06a23f09, type: 3}
+  weaponEmpty: {fileID: 8300000, guid: 1c9e263b38b63b74facdab1e9c87bf65, type: 3}
 --- !u!82 &-1208790526081807831
 AudioSource:
   m_ObjectHideFlags: 0

@@ -132,14 +132,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPref: {fileID: 0}
   bulletSpawnPoint: {fileID: 2855026089744784649}
-  clipSize: 0
-  bulletsPerTap: 0
-  fireRate: 0
-  spread: 0
-  bulletSpawnInterval: 0
-  reloadTime: 0
+  clipSize: 6
+  bulletsPerTap: 1
+  totalBullets: 1000
+  fireRate: 0.15
+  spread: 10
+  bulletSpawnInterval: 0.5
+  reloadTime: 1.5
   allowButtonHold: 0
   weaponShotSound: {fileID: 0}
+  weaponEmpty: {fileID: 8300000, guid: 1c9e263b38b63b74facdab1e9c87bf65, type: 3}
 --- !u!82 &-2372921630099205822
 AudioSource:
   m_ObjectHideFlags: 0
