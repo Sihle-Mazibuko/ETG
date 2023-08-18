@@ -22,7 +22,8 @@ public class Projectile : MonoBehaviour
     private void Start()
     {
         rb.velocity = transform.right * speed;
-            }
+        StartCoroutine(Break());
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {      
@@ -36,5 +37,11 @@ public class Projectile : MonoBehaviour
         }
         Destroy(gameObject,.1f);
 
+    }
+
+    public IEnumerator Break()
+    {
+        yield return new WaitForSeconds(lifetime);
+        Destroy(gameObject);
     }
 }
