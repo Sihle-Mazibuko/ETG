@@ -7,7 +7,6 @@ using UnityEngine;
  *  This script controls the Player's tile-based movement.
  */
 #endregion
-
 public class PlayerController : MonoBehaviour
 {
     #region Fields
@@ -56,6 +55,7 @@ public class PlayerController : MonoBehaviour
             // Check for _input to move the Player
             // Left arrow = -1, Right arrow = +1
             _input.x = Input.GetAxisRaw("Horizontal");
+
             // Down arrow = -1, Up arrow = +1
             _input.y = Input.GetAxisRaw("Vertical");
 
@@ -114,9 +114,6 @@ public class PlayerController : MonoBehaviour
 
         // The Player is not moving
         _isMoving = false;
-
-        // Check for encounters with NPCs on the Level Geo tiles
-        CheckForEncounters();
     }
 
     private bool isWalkable(Vector3 targetPos)
@@ -134,19 +131,6 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
 
-    #region Check For Encounters
-
-    private void CheckForEncounters()
-    {
-        // Check if the tile the Player is walking on is a Level Geo tile
-        if (Physics2D.OverlapCircle(transform.position, 0.2f, levelGeoLayer) != null)
-        {
-            // You encountered an NPC
-            // Debug.Log("You encountered an NPC.");
-        }
-    }
-    #endregion
-
     #region Aim
     //Aim
     [SerializeField] Transform weaponHolder;
@@ -161,5 +145,4 @@ public class PlayerController : MonoBehaviour
         Debug.Log(angle);
     }
     #endregion
-
 }
