@@ -8,6 +8,8 @@ public class EnemyMovement : MonoBehaviour
     public float speed = 1.0f;
     public float timer = 1.0f;
 
+    public float RandomRange;
+
     public GameObject Player;
 
     public Vector2 WalkPosition;
@@ -16,7 +18,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         Player = GameObject.Find("PLAYER");
-        WalkPosition = new Vector3(Player.transform.localPosition.x + Random.Range(-5, 5), Player.transform.localPosition.y + Random.Range(-5, 5), 0);
+        WalkPosition = new Vector3(Player.transform.localPosition.x + Random.Range(-RandomRange, RandomRange), Player.transform.localPosition.y + Random.Range(-RandomRange, RandomRange), 0);
         //WalkPosition = new Vector2(Random.Range(2, 5), Random.Range(2, 5));
         StartCoroutine(Walking());
     }
@@ -34,7 +36,7 @@ public class EnemyMovement : MonoBehaviour
     public IEnumerator Walking()
     {
         yield return new WaitForSeconds(timer);
-        WalkPosition = new Vector3(Player.transform.localPosition.x + Random.Range(-5, 5), Player.transform.localPosition.y + Random.Range(-5, 5), 0);
+        WalkPosition = new Vector3(Player.transform.localPosition.x + Random.Range(-RandomRange, RandomRange), Player.transform.localPosition.y + Random.Range(-RandomRange, RandomRange), 0);
         StartCoroutine(Walking());
     }
 }
