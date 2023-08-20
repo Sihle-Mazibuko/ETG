@@ -136,7 +136,7 @@ MonoBehaviour:
   bulletsPerTap: 1
   totalBullets: 500
   fireRate: 0.11
-  spread: 7
+  spread: 0
   bulletSpawnInterval: 0
   reloadTime: 0.5
   allowButtonHold: 1

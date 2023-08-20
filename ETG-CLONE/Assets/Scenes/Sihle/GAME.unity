@@ -818,8 +818,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   _input: {x: 0, y: 0}
-  weaponHolder: {fileID: 1897925828}
-  offset: 180
 --- !u!114 &1668724125
 MonoBehaviour:
   m_ObjectHideFlags: 0

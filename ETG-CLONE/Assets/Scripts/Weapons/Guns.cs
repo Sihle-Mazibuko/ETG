@@ -52,7 +52,7 @@ public class Guns : MonoBehaviour
 
     void MyInput()
     {
-            if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
+            if (allowButtonHold) shooting = Input.GetKey("Fire1") ;
             else shooting = Input.GetKeyDown(KeyCode.Mouse0);
 
         if ((Input.GetKeyDown(KeyCode.R) && currentAmmo < clipSize && !reloading) || (currentAmmo < clipSize && !reloading))
