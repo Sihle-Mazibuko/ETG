@@ -21,17 +21,20 @@ public class Guns : MonoBehaviour
 
     bool isEquipped;
 
-    AudioSource src;
+    #region Effects
 
-    [SerializeField] AudioClip weaponShotSound;
-    [SerializeField] AudioClip weaponEmpty;
+    [Header("EFFECTS")]
 
+    // Name of SFX
+    public string weaponShotSfx;
+    public string weaponEmptySfx;
+
+    #endregion
 
     private void Awake()
     {
         currentAmmo = clipSize;
         readyToShoot = true;
-        src = GetComponent<AudioSource>();
     }
 
 
@@ -52,7 +55,7 @@ public class Guns : MonoBehaviour
 
     void MyInput()
     {
-            if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
+            if (allowButtonHold) shooting = Input.GetKey("Fire1") ;
             else shooting = Input.GetKeyDown(KeyCode.Mouse0);
 
         if ((Input.GetKeyDown(KeyCode.R) && currentAmmo < clipSize && !reloading) || (currentAmmo < clipSize && !reloading))
@@ -67,7 +70,8 @@ public class Guns : MonoBehaviour
         }
     }
 
-    void Reload() { 
+    void Reload() 
+    { 
         reloading = true;
         Invoke("ReloadFinished", reloadTime);
     }
@@ -86,9 +90,12 @@ public class Guns : MonoBehaviour
         {
             readyToShoot = false;
 
-            //Sounds
-            src.clip = weaponShotSound;
-            src.Play();
+            #region Instantiate Effects
+
+            // Weapon Shot SFX
+            GlobalAudioPlayer.PlaySFX(weaponShotSfx);
+
+            #endregion
 
             //Bullet Spread
             float x = Random.Range(-spread, spread);
@@ -114,13 +121,15 @@ public class Guns : MonoBehaviour
                 Invoke("Shoot", bulletSpawnInterval);
 
             }
-
         }
         else
         {
-            src.clip = weaponEmpty;
-            src.Play();
+            #region Instantiate Effects
 
+            // Weapon Empty SFX
+            GlobalAudioPlayer.PlaySFX(weaponEmptySfx);
+
+            #endregion
         }
     }
 

@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
         // Get References
         _player = GameObject.FindGameObjectWithTag("Player");
         _animator = _player.GetComponentInChildren<Animator>();
+        weaponHolder = gameObject.transform.Find("WEAPON HOLDER");
     }
 
     #endregion
@@ -84,8 +85,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        HandleRotation();
-
+        HanldeRotation();
         // Set the _isMoving parameter for Walk
         _animator.SetBool("isMoving", _isMoving);
     }
@@ -133,10 +133,8 @@ public class PlayerController : MonoBehaviour
 
     #region Aim
     //Aim
-    [SerializeField] Transform weaponHolder;
-    [SerializeField] float offset;
-
-    void HandleRotation()
+    Transform weaponHolder;
+void HanldeRotation()
     {
         Vector3 displacement = weaponHolder.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         float angle = Mathf.Atan2(displacement.y, displacement.x) * Mathf.Rad2Deg;
@@ -145,4 +143,9 @@ public class PlayerController : MonoBehaviour
         Debug.Log(angle);
     }
     #endregion
+<<<<<<< Updated upstream
 }
+=======
+
+}
+>>>>>>> Stashed changes

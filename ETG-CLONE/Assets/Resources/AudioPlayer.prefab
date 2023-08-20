@@ -177,3 +177,31 @@ MonoBehaviour:
     clip:
     - {fileID: 8300000, guid: 4c3619c0cb6e1c346aabc36a5361021c, type: 3}
     lastTimePlayed: 0
+  - name: Crossbow Fire
+    volume: 1
+    MinTimeBetweenCall: 0
+    loop: 0
+    clip:
+    - {fileID: 8300000, guid: 57e70514c5903964195d796a50cef64d, type: 3}
+    lastTimePlayed: 0
+  - name: Shotgun Fire
+    volume: 1
+    MinTimeBetweenCall: 0
+    loop: 0
+    clip:
+    - {fileID: 8300000, guid: 44e5d135748d8c4478b1311e06a23f09, type: 3}
+    lastTimePlayed: 0
+  - name: Shotgun Reload
+    volume: 1
+    MinTimeBetweenCall: 0
+    loop: 0
+    clip:
+    - {fileID: 8300000, guid: 8c68545f47a7d92459b6596db628ff48, type: 3}
+    lastTimePlayed: 0
+  - name: Weapon Empty
+    volume: 1
+    MinTimeBetweenCall: 0
+    loop: 0
+    clip:
+    - {fileID: 8300000, guid: 1c9e263b38b63b74facdab1e9c87bf65, type: 3}
+    lastTimePlayed: 0

@@ -460,6 +460,9 @@ MonoBehaviour:
   levelGeoLayer:
     serializedVersion: 2
     m_Bits: 0
+  _input: {x: 0, y: 0}
+  weaponHolder: {fileID: 1726761258}
+  offset: 0
 --- !u!114 &417020548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,7 +475,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8abc2b7ff97c61444a76fda75b23754e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
+  Heart4: {fileID: 0}
+  Heart5: {fileID: 0}
+  Heart6: {fileID: 0}
+  Keys: 0
+  KeyAmount: {fileID: 0}
+  Blanks: 0
+  BlankAmount: {fileID: 0}
   startHealth: 0
+  currentHealth: 0
 --- !u!212 &417020549
 SpriteRenderer:
   m_ObjectHideFlags: 0

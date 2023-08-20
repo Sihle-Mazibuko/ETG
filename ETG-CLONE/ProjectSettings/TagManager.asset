@@ -58,3 +58,6 @@ TagManager:
   - name: Enemy Hand
     uniqueID: 2784724503
     locked: 0
+  - name: Projectile
+    uniqueID: 3652078797
+    locked: 0

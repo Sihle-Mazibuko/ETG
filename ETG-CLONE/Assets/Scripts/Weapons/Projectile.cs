@@ -5,7 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [SerializeField] float speed;
-    [SerializeField] float lifetime;
+    [SerializeField] float lifetime =3;
     [SerializeField] float damage;
 
 
@@ -14,9 +14,8 @@ public class Projectile : MonoBehaviour
 
     private void Awake()
     {
-        
         rb = GetComponent<Rigidbody2D>();
-
+        Destroy(gameObject, lifetime);
     }
 
     private void Start()
@@ -35,8 +34,7 @@ public class Projectile : MonoBehaviour
         {
             hitCharacter.TakeDamage(damage);
         }
-        Destroy(gameObject,.1f);
-
+        Destroy(gameObject, .1f);
     }
 
     public IEnumerator Break()
