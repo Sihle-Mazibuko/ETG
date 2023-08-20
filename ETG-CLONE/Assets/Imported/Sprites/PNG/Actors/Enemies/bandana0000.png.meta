@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6bbf87575a1518d4880f5c7e9c812055
+guid: 52e757b1b48542a41bdfcdf62c7d5c98
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,14 +101,68 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bullet_Idle_S_1
+      name: bandana_Idle_1
       rect:
         serializedVersion: 2
-        x: 40
+        x: 44
+        y: 421
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b346d3f5410d14a9c546930fdb97e7
+      internalID: 256471666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandana_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 421
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f40f7b10f766647a33cf4c3e82c520
+      internalID: -1327002154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandana0000_10
+      rect:
+        serializedVersion: 2
+        x: 82
         y: 421
         width: 12
         height: 23
@@ -119,17 +173,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d1a607dc0edf8749bd42cc0148e9367
-      internalID: 1487740152
+      spriteID: f9fdd13045c9b26438176d2472d4b3b2
+      internalID: 1731740703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet_Idle_S_2
+      name: bandana0000_11
       rect:
         serializedVersion: 2
-        x: 55
+        x: 97
         y: 421
         width: 12
         height: 22
@@ -140,56 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 628d4b4645f63d341a4906ef51705c5c
-      internalID: -1550239966
+      spriteID: 2d2114c75eb9c6f45904ebea8104eece
+      internalID: -73848826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet_Idle_N_1
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 421
-        width: 12
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 675a12f0a597cad418e945c5881a0c73
-      internalID: 1229385177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet_Idle_N_2
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 421
-        width: 12
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4174f1bbe2f2e1468af45b3af581eb1
-      internalID: -1080823402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet kin0000_12
+      name: bandana_Hand
       rect:
         serializedVersion: 2
         x: 121
@@ -203,19 +215,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 537b70dcb48f32f469dcdd413eb369b4
-      internalID: -146387273
+      spriteID: 3df21e455c4bb2a49807ad1ac1c24e1d
+      internalID: -561415301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet_Run_LeftRight_1
+      name: bandana0000_16
       rect:
         serializedVersion: 2
         x: 6
         y: 384
-        width: 12
+        width: 14
         height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -224,144 +236,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 236fa107518e6044fa3ec2cdccf0fee2
-      internalID: -1980257088
+      spriteID: 05de812c0dacf7742bd67e090758a898
+      internalID: 296614074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet_Run_LeftRight_2
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 384
-        width: 15
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7038c784af85c94a8e459057dc62619
-      internalID: -152398137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet_Run_LeftRight_3
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 384
-        width: 15
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2802661275411e6488fa45b0467ec39a
-      internalID: 1458543625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet_Run_LeftRight_4
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 384
-        width: 12
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 622c6899f45f7964fbde93a914a18199
-      internalID: 1164521643
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet_Run_LeftRight_5
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 384
-        width: 15
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f66e2fe1612beff4598beb07afc7881d
-      internalID: -277658450
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet_Run_LeftRight_6
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 384
-        width: 16
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c318cf9d3fecb04790b84fd0f71f7b1
-      internalID: -1696354301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet_Run_S_1
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 357
-        width: 12
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2924cbd3b22c32e40b1810b8751f52c1
-      internalID: -264281714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet_Run_S_2
+      name: bandana0000_17
       rect:
         serializedVersion: 2
         x: 23
-        y: 357
+        y: 384
         width: 15
         height: 23
       alignment: 0
@@ -371,18 +257,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff17356e59675d942998614024664bfe
-      internalID: -1137974706
+      spriteID: ee11a182d8c64054480d57f907828e4b
+      internalID: 976301551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet_Run_S_3
+      name: bandana0000_18
       rect:
         serializedVersion: 2
-        x: 43
-        y: 357
+        x: 41
+        y: 384
         width: 15
         height: 22
       alignment: 0
@@ -392,19 +278,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a05c63e286b816e46bb1afedfa302c8b
-      internalID: 2115809259
+      spriteID: 24e3c029c4d149648bd9ee810765229c
+      internalID: -2038125282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet_Run_S_4
+      name: bandana0000_19
       rect:
         serializedVersion: 2
-        x: 63
-        y: 357
-        width: 12
+        x: 59
+        y: 384
+        width: 14
         height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -413,18 +299,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99fdd72722b568a459d611972afada59
-      internalID: 1870238196
+      spriteID: 2d2bd958f013e2f40bec64ecdc4aa4fb
+      internalID: 789121104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet_Run_S_5
+      name: bandana0000_20
       rect:
         serializedVersion: 2
-        x: 80
-        y: 357
+        x: 76
+        y: 384
         width: 15
         height: 24
       alignment: 0
@@ -434,17 +320,80 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f0b10c8e3b072b428500d7c39e407a8
-      internalID: 2133775006
+      spriteID: 2fd135c218a5d7b4d974e40c7a8a7a50
+      internalID: -789973363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet_Run_S_6
+      name: bandana0000_21
       rect:
         serializedVersion: 2
-        x: 100
+        x: 94
+        y: 384
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4620c233156cb314c97c5bc49099b682
+      internalID: -1395380880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandana0000_22
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 357
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6687f69ecfba847b9aa2cddf108270
+      internalID: -81127974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandana0000_23
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 357
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8b4c9e1e1c9f541ae4795c9182823e
+      internalID: 1775784456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandana0000_24
+      rect:
+        serializedVersion: 2
+        x: 40
         y: 357
         width: 16
         height: 22
@@ -455,14 +404,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c32b80ed5b0734843856baec5e9893a8
-      internalID: 2104415179
+      spriteID: 3ae7d76d74960f448a9697b302c66924
+      internalID: -1438865880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet_Run_N_1
+      name: bandana0000_25
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 357
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8027df8bbffb4f84eb477a7483826fc1
+      internalID: -1129454323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandana0000_26
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 357
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece653d507acc4442ba0e9e1fb77d8ae
+      internalID: 270848883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandana0000_27
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 357
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6319406e274c14abf35292e43490fc
+      internalID: 503989916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandana0000_28
       rect:
         serializedVersion: 2
         x: 6
@@ -476,14 +488,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 431f4ea2c3d88e848bdd6e848320a66d
-      internalID: -763413448
+      spriteID: 2d4a2872e6a65714b86aa9a1378d5cf8
+      internalID: -600753024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet_Run_N_2
+      name: bandana0000_29
       rect:
         serializedVersion: 2
         x: 21
@@ -497,14 +509,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5b79a80fce80a2419a0f121914c1359
-      internalID: -1904551020
+      spriteID: e9f4feefb18da83498fabe123175983f
+      internalID: 1124262819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet_Run_N_3
+      name: bandana0000_30
       rect:
         serializedVersion: 2
         x: 39
@@ -518,14 +530,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82164fd79b918a448ba19bb8c5462643
-      internalID: -608560163
+      spriteID: ce39ae1b0337ad14c9f88831aa82f0e2
+      internalID: -1430496918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet_Run_N_4
+      name: bandana0000_31
       rect:
         serializedVersion: 2
         x: 57
@@ -539,14 +551,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c73cb00972a51e84a8dca84c0da86ec9
-      internalID: 365934961
+      spriteID: bba37ba4e18294a4a8ac18948de76a4f
+      internalID: -609844637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet_Run_N_5
+      name: bandana0000_32
       rect:
         serializedVersion: 2
         x: 72
@@ -560,14 +572,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e78f99506508483428e307de0dd6ef2a
-      internalID: 754552730
+      spriteID: 99eefd7fc83b2a64c8f39b5b91288e55
+      internalID: -782167428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet_Run_N_6
+      name: bandana0000_33
       rect:
         serializedVersion: 2
         x: 90
@@ -581,14 +593,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 547583281b67c7a47ac1aeac525e3bf0
-      internalID: 1471260622
+      spriteID: ff1328f609a44cc449832cda8639d8fe
+      internalID: 574844575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet_Run_N_7
+      name: bandana0000_34
       rect:
         serializedVersion: 2
         x: 108
@@ -602,14 +614,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94fb88e7f6d01114daae9ded11b92562
-      internalID: -1603815262
+      spriteID: 2072d147f236a734c96ab9d9a728f08e
+      internalID: 1091573555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_35
+      name: bandana0000_35
       rect:
         serializedVersion: 2
         x: 134
@@ -623,14 +635,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cbca2dae178340459d10611349e8031
-      internalID: -910978253
+      spriteID: e429d1bf2ced1134188d59c85db3bb4f
+      internalID: -1795828044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_36
+      name: bandana0000_36
       rect:
         serializedVersion: 2
         x: 149
@@ -644,14 +656,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 112a9983abb702549865097f36e5897d
-      internalID: -1204061847
+      spriteID: aa58481770dc7f8409962f03c8026ad2
+      internalID: -1498717007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_37
+      name: bandana0000_37
       rect:
         serializedVersion: 2
         x: 168
@@ -665,14 +677,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5eda6057f96227d4cb582acfa26b5f12
-      internalID: 2071447416
+      spriteID: f946e0c7c82685149964288cf8b9640b
+      internalID: 1028351885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_38
+      name: bandana0000_38
       rect:
         serializedVersion: 2
         x: 186
@@ -686,14 +698,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d6a2547cbbf68048b6012e9af971401
-      internalID: -1232687194
+      spriteID: d7b98426c69aba94a871c0d8ef52742c
+      internalID: 2078345345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_58
+      name: bandana0000_58
       rect:
         serializedVersion: 2
         x: 6
@@ -707,14 +719,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9c8ed535bb24eb48bc4959aafe672fb
-      internalID: 923527773
+      spriteID: bfa8034adbf63564890ee8c90a21f3cc
+      internalID: 135680698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_59
+      name: bandana0000_59
       rect:
         serializedVersion: 2
         x: 24
@@ -728,14 +740,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1a7def5d72000b4786d4a110e28e754
-      internalID: 102421490
+      spriteID: 552a759f76785ab41b990725da5eba92
+      internalID: 584715118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_60
+      name: bandana0000_60
       rect:
         serializedVersion: 2
         x: 42
@@ -749,14 +761,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d63b716e6abe6b46a3c3130c7450389
-      internalID: 51412673
+      spriteID: 17642e90f02dd5c40b1f3be200f91a89
+      internalID: 1078819314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_61
+      name: bandana0000_61
       rect:
         serializedVersion: 2
         x: 72
@@ -770,14 +782,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b69819c04d81adc418202f59488618f2
-      internalID: 18775138
+      spriteID: cb544c70aaa91e74ba7cf9bd630359c9
+      internalID: -328346057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_62
+      name: bandana0000_62
       rect:
         serializedVersion: 2
         x: 90
@@ -791,14 +803,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69243a273cdf6124385590564628197a
-      internalID: 2102344726
+      spriteID: ca01e6a21d74f144baa2f6f579742849
+      internalID: -786553683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_63
+      name: bandana0000_63
       rect:
         serializedVersion: 2
         x: 108
@@ -812,19 +824,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e88353a8bc1d2f54fb30ecaf9209c0a6
-      internalID: -456911225
+      spriteID: d188662565001d645be75d6a8b5beba4
+      internalID: 787865958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_64
+      name: bandana0000_64
       rect:
         serializedVersion: 2
-        x: 138
+        x: 137
         y: 290
-        width: 12
+        width: 14
         height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -833,19 +845,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 313890c6a4a71b54eb011646f62cf958
-      internalID: -533855724
+      spriteID: d3c2bb11a7de21f45b469bb49e9cbc65
+      internalID: 38412003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_65
+      name: bandana0000_65
       rect:
         serializedVersion: 2
-        x: 153
+        x: 154
         y: 290
-        width: 12
+        width: 14
         height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -854,14 +866,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab2cf316e42e3e0479d1478ed942842e
-      internalID: -479986494
+      spriteID: 38edd14094f837c4ebbabc5ea913ddcb
+      internalID: 815934610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_66
+      name: bandana0000_66
       rect:
         serializedVersion: 2
         x: 6
@@ -875,14 +887,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 328b473ac7564284f9735169f71386ac
-      internalID: 854164767
+      spriteID: 09619879a22fb154f9fec6b2f1acf138
+      internalID: -353082026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_67
+      name: bandana0000_67
       rect:
         serializedVersion: 2
         x: 24
@@ -896,14 +908,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15143dc44e748c440b451d7b78ae7a25
-      internalID: -2061370858
+      spriteID: f225a37d31f46844c930efa172d25172
+      internalID: -1573720677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_68
+      name: bandana0000_68
       rect:
         serializedVersion: 2
         x: 42
@@ -917,14 +929,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0efc443e7bd4994ab9444fa89861e7f
-      internalID: -1916330510
+      spriteID: 805e21d2dc76bb94ab3334e7c89dcdcd
+      internalID: -950202733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_69
+      name: bandana0000_69
       rect:
         serializedVersion: 2
         x: 72
@@ -938,14 +950,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c161076e7195f641b1fa4b31d190f4c
-      internalID: 1212729714
+      spriteID: 3bc27204cd8d4354297d353f0c213e35
+      internalID: 1320382073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_70
+      name: bandana0000_70
       rect:
         serializedVersion: 2
         x: 90
@@ -959,14 +971,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 301ed5114993bb64eb3a99a354209e72
-      internalID: 607373392
+      spriteID: 548ee31159d70734b9393badce98f756
+      internalID: -1240182273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_71
+      name: bandana0000_71
       rect:
         serializedVersion: 2
         x: 108
@@ -980,14 +992,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 520749df8282a2d478033a0f786ab8ca
-      internalID: 1803152525
+      spriteID: 37dad1d618e3cd340b42107a7f09c013
+      internalID: -1263869343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_76
+      name: bandana0000_76
       rect:
         serializedVersion: 2
         x: 6
@@ -1001,14 +1013,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2ef0ab375ee61d4aa37e287c84bfb93
-      internalID: 230009875
+      spriteID: 897ac690d2c5ae64e804ecc482c7babb
+      internalID: -296171589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_77
+      name: bandana0000_77
       rect:
         serializedVersion: 2
         x: 24
@@ -1022,14 +1034,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8ff214bc5723f84d8e003a0d8916d61
-      internalID: 535298047
+      spriteID: 3d98e4609b1ad674f96dbe2d356dffe6
+      internalID: 172653382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_78
+      name: bandana0000_78
       rect:
         serializedVersion: 2
         x: 41
@@ -1043,14 +1055,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d18008d2a8b79843aa191c18a0c3057
-      internalID: -1680235509
+      spriteID: fd257daed3035084991b5d8c684345f7
+      internalID: -572262843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_79
+      name: bandana0000_79
       rect:
         serializedVersion: 2
         x: 55
@@ -1064,14 +1076,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b77f424495facca44ac40e7ab789b990
-      internalID: 1369034233
+      spriteID: f801a7e84271e0c45855b8c645eaf4ac
+      internalID: 398418418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_80
+      name: bandana0000_80
       rect:
         serializedVersion: 2
         x: 67
@@ -1085,14 +1097,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e68125917da33d54bbe3eb5ee0c6eaf4
-      internalID: 544726256
+      spriteID: dd4c7f68f8824494f89e94b7c0c376ce
+      internalID: 1967432689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_82
+      name: bandana0000_87
       rect:
         serializedVersion: 2
         x: 6
@@ -1106,14 +1118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d92659ed9a6d3ff4790f4a1c787851ce
-      internalID: 186351708
+      spriteID: 8afb6058e61402849b7007c2feb9ec1e
+      internalID: -2145558716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_83
+      name: bandana0000_88
       rect:
         serializedVersion: 2
         x: 21
@@ -1127,14 +1139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6ab6d054d2b50944b5f20eea12f3636
-      internalID: 96114966
+      spriteID: f6acf81d86d9482409f38303000dcf77
+      internalID: -1405522477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_84
+      name: bandana0000_89
       rect:
         serializedVersion: 2
         x: 42
@@ -1148,14 +1160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb390793c12efb34e901f9aa06213fa0
-      internalID: -10491882
+      spriteID: 7aeb0756a59ba7247881ee7dcbf48cbf
+      internalID: -1414301538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_85
+      name: bandana0000_90
       rect:
         serializedVersion: 2
         x: 60
@@ -1169,14 +1181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40ab9041c899f6c4fbe329ba22531e19
-      internalID: -460505319
+      spriteID: 3b450066592cce34bae62da1fb37e335
+      internalID: -1268851262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_86
+      name: bandana0000_91
       rect:
         serializedVersion: 2
         x: 79
@@ -1190,19 +1202,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcdec4a633c35c2419fb709ec42ef85d
-      internalID: -534444639
+      spriteID: 5ee26543f573ec5419ae756e352e9097
+      internalID: 863769688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_87
+      name: bandana0000_92
       rect:
         serializedVersion: 2
         x: 97
         y: 185
-        width: 16
+        width: 17
         height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1211,17 +1223,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b31095572b97c2499eb10c4042b7a05
-      internalID: -300448101
+      spriteID: f2727eef5993fd14caf316005923a686
+      internalID: -453355329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_88
+      name: bandana0000_93
       rect:
         serializedVersion: 2
-        x: 116
+        x: 117
         y: 185
         width: 16
         height: 22
@@ -1232,17 +1244,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e81e6c90cf77ff24bb6957e6de514b9d
-      internalID: -1911774520
+      spriteID: e3f2f20bbb23f5c49bcbb12d907bd90b
+      internalID: 450622153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_89
+      name: bandana0000_94
       rect:
         serializedVersion: 2
-        x: 134
+        x: 136
         y: 185
         width: 16
         height: 22
@@ -1253,19 +1265,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0f9702e6bc290c4a93e274d19a3a33a
-      internalID: 456384354
+      spriteID: 4c6dd7909daf1f648b50453aa4100f88
+      internalID: -623214217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_90
+      name: bandana0000_95
       rect:
         serializedVersion: 2
-        x: 153
+        x: 155
         y: 185
-        width: 15
+        width: 16
         height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1274,40 +1286,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e00b88563adcd514e92c342b371eae03
-      internalID: -496895952
+      spriteID: 0ae555e5a689ea045836863fafc76d26
+      internalID: -298358303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_91
+      name: bandana0000_96
       rect:
         serializedVersion: 2
-        x: 171
+        x: 174
         y: 185
-        width: 15
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ba3bcbb518917846a7b1b66d9088700
-      internalID: 1106190845
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet kin0000_92
-      rect:
-        serializedVersion: 2
-        x: 189
-        y: 185
-        width: 15
+        width: 16
         height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1316,19 +1307,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b1f87c4739ba7b46a3c06de24fc1050
-      internalID: 1747628021
+      spriteID: 0d983669542e97f4a8227a1629fafff0
+      internalID: 1238963981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_93
+      name: bandana0000_97
       rect:
         serializedVersion: 2
-        x: 207
+        x: 193
         y: 185
-        width: 16
+        width: 17
         height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1337,19 +1328,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83970d2bda0e4904b8dae09911affc05
-      internalID: 150934179
+      spriteID: 8b5148e3ac7f6a74d883a5042dd66cbd
+      internalID: -1315154711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_94
+      name: bandana0000_98
       rect:
         serializedVersion: 2
-        x: 226
+        x: 213
         y: 185
-        width: 16
+        width: 17
         height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1358,14 +1349,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6672955e79e06a4897519483a647227
-      internalID: -1930213965
+      spriteID: 4cc93c188f0d9d24db88481e00c68991
+      internalID: -2091097043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_112
+      name: bandana0000_110
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 173
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bcf4cc517eedd34196961fc044d0462
+      internalID: 330681449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandana0000_116
       rect:
         serializedVersion: 2
         x: 6
@@ -1379,14 +1391,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 996ee2057ce7877498bdd6430ff50749
-      internalID: -1791539833
+      spriteID: b7403bc01d394224ca8a2352e82296ac
+      internalID: 2071441020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_113
+      name: bandana0000_117
       rect:
         serializedVersion: 2
         x: 25
@@ -1400,17 +1412,38 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a06bee7559707624bb4bdad368d6e680
-      internalID: 1740888150
+      spriteID: 34acb9d67b53b2d459a3b3e0c82a6675
+      internalID: -521184563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_114
+      name: bandana0000_118
       rect:
         serializedVersion: 2
         x: 49
+        y: 146
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258e952d9b5851c41b628cd0b4456172
+      internalID: -1013997627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandana0000_119
+      rect:
+        serializedVersion: 2
+        x: 75
         y: 146
         width: 23
         height: 14
@@ -1421,35 +1454,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78df519c138200e47942bc6f1fa4aedd
-      internalID: -1994651904
+      spriteID: d0aceb9140995bb418a2d3336b4fef82
+      internalID: -1000301282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_115
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 146
-        width: 23
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4552cdc30b3b4fc46b4af0ac7b58937b
-      internalID: -752869859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet kin0000_116
+      name: bandana0000_120
       rect:
         serializedVersion: 2
         x: 134
@@ -1463,14 +1475,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 747ce81b35c89cc4d8c33b3e35b45bcf
-      internalID: -1150476750
+      spriteID: 792113145f315c642961f4e656a65856
+      internalID: -2042690655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_117
+      name: bandana0000_121
       rect:
         serializedVersion: 2
         x: 153
@@ -1484,17 +1496,38 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f34c8bc2cc3c3b41a0e4006158245ab
-      internalID: -102458283
+      spriteID: c5dad5a838e266f4089ec7e6ae82c043
+      internalID: 1987208557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_118
+      name: bandana0000_122
       rect:
         serializedVersion: 2
-        x: 181
+        x: 177
+        y: 146
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b24aff8810c184889d3abcdaf37a3c
+      internalID: 848172313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandana0000_123
+      rect:
+        serializedVersion: 2
+        x: 204
         y: 146
         width: 23
         height: 14
@@ -1505,35 +1538,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ad916fc92f52004d91c62d384e1c507
-      internalID: -1921722631
+      spriteID: 4ce0ac1381e653842ac1c7e0e666173a
+      internalID: 581277608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_119
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 146
-        width: 23
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d49f4d9b95cd2c42a13ac9a3058c7c7
-      internalID: -1025145501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet kin0000_120
+      name: bandana0000_124
       rect:
         serializedVersion: 2
         x: 6
@@ -1547,14 +1559,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25d5387da19fea04a9d84a226638339b
-      internalID: 18202500
+      spriteID: f75a8f5a0acc27f4b85e80d23f13ea60
+      internalID: -1508606721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_121
+      name: bandana0000_125
       rect:
         serializedVersion: 2
         x: 24
@@ -1568,14 +1580,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a93df5e629024fe46a1c1a9d34cc620b
-      internalID: 742410733
+      spriteID: 59da42ff9f26e014682f115d41babfdc
+      internalID: 64509154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_122
+      name: bandana0000_126
       rect:
         serializedVersion: 2
         x: 43
@@ -1589,14 +1601,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a8c45afef8223c43844c5e7b016db3f
-      internalID: 269248081
+      spriteID: cbd83461ca873e243b08d5ac4e58135c
+      internalID: 1732176787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_123
+      name: bandana0000_127
       rect:
         serializedVersion: 2
         x: 63
@@ -1610,14 +1622,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6afe3f2a1b14f2c48b1c452c8b6da335
-      internalID: -1316654505
+      spriteID: 4bf3f67e2a54d7d45bc3a01b7c15da0b
+      internalID: -1678260872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_124
+      name: bandana0000_128
       rect:
         serializedVersion: 2
         x: 83
@@ -1631,14 +1643,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca99072c836533846a5b1d657e494522
-      internalID: -374310131
+      spriteID: 5bdcc31b7fb28f74e8b1b4431e4391f0
+      internalID: 449258977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_125
+      name: bandana0000_129
       rect:
         serializedVersion: 2
         x: 103
@@ -1652,14 +1664,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0256b3d70fcdbcb4bba47b5226f967eb
-      internalID: 2054078029
+      spriteID: a227415774409c0428514327bb69b3cf
+      internalID: -1105203460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_126
+      name: bandana0000_130
       rect:
         serializedVersion: 2
         x: 134
@@ -1673,14 +1685,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0ab753b883c0614bbf814da5a17b9d3
-      internalID: 1242555067
+      spriteID: a2aa58847c8d5df4e91589623ea4771a
+      internalID: -1610025520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_127
+      name: bandana0000_131
       rect:
         serializedVersion: 2
         x: 153
@@ -1694,14 +1706,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 870f9d9b4f079a8418719208296e858e
-      internalID: 780873547
+      spriteID: 2b741f8e85d5b5b4c98bd1a81d8a1b4e
+      internalID: -1340964881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_128
+      name: bandana0000_132
       rect:
         serializedVersion: 2
         x: 173
@@ -1715,14 +1727,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ac46f5448d0d344289c3dc2d11bf3c4
-      internalID: 381020571
+      spriteID: 94aec4cce1aee8b45a4f144850bf359f
+      internalID: 889961863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_129
+      name: bandana0000_133
       rect:
         serializedVersion: 2
         x: 193
@@ -1736,14 +1748,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f2d313d24af68a439f1c3d9852d03b7
-      internalID: -301612180
+      spriteID: 1f27ecf63829ea948bc81abd96d157ad
+      internalID: -1987294353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_130
+      name: bandana0000_134
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 121
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3467d2241bb274e40b69d78a41722d57
+      internalID: -560472830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandana0000_135
       rect:
         serializedVersion: 2
         x: 6
@@ -1757,14 +1790,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05de1bbd12a34624ebc4b4933201a98d
-      internalID: 1427595716
+      spriteID: 6bca22e940b65284880fd60b0be625bc
+      internalID: -994035326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_131
+      name: bandana0000_136
       rect:
         serializedVersion: 2
         x: 24
@@ -1778,14 +1811,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d1e12c242898434b9cddc4dec6f15d8
-      internalID: 116566060
+      spriteID: d01513dcc6b040b49a3fd55845944252
+      internalID: -1815931940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_132
+      name: bandana0000_137
       rect:
         serializedVersion: 2
         x: 46
@@ -1799,14 +1832,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 326b88ffe640ab74f8800e866be1399f
-      internalID: -1693155868
+      spriteID: 32ccf1dc504a04049be030c2c0f29da0
+      internalID: 740273419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_133
+      name: bandana0000_138
       rect:
         serializedVersion: 2
         x: 68
@@ -1820,14 +1853,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa5c1c77a846e3346b726fd1bc8016b7
-      internalID: -764012691
+      spriteID: 89063450096282e4d87ae89f7f1991d4
+      internalID: -1221115978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_134
+      name: bandana0000_139
       rect:
         serializedVersion: 2
         x: 90
@@ -1841,14 +1874,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1046c1e75c7955459edca0a8565cefe
-      internalID: 764054657
+      spriteID: cafdec0e5e1d9b640ac8179b41c45f4e
+      internalID: -1481052683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_135
+      name: bandana0000_140
       rect:
         serializedVersion: 2
         x: 134
@@ -1862,14 +1895,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41d7f6fadbac7114c802f1f9c70fe72b
-      internalID: 951810729
+      spriteID: fe69665599412f84d802af56aa70f4e6
+      internalID: -105379239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_136
+      name: bandana0000_141
       rect:
         serializedVersion: 2
         x: 152
@@ -1883,14 +1916,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9166e076666e8a54bbf9a25acc572e1a
-      internalID: -1335922560
+      spriteID: 7df5f363005d8964c938f193bf784394
+      internalID: 800146604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_137
+      name: bandana0000_142
       rect:
         serializedVersion: 2
         x: 174
@@ -1904,14 +1937,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d2373c189290f14cb7597086333bf38
-      internalID: 1883980680
+      spriteID: d250207a817687a489e18d4c38f6acba
+      internalID: -251175230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_138
+      name: bandana0000_143
       rect:
         serializedVersion: 2
         x: 196
@@ -1925,14 +1958,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 845eb405d360a444982a6dc6482b0ebd
-      internalID: 449369148
+      spriteID: a1a9c87422c304b4d960242c1beb2692
+      internalID: -1835868040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_139
+      name: bandana0000_144
       rect:
         serializedVersion: 2
         x: 218
@@ -1946,14 +1979,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f207c0a0915c1a84cb9816f5ddb25bb1
-      internalID: -1012331157
+      spriteID: 3a995448197e327419dac22ace7e407f
+      internalID: -1378557713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_140
+      name: bandana0000_145
       rect:
         serializedVersion: 2
         x: 6
@@ -1967,14 +2000,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 483a4f7f9cf0c2146a9600c0c31f0c7b
-      internalID: 378489295
+      spriteID: 40f05ae11a367cc449876feb625cddae
+      internalID: 1737150055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_141
+      name: bandana0000_146
       rect:
         serializedVersion: 2
         x: 21
@@ -1988,14 +2021,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca9e76cd7a08a4445aa5082168c09cda
-      internalID: 1510418356
+      spriteID: e26a1d066cb3e424692bb96578df4e45
+      internalID: 1910952841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_142
+      name: bandana0000_147
       rect:
         serializedVersion: 2
         x: 36
@@ -2009,14 +2042,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f89f4bfea4278343b681b9c50672553
-      internalID: 624673204
+      spriteID: 610c5d894618fb2469ffd06cb74f27e1
+      internalID: -1775105745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_143
+      name: bandana0000_148
       rect:
         serializedVersion: 2
         x: 134
@@ -2030,14 +2063,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad0fbce10aa1bff4386f7b50b144066c
-      internalID: -1451064722
+      spriteID: 15157a3cb78074c43908cda72cbccdcc
+      internalID: 1460543323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_144
+      name: bandana0000_149
       rect:
         serializedVersion: 2
         x: 6
@@ -2051,14 +2084,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c29de88329a6c2458d37ac8c5138804
-      internalID: -1714466436
+      spriteID: 3bc21e22959b03243a77c82230aef532
+      internalID: 28184658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_145
+      name: bandana0000_150
       rect:
         serializedVersion: 2
         x: 21
@@ -2072,14 +2105,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30afe11d432b0184abcd2d46fb4d8b27
-      internalID: 611947222
+      spriteID: c6a118944fc074e4784e9b7fe5bc7cc5
+      internalID: 1836575869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_146
+      name: bandana0000_151
       rect:
         serializedVersion: 2
         x: 36
@@ -2093,14 +2126,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09092a4d7c3de5e4a8bf206bb9d8a529
-      internalID: 851963702
+      spriteID: 2828af63110c41148af1c6084bee847a
+      internalID: 1377150927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_147
+      name: bandana0000_152
       rect:
         serializedVersion: 2
         x: 51
@@ -2114,20 +2147,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad860c9689996df43846e1b21b01727a
-      internalID: 911580604
+      spriteID: 7a2fe44e56948b2469e79a062c6e9972
+      internalID: -1323048558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_155
+      name: bandana0000_153
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 40
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd6025e64bb6da4ca6fe189db104473
+      internalID: -1807347126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandana0000_160
       rect:
         serializedVersion: 2
         x: 6
         y: 20
         width: 23
-        height: 12
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2135,20 +2189,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d66d4c32812a9c442a767380516c5082
-      internalID: -1653329562
+      spriteID: 2a127da7bb8dbc14a8263d16e11479d7
+      internalID: -1287003579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_156
+      name: bandana0000_161
       rect:
         serializedVersion: 2
         x: 32
         y: 20
         width: 23
-        height: 12
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2156,14 +2210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be245e889062ee444bd9da98bb2cd203
-      internalID: 390313833
+      spriteID: c5208f23bafdcc948a2bc28f756f33ad
+      internalID: -1506551040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_157
+      name: bandana0000_162
       rect:
         serializedVersion: 2
         x: 58
@@ -2177,14 +2231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a1b951a5efbe9e40b533d1950c8e006
-      internalID: 2047170040
+      spriteID: 0a5d91019468538499d1aad47d75f9ee
+      internalID: 639277579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_158
+      name: bandana0000_163
       rect:
         serializedVersion: 2
         x: 77
@@ -2198,14 +2252,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46bbb4d9995d8184b8a047c2cdaf3b19
-      internalID: 1089004902
+      spriteID: b49edaf12b308804e8f8535ee78d9d49
+      internalID: -102197739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_159
+      name: bandana0000_164
       rect:
         serializedVersion: 2
         x: 96
@@ -2219,14 +2273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61cbe4d0c2ec6b84eb8a3574d5b60893
-      internalID: 1467874041
+      spriteID: 4db6a69334381594d9101042414cf738
+      internalID: -1563536614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_160
+      name: bandana0000_165
       rect:
         serializedVersion: 2
         x: 116
@@ -2240,14 +2294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0fd9411037f3dc4e8ca4e78ffd3f728
-      internalID: 188890032
+      spriteID: 1d899cba402074e4f84b3836c9111e7e
+      internalID: 1023269726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_161
+      name: bandana0000_166
       rect:
         serializedVersion: 2
         x: 136
@@ -2261,14 +2315,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ac21ddac412fef47b12b31e6f2e7258
-      internalID: -1014267709
+      spriteID: 85cb588eb9795294c9b3720176838fee
+      internalID: 1529562168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_162
+      name: bandana0000_167
       rect:
         serializedVersion: 2
         x: 156
@@ -2282,14 +2336,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d73248e1802ba748b3461e4441d8557
-      internalID: -1761234449
+      spriteID: ba9c74bb1530f4f46a6ddd61bad0d9b0
+      internalID: -210655637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_163
+      name: bandana0000_168
       rect:
         serializedVersion: 2
         x: 176
@@ -2303,14 +2357,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41d9cdcb5fd00ac4e81bf0366e75d117
-      internalID: 2051329521
+      spriteID: 4540f198b1bf217408070054898f9422
+      internalID: 1692507055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet kin0000_164
+      name: bandana0000_169
       rect:
         serializedVersion: 2
         x: 196
@@ -2324,8 +2378,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe3592f9291fcb748bdf48ca1ce785e1
-      internalID: 545353664
+      spriteID: 34c5bd2e0a6506d4fa490ed8109d1e92
+      internalID: -1150120155
       vertices: []
       indices: 
       edges: []
@@ -2341,193 +2395,199 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bullet kin0000_0: 130651715
-      Bullet kin0000_1: -93599565
-      Bullet kin0000_100: -1718449397
-      Bullet kin0000_101: -1902458876
-      Bullet kin0000_102: -1376642224
-      Bullet kin0000_103: -829135035
-      Bullet kin0000_104: 1148084610
-      Bullet kin0000_105: 2085292638
-      Bullet kin0000_106: 1655240734
-      Bullet kin0000_107: -74897560
-      Bullet kin0000_108: 2062552476
-      Bullet kin0000_109: -1803138073
-      Bullet kin0000_110: 1074179389
-      Bullet kin0000_111: -1475694172
-      Bullet kin0000_112: -1791539833
-      Bullet kin0000_113: 1740888150
-      Bullet kin0000_114: -1994651904
-      Bullet kin0000_115: -752869859
-      Bullet kin0000_116: -1150476750
-      Bullet kin0000_117: -102458283
-      Bullet kin0000_118: -1921722631
-      Bullet kin0000_119: -1025145501
-      Bullet kin0000_12: -146387273
-      Bullet kin0000_120: 18202500
-      Bullet kin0000_121: 742410733
-      Bullet kin0000_122: 269248081
-      Bullet kin0000_123: -1316654505
-      Bullet kin0000_124: -374310131
-      Bullet kin0000_125: 2054078029
-      Bullet kin0000_126: 1242555067
-      Bullet kin0000_127: 780873547
-      Bullet kin0000_128: 381020571
-      Bullet kin0000_129: -301612180
-      Bullet kin0000_13: -1958964112
-      Bullet kin0000_130: 1427595716
-      Bullet kin0000_131: 116566060
-      Bullet kin0000_132: -1693155868
-      Bullet kin0000_133: -764012691
-      Bullet kin0000_134: 764054657
-      Bullet kin0000_135: 951810729
-      Bullet kin0000_136: -1335922560
-      Bullet kin0000_137: 1883980680
-      Bullet kin0000_138: 449369148
-      Bullet kin0000_139: -1012331157
-      Bullet kin0000_14: 665766609
-      Bullet kin0000_140: 378489295
-      Bullet kin0000_141: 1510418356
-      Bullet kin0000_142: 624673204
-      Bullet kin0000_143: -1451064722
-      Bullet kin0000_144: -1714466436
-      Bullet kin0000_145: 611947222
-      Bullet kin0000_146: 851963702
-      Bullet kin0000_147: 911580604
-      Bullet kin0000_148: -478088185
-      Bullet kin0000_149: 696305469
-      Bullet kin0000_15: 1138733701
-      Bullet kin0000_150: -1459814930
-      Bullet kin0000_151: 1377869831
-      Bullet kin0000_152: 400076341
-      Bullet kin0000_153: -459083074
-      Bullet kin0000_154: -1625107402
-      Bullet kin0000_155: -1653329562
-      Bullet kin0000_156: 390313833
-      Bullet kin0000_157: 2047170040
-      Bullet kin0000_158: 1089004902
-      Bullet kin0000_159: 1467874041
-      Bullet kin0000_160: 188890032
-      Bullet kin0000_161: -1014267709
-      Bullet kin0000_162: -1761234449
-      Bullet kin0000_163: 2051329521
-      Bullet kin0000_164: 545353664
-      Bullet kin0000_165: 1161152887
-      Bullet kin0000_166: -580198380
-      Bullet kin0000_167: -690771855
-      Bullet kin0000_168: -1839950144
-      Bullet kin0000_169: 1682632697
-      Bullet kin0000_170: 1552659885
-      Bullet kin0000_171: 1603797390
-      Bullet kin0000_172: -476283319
-      Bullet kin0000_173: -1475804015
-      Bullet kin0000_174: 272079743
-      Bullet kin0000_175: -1693122179
-      Bullet kin0000_176: -217105178
-      Bullet kin0000_177: -256527057
-      Bullet kin0000_178: -1951024871
-      Bullet kin0000_179: 2104623047
-      Bullet kin0000_180: 1481952595
-      Bullet kin0000_181: -784909875
-      Bullet kin0000_182: -610243276
-      Bullet kin0000_183: 733555837
-      Bullet kin0000_184: 1380241144
-      Bullet kin0000_185: -1092252793
-      Bullet kin0000_186: -774505801
-      Bullet kin0000_187: -2030434352
-      Bullet kin0000_188: -2063270426
-      Bullet kin0000_2: -1419268751
-      Bullet kin0000_3: 32425212
-      Bullet kin0000_35: -910978253
-      Bullet kin0000_36: -1204061847
-      Bullet kin0000_37: 2071447416
-      Bullet kin0000_38: -1232687194
-      Bullet kin0000_39: -1032909973
-      Bullet kin0000_4: 530513571
-      Bullet kin0000_40: 1501161534
-      Bullet kin0000_41: -1088733253
-      Bullet kin0000_42: 865382017
-      Bullet kin0000_43: -1935612684
-      Bullet kin0000_44: 1957899927
-      Bullet kin0000_45: 86560104
-      Bullet kin0000_46: 29369623
-      Bullet kin0000_47: 998629807
-      Bullet kin0000_48: -736147835
-      Bullet kin0000_49: 703782571
-      Bullet kin0000_5: -936998259
-      Bullet kin0000_50: -1860191300
-      Bullet kin0000_51: 363169505
-      Bullet kin0000_52: 1990868117
-      Bullet kin0000_53: 877137543
-      Bullet kin0000_54: 1799709711
-      Bullet kin0000_55: 337356242
-      Bullet kin0000_56: 715894291
-      Bullet kin0000_57: -467860225
-      Bullet kin0000_58: 923527773
-      Bullet kin0000_59: 102421490
-      Bullet kin0000_60: 51412673
-      Bullet kin0000_61: 18775138
-      Bullet kin0000_62: 2102344726
-      Bullet kin0000_63: -456911225
-      Bullet kin0000_64: -533855724
-      Bullet kin0000_65: -479986494
-      Bullet kin0000_66: 854164767
-      Bullet kin0000_67: -2061370858
-      Bullet kin0000_68: -1916330510
-      Bullet kin0000_69: 1212729714
-      Bullet kin0000_70: 607373392
-      Bullet kin0000_71: 1803152525
-      Bullet kin0000_72: 987660057
-      Bullet kin0000_73: 1382638818
-      Bullet kin0000_74: -49815891
-      Bullet kin0000_75: -554253391
-      Bullet kin0000_76: 230009875
-      Bullet kin0000_77: 535298047
-      Bullet kin0000_78: -1680235509
-      Bullet kin0000_79: 1369034233
-      Bullet kin0000_80: -1734938013
-      Bullet kin0000_81: 186351708
-      Bullet kin0000_82: 96114966
-      Bullet kin0000_83: -10491882
-      Bullet kin0000_84: -460505319
-      Bullet kin0000_85: -534444639
-      Bullet kin0000_86: -300448101
-      Bullet kin0000_87: -1911774520
-      Bullet kin0000_88: 456384354
-      Bullet kin0000_89: -1550239966
-      Bullet kin0000_90: 1106190845
-      Bullet kin0000_91: 1747628021
-      Bullet kin0000_92: 150934179
-      Bullet kin0000_93: -1930213965
-      Bullet kin0000_94: -690252099
-      Bullet kin0000_95: -1063165120
-      Bullet kin0000_96: -1677040811
-      Bullet kin0000_97: 968573812
-      Bullet kin0000_98: 1946207911
-      Bullet kin0000_99: -1272827629
-      Bullet_Idle_N_1: 1229385177
-      Bullet_Idle_N_2: -1080823402
-      Bullet_Idle_S_1: 1487740152
-      Bullet_Idle_S_2: -1550239966
-      Bullet_Run_LeftRight_1: -1980257088
-      Bullet_Run_LeftRight_2: -152398137
-      Bullet_Run_LeftRight_3: 1458543625
-      Bullet_Run_LeftRight_4: 1164521643
-      Bullet_Run_LeftRight_5: -277658450
-      Bullet_Run_LeftRight_6: -1696354301
-      Bullet_Run_N_1: -763413448
-      Bullet_Run_N_2: -1904551020
-      Bullet_Run_N_3: -608560163
-      Bullet_Run_N_4: 365934961
-      Bullet_Run_N_5: 754552730
-      Bullet_Run_N_6: 1471260622
-      Bullet_Run_N_7: -1603815262
-      Bullet_Run_S_1: -264281714
-      Bullet_Run_S_2: -1137974706
-      Bullet_Run_S_3: 2115809259
-      Bullet_Run_S_4: 1870238196
-      Bullet_Run_S_5: 2133775006
-      Bullet_Run_S_6: 2104415179
+      bandana0000_0: -1530360979
+      bandana0000_10: 1731740703
+      bandana0000_100: -100294779
+      bandana0000_101: 767554061
+      bandana0000_102: -1137893702
+      bandana0000_103: 2139448496
+      bandana0000_104: -434222763
+      bandana0000_105: 1105698757
+      bandana0000_106: 1432912198
+      bandana0000_107: -377040986
+      bandana0000_108: 1930930916
+      bandana0000_109: 1190636204
+      bandana0000_11: -73848826
+      bandana0000_110: 330681449
+      bandana0000_111: -1467153955
+      bandana0000_112: 1516587831
+      bandana0000_113: -275257706
+      bandana0000_114: -1330915128
+      bandana0000_115: 1944286564
+      bandana0000_116: 2071441020
+      bandana0000_117: -521184563
+      bandana0000_118: -1013997627
+      bandana0000_119: -1000301282
+      bandana0000_120: -2042690655
+      bandana0000_121: 1987208557
+      bandana0000_122: 848172313
+      bandana0000_123: 581277608
+      bandana0000_124: -1508606721
+      bandana0000_125: 64509154
+      bandana0000_126: 1732176787
+      bandana0000_127: -1678260872
+      bandana0000_128: 449258977
+      bandana0000_129: -1105203460
+      bandana0000_13: 443315332
+      bandana0000_130: -1610025520
+      bandana0000_131: -1340964881
+      bandana0000_132: 889961863
+      bandana0000_133: -1987294353
+      bandana0000_134: -560472830
+      bandana0000_135: -994035326
+      bandana0000_136: -1815931940
+      bandana0000_137: 740273419
+      bandana0000_138: -1221115978
+      bandana0000_139: -1481052683
+      bandana0000_14: -788212522
+      bandana0000_140: -105379239
+      bandana0000_141: 800146604
+      bandana0000_142: -251175230
+      bandana0000_143: -1835868040
+      bandana0000_144: -1378557713
+      bandana0000_145: 1737150055
+      bandana0000_146: 1910952841
+      bandana0000_147: -1775105745
+      bandana0000_148: 1460543323
+      bandana0000_149: 28184658
+      bandana0000_15: -88000128
+      bandana0000_150: 1836575869
+      bandana0000_151: 1377150927
+      bandana0000_152: -1323048558
+      bandana0000_153: -1807347126
+      bandana0000_154: 1544459068
+      bandana0000_155: -1352113232
+      bandana0000_156: 1669940695
+      bandana0000_157: -694679449
+      bandana0000_158: -410461709
+      bandana0000_159: 652077631
+      bandana0000_16: 296614074
+      bandana0000_160: -1287003579
+      bandana0000_161: -1506551040
+      bandana0000_162: 639277579
+      bandana0000_163: -102197739
+      bandana0000_164: -1563536614
+      bandana0000_165: 1023269726
+      bandana0000_166: 1529562168
+      bandana0000_167: -210655637
+      bandana0000_168: 1692507055
+      bandana0000_169: -1150120155
+      bandana0000_17: 976301551
+      bandana0000_170: -1972742777
+      bandana0000_171: 824656372
+      bandana0000_172: -1409617422
+      bandana0000_173: 182655027
+      bandana0000_174: 1529883843
+      bandana0000_175: -573689822
+      bandana0000_176: 1161391149
+      bandana0000_177: 2089695526
+      bandana0000_178: 719374039
+      bandana0000_179: -96420185
+      bandana0000_18: -2038125282
+      bandana0000_180: -1305785569
+      bandana0000_181: 905542481
+      bandana0000_182: -12158935
+      bandana0000_183: -474972178
+      bandana0000_184: 1389062590
+      bandana0000_185: -823495785
+      bandana0000_186: -1581270993
+      bandana0000_187: 699045501
+      bandana0000_188: -1297881667
+      bandana0000_189: -701767239
+      bandana0000_19: 789121104
+      bandana0000_190: -1775406554
+      bandana0000_191: -132796316
+      bandana0000_192: -1511599017
+      bandana0000_193: -1564982518
+      bandana0000_2: 436278611
+      bandana0000_20: -789973363
+      bandana0000_21: -1395380880
+      bandana0000_22: -81127974
+      bandana0000_23: 1775784456
+      bandana0000_24: -1438865880
+      bandana0000_25: -1129454323
+      bandana0000_26: 270848883
+      bandana0000_27: 503989916
+      bandana0000_28: -600753024
+      bandana0000_29: 1124262819
+      bandana0000_3: -1741015693
+      bandana0000_30: -1430496918
+      bandana0000_31: -609844637
+      bandana0000_32: -782167428
+      bandana0000_33: 574844575
+      bandana0000_34: 1091573555
+      bandana0000_35: -1795828044
+      bandana0000_36: -1498717007
+      bandana0000_37: 1028351885
+      bandana0000_38: 2078345345
+      bandana0000_39: 1608741367
+      bandana0000_4: -528341325
+      bandana0000_40: -1152161479
+      bandana0000_41: 210993088
+      bandana0000_42: 95787009
+      bandana0000_43: 1286286124
+      bandana0000_44: -21122941
+      bandana0000_45: -957482747
+      bandana0000_46: 1251280783
+      bandana0000_47: 487838015
+      bandana0000_48: -732170175
+      bandana0000_49: -924522479
+      bandana0000_5: 1489840093
+      bandana0000_50: -253145110
+      bandana0000_51: 1173695768
+      bandana0000_52: 1159899903
+      bandana0000_53: 1601218822
+      bandana0000_54: -660987114
+      bandana0000_55: 1210387647
+      bandana0000_56: -316568172
+      bandana0000_57: -83294762
+      bandana0000_58: 135680698
+      bandana0000_59: 584715118
+      bandana0000_60: 1078819314
+      bandana0000_61: -328346057
+      bandana0000_62: -786553683
+      bandana0000_63: 787865958
+      bandana0000_64: 38412003
+      bandana0000_65: 815934610
+      bandana0000_66: -353082026
+      bandana0000_67: -1573720677
+      bandana0000_68: -950202733
+      bandana0000_69: 1320382073
+      bandana0000_70: -1240182273
+      bandana0000_71: -1263869343
+      bandana0000_72: -385466762
+      bandana0000_73: 1291478732
+      bandana0000_74: 440843533
+      bandana0000_75: 1810401620
+      bandana0000_76: -296171589
+      bandana0000_77: 172653382
+      bandana0000_78: -572262843
+      bandana0000_79: 398418418
+      bandana0000_80: 1967432689
+      bandana0000_81: -1769895332
+      bandana0000_82: -1644200775
+      bandana0000_83: 1676266501
+      bandana0000_84: 539112018
+      bandana0000_85: 885443286
+      bandana0000_86: -688422222
+      bandana0000_87: -2145558716
+      bandana0000_88: -1405522477
+      bandana0000_89: -1414301538
+      bandana0000_90: -1268851262
+      bandana0000_91: 863769688
+      bandana0000_92: -453355329
+      bandana0000_93: 450622153
+      bandana0000_94: -623214217
+      bandana0000_95: -298358303
+      bandana0000_96: 1238963981
+      bandana0000_97: -1315154711
+      bandana0000_98: -2091097043
+      bandana0000_99: -547094842
+      bandana_ Idle_ 1: -188861431
+      bandana_ Idle_ 2: -1583327689
+      bandana_Hand: -561415301
+      bandana_Idle_1: 256471666
+      bandana_Idle_2: -1327002154
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
