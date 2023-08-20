@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6173575238480380274}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GunShoot (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 7425295212286752094}
   - component: {fileID: 7425295212286752089}
   - component: {fileID: 7238715555914245894}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,10 +132,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 9143233633598909406, guid: 8784d79695179224797726657baa7dbc, type: 3}
+  distanceBetweenObjects: 0
+  timer: 1.5
   Enemy: {fileID: 7425295212870926675}
+  Player: {fileID: 0}
   BulletSpawn1: {fileID: 7425295212740199546}
   BulletSpawn2: {fileID: 8629635992786044016}
   BulletSpawn3: {fileID: 4142549340545927939}
+  Close: 0
 --- !u!1 &7425295212740199546
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,7 +149,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7425295212740199541}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GunShoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +428,7 @@ MonoBehaviour:
   Chase: 0
   first: 0
   Player: {fileID: 0}
-  speed: 1.1
+  speed: 1.5
   Move: {x: 0, y: 0}
   play: {fileID: 7425295212847980755}
   shot: {fileID: 7238715555914245894}
@@ -438,7 +442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7425295213652852517}
   - component: {fileID: 7425295213652852516}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -522,7 +526,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9142951392111883732}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GunShoot (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

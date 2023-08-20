@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7425295212286752094}
   - component: {fileID: 7425295212286752089}
   - component: {fileID: 1427237721994431150}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,10 +99,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 9143233633598909406, guid: 902f7aa6004f5de41a94c60200ded88b, type: 3}
+  distanceBetweenObjects: 0
+  timer: 1.5
   Enemy: {fileID: 7425295212870926675}
+  Player: {fileID: 0}
   BulletSpawn1: {fileID: 7425295212740199546}
   BulletSpawn2: {fileID: 0}
   BulletSpawn3: {fileID: 0}
+  Close: 0
 --- !u!1 &7425295212740199546
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7425295212740199541}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GunShoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,10 +375,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9adb252878058094893a8c48e086c08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
-  timer: 2
+  speed: 1.75
+  timer: 2.5
+  RandomRange: 6
   Player: {fileID: 0}
   WalkPosition: {x: 0, y: 0}
+  kin: {fileID: 0}
 --- !u!1 &7425295213652852522
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7425295213652852517}
   - component: {fileID: 7425295213652852516}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7425295212286752094}
   - component: {fileID: 7425295212286752089}
   - component: {fileID: 1427237721994431150}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7425295212286752095}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.096, y: -0.233, z: 0}
+  m_LocalPosition: {x: 0.05, y: -0.233, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 1965013535
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -162525584, guid: 1df7c3a3e7a8fdb4fb752f8aabb72946, type: 3}
+  m_Sprite: {fileID: -1862664429, guid: fa5e523a625d48445a91412e970bea25, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,11 +98,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf5f91320b910f43a5fca9e5e22d01a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bullet: {fileID: 9143233633598909406, guid: 902f7aa6004f5de41a94c60200ded88b, type: 3}
+  Bullet: {fileID: 9143233633598909406, guid: c5a78e92d350b1547abf86b1b8d3b556, type: 3}
+  distanceBetweenObjects: 0
+  timer: 0.15
   Enemy: {fileID: 7425295212870926675}
+  Player: {fileID: 0}
   BulletSpawn1: {fileID: 7425295212740199546}
   BulletSpawn2: {fileID: 0}
   BulletSpawn3: {fileID: 0}
+  Close: 0
 --- !u!1 &7425295212740199546
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7425295212740199541}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GunShoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,6 +251,7 @@ GameObject:
   - component: {fileID: 7425295212870926674}
   - component: {fileID: 7425295212870926639}
   - component: {fileID: 7425295212870926638}
+  - component: {fileID: 1558392596}
   m_Layer: 0
   m_Name: Bandana Kin
   m_TagString: Untagged
@@ -371,10 +376,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9adb252878058094893a8c48e086c08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 2
   timer: 2
+  RandomRange: 3
   Player: {fileID: 0}
   WalkPosition: {x: 0, y: 0}
+  kin: {fileID: 1427237721994431150}
+--- !u!58 &1558392596
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7425295212870926675}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 6
 --- !u!1 &7425295213652852522
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7425295213652852517}
   - component: {fileID: 7425295213652852516}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
