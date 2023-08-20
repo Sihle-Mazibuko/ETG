@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -9036013815894584740}
   - component: {fileID: 5117721339548920811}
   m_Layer: 0
-  m_Name: ARROW
+  m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,6 @@ MonoBehaviour:
   speed: 10
   lifetime: 2
   damage: 22
-  WeaponHolster: {fileID: 0}
 --- !u!61 &5117721339548920811
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -109,7 +108,7 @@ GameObject:
   - component: {fileID: 6445755363533470921}
   - component: {fileID: 7776740830907487219}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Projectile_GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,8 +167,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -642888499
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e17a7478b29c597499426d5059335ffc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
