@@ -14,6 +14,8 @@ public class EnemyMovement : MonoBehaviour
 
     public Vector2 WalkPosition;
 
+    public KinShoot kin;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +24,13 @@ public class EnemyMovement : MonoBehaviour
         //WalkPosition = new Vector2(Random.Range(2, 5), Random.Range(2, 5));
         StartCoroutine(Walking());
     }
-
     
+    
+    
+
+
+
+
 
     // Update is called once per frame
     void Update()
