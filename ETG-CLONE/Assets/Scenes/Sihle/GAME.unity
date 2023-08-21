@@ -576,6 +576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa72406ef5249524692e920180b14af0, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 --- !u!1 &919713634
 GameObject:
@@ -682,6 +683,8 @@ Transform:
   m_PrefabInstance: {fileID: 171235496}
   m_PrefabAsset: {fileID: 0}
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 968a866 (Dog)
 --- !u!1001 &932594262
 PrefabInstance:
   m_ObjectHideFlags: 0
