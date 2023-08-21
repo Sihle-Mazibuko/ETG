@@ -55,8 +55,8 @@ public class Guns : MonoBehaviour
 
     void MyInput()
     {
-            if (allowButtonHold) shooting = Input.GetKey("Fire1") ;
-            else shooting = Input.GetKeyDown(KeyCode.Mouse0);
+        if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
+        else shooting = Input.GetKeyDown(KeyCode.Mouse0);
 
         if ((Input.GetKeyDown(KeyCode.R) && currentAmmo < clipSize && !reloading) || (currentAmmo < clipSize && !reloading))
         {
@@ -65,7 +65,7 @@ public class Guns : MonoBehaviour
 
         if (readyToShoot && shooting && !reloading && currentAmmo > 0)
         {
-            bulletsPerTap = bulletsShot;
+            bulletsShot = bulletsPerTap;
             Shoot();
         }
     }
@@ -73,6 +73,7 @@ public class Guns : MonoBehaviour
     void Reload() 
     { 
         reloading = true;
+
         Invoke("ReloadFinished", reloadTime);
     }
 
@@ -97,11 +98,11 @@ public class Guns : MonoBehaviour
 
             #endregion
 
-            //Bullet Spread
-            float x = Random.Range(-spread, spread);
-            float y = Random.Range(-spread, spread);
+            ////Bullet Spread
+            //float x = Random.Range(-spread, spread);
+            //float y = Random.Range(-spread, spread);
 
-            Vector3 _direction = transform.position + new Vector3(x, y, 0);
+            //Vector3 _direction = transform.position + new Vector3(x, y, 0);
 
 
 
