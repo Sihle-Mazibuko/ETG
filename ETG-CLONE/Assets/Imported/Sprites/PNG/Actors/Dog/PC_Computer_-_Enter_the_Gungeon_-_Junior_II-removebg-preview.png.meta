@@ -1,0 +1,1501 @@
+fileFormatVersion: 2
+guid: 6102cfce1fe389d4f9f765f7a9a7e652
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 375
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798531cda267519409453b8ef4f42df8
+      internalID: 1744209590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 347
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c8097512d69cf48adb0eff4c0e4149
+      internalID: 1841918588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 345
+        width: 35
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72575e6da02d89440911c10c00fb619a
+      internalID: 520559689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 328
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1149da89ffaaa304991060f2c93deb30
+      internalID: 118739291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 310
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50d59aff4c69bd46b91b196f7df3a44
+      internalID: 1962336365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 310
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c69f4fd4d4c824ba9ed780acaf05da
+      internalID: 1384976136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 310
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3865c69d5a9e4408a6563c4b27c799
+      internalID: -690258725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 309
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3483f0963443f6c428bc52284baac84e
+      internalID: 648999786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 293
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d722e2c12bc73fc4cbe92ac45ee4b0dd
+      internalID: -399030190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 291
+        width: 35
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e78ab5a126a984b945f256b46813ca
+      internalID: 23571210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 276
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f709b02c2e5d6c4ca6b47f8fc0f3ea8
+      internalID: -992755726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 275
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28802d0e5efe13d49adffb0816387d4e
+      internalID: 1457526259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 272
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e33f35e7a0be24ea944a81145de2f6
+      internalID: -1770627986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 243
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc98f916554db084a95c9e2e5220246d
+      internalID: -186801199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 242
+        width: 71
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc766ebe584205145b8d085d074362c7
+      internalID: -156260096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 215
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca22e21b6de9ef04497607ec49206f6f
+      internalID: 551426282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 215
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b761f5792e97c644eb706cbb4541a946
+      internalID: -1681597681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 215
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827f90220ebfc784aaa9757eb3f97ffe
+      internalID: 1954060737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 215
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7972592bd7c77384fba1c04057282213
+      internalID: 1327492760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 186
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0cfb9093bfe9714a930ed105247e226
+      internalID: 1536134203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 170
+        width: 120
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898b09977de41bd4bb851c5f217fe65a
+      internalID: -1163435094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 185
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a123b3bfae880ce42bda4a3aedcbaa21
+      internalID: -535226308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 186
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f01b0828cd16c049893b76851278c47
+      internalID: 507302984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_37
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 154
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d94dd3371584eb478f52fbc70e64c14
+      internalID: 548250835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_38
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 154
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5080a4596a62cc4bb429fecf8f706f5
+      internalID: 1729363130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_39
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 154
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bc9e4775e79424abd0f14466fe03fb
+      internalID: -924218210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_40
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 154
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f57457a47f718d4cab24f36da959db3
+      internalID: 1551189845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_41
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 154
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94ccaab2cf18f94999f9b50031737cf
+      internalID: 1433574457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_42
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 154
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8e6ec19362ce94cbb7d1779b7e2bb4
+      internalID: 944982446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_46
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 121
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9433e7463398c79429337935f21abd5b
+      internalID: 2146801411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_47
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 122
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a2509635d5be046bba22ccac08542f
+      internalID: 1111259365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_48
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 119
+        width: 39
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e58fb4e81a0104daee410311ee19c0
+      internalID: 808491123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_49
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 119
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da75cec12f204c643b07dce7b9b5ec79
+      internalID: 1923560519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_50
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 122
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16fb54b6858094e439e93a54d09933f3
+      internalID: -1044836041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_51
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 123
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79a1583ddf298a41b6c48022693b763
+      internalID: 1771975769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_52
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 103
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee42f03d6db6b05488a151a608826fcd
+      internalID: -1604503512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_53
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 104
+        width: 40
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2cede138a6e104fb8276466fd569b9
+      internalID: 1175195005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_54
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 102
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3946b5f7687bf244b4c0611191f95ff
+      internalID: -1507624261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_55
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 102
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ed05b3cc993254ba3b5cf63942e0e6
+      internalID: -618826699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_56
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 102
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434f2a83c2103344d922491159bffe45
+      internalID: 666212836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_57
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 100
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e33718e4ccc4594d8cb0213d2f90467
+      internalID: -328867011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_58
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 81
+        width: 99
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685464084bd51dd4d9526948cd3be442
+      internalID: -57195073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_59
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 83
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8033b45bcf20842aad7aad42eefd99
+      internalID: 704735832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_60
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 52
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca566a40b4379946a5ca082e714e202
+      internalID: -768491067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_62
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 52
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6d30d3adb1f1e4695df456491f8a06
+      internalID: 1991482599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_63
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 52
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c1c3fbb566a894f877c44df9a44047
+      internalID: 361999414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_64
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 53
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ee0d3c58c8310498cbbf264cdeda67
+      internalID: 608616981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_65
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 51
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b46f19b90f9af4c90b712eac6b5e20
+      internalID: 1730772409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_66
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 32
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873948a9e678b624ea3cf0d62a689f84
+      internalID: -1022770766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_67
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 32
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca100613ef20c0409a1ec648d8ba84a
+      internalID: -1075939864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_68
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 32
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e862497c9618cdc428cf6e9a21f2407b
+      internalID: 1848435983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_69
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 33
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a3960f98f5011408e0bbf4b99e6ee5
+      internalID: -312032916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_71
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 3
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0af2c4314585704b8c5ab6b00ca7861
+      internalID: -703832473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_72
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50c52ec84bfbdd4a9b056fe6a66533d
+      internalID: -189129446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_73
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 3
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1678db40b8d339f45b467f1671c4b460
+      internalID: 650392008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_74
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 2
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb633d9ebae4fe4e8f174153e82b79f
+      internalID: 1588663145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 375
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4dd74702b7a374c9b71d52371cc09c
+      internalID: -659787276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 375
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746d80cd3f47d204c9f062a2bb873c35
+      internalID: 696945407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 374
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a899788d020563a41bf1dbb2ccebfffb
+      internalID: 1459372995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 328
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24fa5fd46d562244bc1d8313869606d
+      internalID: 1786745562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 325
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 958dd9b0371531e46b24e6c277f1387e
+      internalID: 1467272671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 326
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17d9115e6a0c9248b811e4c81fc2ce8
+      internalID: -1907570398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_0: -659787276
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_1: 696945407
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_10: 1962336365
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_11: 1384976136
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_12: -690258725
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_13: 648999786
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_14: -399030190
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_15: 23571210
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_16: -992755726
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_17: 1457526259
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_18: -1770627986
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_19: 984566943
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_2: 1459372995
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_20: -1226178350
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_21: -186801199
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_22: -156260096
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_23: 698964815
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_24: 1916087584
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_25: 1329057443
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_26: -1972556746
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_27: 551426282
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_28: -1681597681
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_29: 1954060737
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_3: 1744209590
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_30: 1327492760
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_31: -388491827
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_32: -1058123138
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_33: 1536134203
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_34: -1163435094
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_35: -535226308
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_36: 507302984
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_37: 548250835
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_38: 1729363130
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_39: -924218210
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_4: 1786745562
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_40: 1551189845
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_41: 1433574457
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_42: 944982446
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_43: 857112730
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_44: -20866964
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_45: 1990430659
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_46: 2146801411
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_47: 1111259365
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_48: 808491123
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_49: 1923560519
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_5: 1467272671
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_50: -1044836041
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_51: 1771975769
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_52: -1604503512
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_53: 1175195005
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_54: -1507624261
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_55: -618826699
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_56: 666212836
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_57: -328867011
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_58: -57195073
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_59: 704735832
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_6: 1841918588
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_60: -768491067
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_61: 808337367
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_62: 1991482599
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_63: 361999414
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_64: 608616981
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_65: 1730772409
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_66: -1022770766
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_67: -1075939864
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_68: 1848435983
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_69: -312032916
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_7: 520559689
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_70: -2073081381
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_71: -703832473
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_72: -189129446
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_73: 650392008
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_74: 1588663145
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_75: -758501426
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_8: 118739291
+      PC_Computer_-_Enter_the_Gungeon_-_Junior_II-removebg-preview_9: -1907570398
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
