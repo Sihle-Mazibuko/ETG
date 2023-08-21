@@ -25,18 +25,16 @@ public class KinShoot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.Find("PLAYER");
+        Player = GameObject.Find("Player");
         if (Enemy.name == "Bullet Kin")
         {
             StartCoroutine(Shoot());
         }
-        if(Enemy.name == "Bandana Kin")
+        if (Enemy.name == "Bandana Kin")
         {
             Close = false;
-            StartCoroutine(BandanaShoot());
-            
+            StartCoroutine(BandanaShoot());  
         }
-        
     }
 
     // Update is called once per frame
@@ -60,7 +58,6 @@ public class KinShoot : MonoBehaviour
         yield return new WaitForSeconds(timer);
         StartCoroutine(Shoot());
         Instantiate(Bullet, BulletSpawn1.transform.position, BulletSpawn1.transform.rotation);
-        
     }
 
     public IEnumerator ShotShoot()
@@ -70,7 +67,6 @@ public class KinShoot : MonoBehaviour
         Instantiate(Bullet, BulletSpawn1.transform.position, BulletSpawn1.transform.rotation);
         Instantiate(Bullet, BulletSpawn2.transform.position, BulletSpawn2.transform.rotation);
         Instantiate(Bullet, BulletSpawn3.transform.position, BulletSpawn3.transform.rotation);
-
     }
 
     public IEnumerator BandanaShoot()
@@ -79,11 +75,9 @@ public class KinShoot : MonoBehaviour
         
         if (Close == true)
         {
-           
             Instantiate(Bullet, BulletSpawn1.transform.position, BulletSpawn1.transform.rotation);
-            
         }
-        StartCoroutine(BandanaShoot());
 
+        StartCoroutine(BandanaShoot());
     }
 }

@@ -52,11 +52,14 @@ TagManager:
   - name: Player
     uniqueID: 2159349193
     locked: 0
-  - name: Gun
-    uniqueID: 1965013535
+  - name: Player
+    uniqueID: 804200649
     locked: 0
   - name: Enemy Hand
     uniqueID: 2784724503
+    locked: 0
+  - name: Gun
+    uniqueID: 1965013535
     locked: 0
   - name: Projectile
     uniqueID: 3652078797

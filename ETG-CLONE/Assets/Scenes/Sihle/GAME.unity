@@ -1006,7 +1006,7 @@ GameObject:
   - component: {fileID: 1668724128}
   - component: {fileID: 1668724129}
   m_Layer: 6
-  m_Name: PLAYER
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1053,6 +1053,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   _input: {x: 0, y: 0}
+  _weaponHolder: {fileID: 0}
+  _offset: 0
 --- !u!114 &1668724125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1181,7 +1183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1897925828}
   m_Layer: 6
-  m_Name: WEAPON HOLDER
+  m_Name: Weapon Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

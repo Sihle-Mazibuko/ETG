@@ -8,8 +8,7 @@ public class LookAtPlayer : MonoBehaviour
 
     public bool player;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         if (gameObject.name == "Shot Hand Pivot")
         {
@@ -21,29 +20,24 @@ public class LookAtPlayer : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
-
-        if (GameObject.Find("PLAYER") != null)
+        if (GameObject.Find("Player") != null)
         {
             if (player == true)
             {
-                PlayerObject = GameObject.Find("PLAYER");
+                PlayerObject = GameObject.Find("Player");
 
                 // Get Angle in Radians
-                float AngleRad = Mathf.Atan2(PlayerObject.transform.position.y - transform.position.y, PlayerObject.transform.position.x - transform.position.x);
+                float AngleRad = Mathf.Atan2(PlayerObject.transform.position.y - transform.position.y, 
+                    PlayerObject.transform.position.x - transform.position.x);
+
                 // Get Angle in Degrees
                 float AngleDeg = (180 / Mathf.PI) * AngleRad;
+
                 // Rotate Object
                 this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg + 90);
             }
-
         }
-
-        
-
-        
     }
 }

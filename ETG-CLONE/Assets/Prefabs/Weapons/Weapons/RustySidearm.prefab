@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5383303394965118570}
   m_Layer: 0
-  m_Name: FIRE POINT
+  m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -141,5 +141,3 @@ MonoBehaviour:
   allowButtonHold: 0
   weaponShotSfx: Shotgun Fire
   weaponEmptySfx: Weapon Empty
-  weaponShotSound: {fileID: 8300000, guid: 44e5d135748d8c4478b1311e06a23f09, type: 3}
-  weaponEmpty: {fileID: 8300000, guid: 1c9e263b38b63b74facdab1e9c87bf65, type: 3}
