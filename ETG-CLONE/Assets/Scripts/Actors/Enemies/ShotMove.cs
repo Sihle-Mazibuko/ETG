@@ -8,6 +8,8 @@ public class ShotMove : MonoBehaviour
     public bool first;
     public GameObject Player;
     public float speed = 1f;
+    public float Range;
+    public float time;
     public Vector2 Move;
     public LookAtPlayer play;
     public KinShoot shot;
@@ -15,7 +17,7 @@ public class ShotMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.Find("PLAYER");
+        Player = GameObject.Find("Player");
         StartCoroutine(Walk());
         first = false;
     }
@@ -36,7 +38,7 @@ public class ShotMove : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D coll)
     {
-        if(coll.gameObject.name == "PLAYER" && first == false)
+        if(coll.gameObject.name == "Player" && first == false)
         {
             Chase = true;
             first = true;
@@ -47,8 +49,8 @@ public class ShotMove : MonoBehaviour
 
     public IEnumerator Walk()
     {
-        yield return new WaitForSeconds(2);
-        Move = new Vector2(transform.position.x + Random.Range(-1.5f, 1.5f), transform.position.y + Random.Range(-1.5f, 1.5f));
+        yield return new WaitForSeconds(time);
+        Move = new Vector2(transform.position.x + Random.Range(-Range, Range), transform.position.y + Random.Range(-Range, Range));
         StartCoroutine(Walk());
     }
 }
