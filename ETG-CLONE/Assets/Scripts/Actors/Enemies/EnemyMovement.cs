@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    
     public float speed = 1.0f;
     public float timer = 1.0f;
 
@@ -16,27 +15,16 @@ public class EnemyMovement : MonoBehaviour
 
     public KinShoot kin;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        Player = GameObject.Find("PLAYER");
+        Player = GameObject.Find("Player");
         WalkPosition = new Vector3(Player.transform.localPosition.x + Random.Range(-RandomRange, RandomRange), Player.transform.localPosition.y + Random.Range(-RandomRange, RandomRange), 0);
         //WalkPosition = new Vector2(Random.Range(2, 5), Random.Range(2, 5));
         StartCoroutine(Walking());
     }
     
-    
-    
-
-
-
-
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
-
         transform.position = Vector3.MoveTowards(transform.position, WalkPosition, speed * Time.deltaTime);
     }
 

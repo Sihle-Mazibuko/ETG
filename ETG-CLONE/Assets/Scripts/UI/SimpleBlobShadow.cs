@@ -8,7 +8,7 @@ public class SimpleBlobShadow : MonoBehaviour {
 	public Transform FollowBone;
 	public float BlobShadowSize = 1;
 	public float DistanceScale = 2f; //the size multiplier of the blobshadow relative to the distance from the floor
-	public float Yoffset = 0; //the offset of the blobshadow
+	public float Yoffset = 0; //the _offset of the blobshadow
 	public LayerMask GroundLayerMask;
 	public bool followTerrainRotation = true;
 	private float rayDist = 10f; //raycast distance
