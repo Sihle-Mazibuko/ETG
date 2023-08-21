@@ -241,7 +241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cabee0ccec2c09843b4a43f7fd4e4f11, type: 3}
-<<<<<<< Updated upstream
+Updated upstream
 --- !u!1001 &507985300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -372,8 +372,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6289872594814350382, guid: 75f28b6630dd7234eaa63d87d52b0f1c, type: 3}
   m_PrefabInstance: {fileID: 507985300}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> Stashed changes
+ Stashed changes
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,8 +575,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa72406ef5249524692e920180b14af0, type: 3}
-<<<<<<< HEAD
-<<<<<<< Updated upstream
+HEAD
+Updated upstream
 --- !u!1 &919713634
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,15 +675,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stopDistance: 1
-=======
+
 --- !u!4 &929948714 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6289872594814350382, guid: 75f28b6630dd7234eaa63d87d52b0f1c, type: 3}
   m_PrefabInstance: {fileID: 171235496}
   m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes
-=======
->>>>>>> parent of 968a866 (Dog)
+ Stashed changes
+ parent of 968a866 (Dog)
 --- !u!1001 &932594262
 PrefabInstance:
   m_ObjectHideFlags: 0
