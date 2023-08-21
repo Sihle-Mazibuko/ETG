@@ -13,7 +13,7 @@ public class EnemyMovement : MonoBehaviour
 
     public Vector2 WalkPosition;
 
-    public KinShoot kin;
+    
 
     private void Start()
     {
@@ -27,6 +27,8 @@ public class EnemyMovement : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, WalkPosition, speed * Time.deltaTime);
     }
+
+
 
     public IEnumerator Walking()
     {
