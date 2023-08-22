@@ -194,6 +194,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cabee0ccec2c09843b4a43f7fd4e4f11, type: 3}
+--- !u!1 &518841864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9217105372195379043, guid: 3104180141d87fe4ca265e15af2db794, type: 3}
+  m_PrefabInstance: {fileID: 921812774}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,6 +343,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hunter
       objectReference: {fileID: 0}
+    - target: {fileID: 6982216177664848647, guid: 3104180141d87fe4ca265e15af2db794, type: 3}
+      propertyPath: m_Size.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982216177664848647, guid: 3104180141d87fe4ca265e15af2db794, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982216177664848647, guid: 3104180141d87fe4ca265e15af2db794, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 9217105370606747851, guid: 3104180141d87fe4ca265e15af2db794, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -362,6 +379,10 @@ PrefabInstance:
       propertyPath: m_AngularDrag
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9217105372195379055, guid: 3104180141d87fe4ca265e15af2db794, type: 3}
+      propertyPath: Object
+      value: 
+      objectReference: {fileID: 518841864}
     - target: {fileID: 9217105372250289923, guid: 3104180141d87fe4ca265e15af2db794, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.615
