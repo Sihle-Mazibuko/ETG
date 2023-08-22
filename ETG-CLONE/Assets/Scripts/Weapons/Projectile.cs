@@ -21,7 +21,6 @@ public class Projectile : MonoBehaviour
     private void Start()
     {
         rb.velocity = transform.right * speed;
-        StartCoroutine(Break());
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -30,16 +29,11 @@ public class Projectile : MonoBehaviour
         Health hitCharacter = collision.gameObject.GetComponent<Health>();
         //Instantiate(bloodSplatter, collision.transform.position, Quaternion.identity);
 
-        if (hitCharacter != null)
+        if (hitCharacter != null && hitCharacter.tag == "Enemy")
         {
             hitCharacter.TakeDamage(damage);
         }
         Destroy(gameObject, .1f);
     }
 
-    public IEnumerator Break()
-    {
-        yield return new WaitForSeconds(lifetime);
-        Destroy(gameObject);
-    }
 }

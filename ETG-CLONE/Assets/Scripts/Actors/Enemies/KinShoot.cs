@@ -13,9 +13,9 @@ public class KinShoot : MonoBehaviour
 
     public float timer = 1.5f;
     
-    public GameObject Enemy;
-    public GameObject Player;
-    public Transform PlayerPos;
+    GameObject Enemy;
+    GameObject Player;
+    Transform PlayerPos;
 
     public GameObject BulletSpawn1;
     public GameObject BulletSpawn2;
@@ -23,7 +23,6 @@ public class KinShoot : MonoBehaviour
 
     public bool Close;
 
-    // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.Find("Player");
@@ -54,7 +53,6 @@ public class KinShoot : MonoBehaviour
     //    }
     //}
 
-    // Update is called once per frame
     void Update()
     {
        

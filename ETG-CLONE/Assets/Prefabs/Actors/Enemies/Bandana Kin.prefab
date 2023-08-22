@@ -397,7 +397,6 @@ MonoBehaviour:
   speed: 2
   timer: 2
   RandomRange: 3
-  Player: {fileID: 0}
   WalkPosition: {x: 0, y: 0}
 --- !u!70 &7425295212870926639
 CapsuleCollider2D:
@@ -443,7 +442,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0

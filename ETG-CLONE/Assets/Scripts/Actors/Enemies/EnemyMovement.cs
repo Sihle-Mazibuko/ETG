@@ -9,7 +9,7 @@ public class EnemyMovement : MonoBehaviour
 
     public float RandomRange;
 
-    public GameObject Player;
+    GameObject Player;
 
     public Vector2 WalkPosition;
 
