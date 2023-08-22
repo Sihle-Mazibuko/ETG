@@ -241,8 +241,6 @@ MonoBehaviour:
   distanceBetweenObjects: 0
   timer: 1.5
   Enemy: {fileID: 7425295212870926675}
-  Player: {fileID: 0}
-  PlayerPos: {fileID: 0}
   BulletSpawn1: {fileID: 7425295212740199546}
   BulletSpawn2: {fileID: 8629635992786044016}
   BulletSpawn3: {fileID: 4142549340545927939}
@@ -376,7 +374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a2efecdabc72048972b0fca16fffed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerObject: {fileID: 0}
   player: 0
 --- !u!1 &7425295212870926675
 GameObject:

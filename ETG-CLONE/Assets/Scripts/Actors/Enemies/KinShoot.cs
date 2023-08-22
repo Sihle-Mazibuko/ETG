@@ -13,7 +13,7 @@ public class KinShoot : MonoBehaviour
 
     public float timer = 1.5f;
     
-    GameObject Enemy;
+    public GameObject Enemy;
     GameObject Player;
     Transform PlayerPos;
 
@@ -25,33 +25,23 @@ public class KinShoot : MonoBehaviour
 
     void Start()
     {
-        Player = GameObject.Find("Player");
         
-        if (Enemy.name == "Bullet Kin(Clone)")
+        Player = GameObject.Find("Player");
+       
+        
+        if (Enemy.name == "Bullet Kin(Clone)" || Enemy.name == "Bullet Kin")
         {
             Debug.Log("Bullet Kin");
             StartCoroutine(Shoot());
     }
-        if (Enemy.name == "Bandana Kin(Clone)")
+        if (Enemy.name == "Bandana Kin(Clone)" || Enemy.name == "Bandana Kin")
         {
             //Close = false;
             StartCoroutine(BandanaShoot());
         }
     }
 
-    //private void Awake()
-    //{
-    //    if (Enemy.name == "Bullet Kin")
-    //    {
-    //        Debug.Log("Bullet Kin");
-    //        StartCoroutine(Shoot());
-    //    }
-    //    if (Enemy.name == "Bandana Kin")
-    //    {
-    //        Close = false;
-    //        StartCoroutine(BandanaShoot());
-    //    }
-    //}
+   
 
     void Update()
     {
