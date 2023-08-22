@@ -17,7 +17,7 @@ public class ShotMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.Find("Player");
+        Player = GameObject.Find("Player ");
         StartCoroutine(Walk());
         first = false;
     }
@@ -38,8 +38,9 @@ public class ShotMove : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D coll)
     {
-        if(coll.gameObject.name == "Player" && first == false)
+        if(coll.gameObject.name == "Player " && first == false)
         {
+            Debug.Log("Player");
             Chase = true;
             first = true;
             play.player = true;

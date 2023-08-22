@@ -42,7 +42,8 @@ GameObject:
   - component: {fileID: 7026907030446734095}
   - component: {fileID: 67463826935637717}
   - component: {fileID: 5325361620627896040}
-  m_Layer: 0
+  - component: {fileID: 6727039025648360532}
+  m_Layer: 9
   m_Name: Enemy_GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,6 +138,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &6727039025648360532
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5224311416598504450}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.375, y: 0.90625}
+  m_Direction: 0
 --- !u!1 &7425295212286752095
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,8 +256,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 9143233633598909406, guid: 8784d79695179224797726657baa7dbc, type: 3}
   distanceBetweenObjects: 0
+  Target: {fileID: 0}
+  ZRotate: 0
   timer: 1.5
+  CurrentY: 0
   Enemy: {fileID: 7425295212870926675}
+  Player: {fileID: 0}
   BulletSpawn1: {fileID: 7425295212740199546}
   BulletSpawn2: {fileID: 8629635992786044016}
   BulletSpawn3: {fileID: 4142549340545927939}
@@ -385,7 +406,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7425295212870926636}
   - component: {fileID: 3932754116185664398}
-  - component: {fileID: 7425295212870926639}
   - component: {fileID: 6891608512011126668}
   - component: {fileID: 565492752}
   m_Layer: 0
@@ -433,22 +453,6 @@ MonoBehaviour:
   Move: {x: 0, y: 0}
   play: {fileID: 7425295212847980755}
   shot: {fileID: 7238715555914245894}
---- !u!70 &7425295212870926639
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7425295212870926675}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.4, y: 1}
-  m_Direction: 0
 --- !u!58 &6891608512011126668
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -11,7 +11,22 @@ public class Dog : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
 
+    private void Update()
+    {
+        if(target.GetComponent<PlayerController>()._input.x == 0)
+        {
 
+        }
+
+        if(target.transform.localPosition.x < transform.localPosition.x)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+    }
     private void Awake()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -25,11 +40,13 @@ public class Dog : MonoBehaviour
         if (Vector2.Distance(transform.position, target.position) > stopDistance)
         {
             HandleMove();
-            animator.SetTrigger("isWalking");
+            animator.SetBool("isWalking", true);
+            
         }
         else
         {
-            animator.SetTrigger("Sit");
+            
+            animator.SetBool("isWalking", false);
             //Play idle animation
         }
     }

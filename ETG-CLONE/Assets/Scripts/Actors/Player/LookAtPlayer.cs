@@ -22,11 +22,11 @@ public class LookAtPlayer : MonoBehaviour
 
     private void Update()
     {
-        if (GameObject.Find("Player") != null)
+        if (GameObject.Find("Player ") != null)
         {
             if (player == true)
             {
-                PlayerObject = GameObject.Find("Player");
+                PlayerObject = GameObject.Find("Player ");
 
                 // Get Angle in Radians
                 float AngleRad = Mathf.Atan2(PlayerObject.transform.position.y - transform.position.y, 

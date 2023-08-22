@@ -9,9 +9,11 @@ public class KinShoot : MonoBehaviour
 
     public float distanceBetweenObjects;
 
-
+    public GameObject Target;
+    public float xPosition;
 
     public float timer = 1.5f;
+    public float CurrentY;
     
     public GameObject Enemy;
     public GameObject Player;
@@ -25,13 +27,15 @@ public class KinShoot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.Find("Player");
+        Target = GameObject.Find("Hand_Pivot");
+        CurrentY = transform.localScale.y;
+        Player = GameObject.Find("Player ");
 
-        if (Enemy.name == "Bullet Kin")
+        if (Enemy.name == "Bullet Kin(Clone)")
         {
             StartCoroutine(Shoot());
         }
-        if (Enemy.name == "Bandana Kin")
+        if (Enemy.name == "Bandana Kin(Clone)")
         {
             Close = false;
             StartCoroutine(BandanaShoot());  
@@ -41,6 +45,18 @@ public class KinShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        xPosition = Player.transform.localPosition.x;
+
+        if (xPosition > Target.transform.localPosition.x)
+        {
+            Debug.Log("Right");
+            transform.localScale = new Vector3(transform.localScale.x, CurrentY, transform.localPosition.z);
+        }
+        if (xPosition < Target.transform.localPosition.x)
+        {
+            transform.localScale = new Vector3(transform.localScale.x, -CurrentY, transform.localPosition.z);
+        }
+
         distanceBetweenObjects = Vector3.Distance(transform.position, Player.transform.position);
         Debug.DrawLine(transform.position, Player.transform.position, Color.green);
 

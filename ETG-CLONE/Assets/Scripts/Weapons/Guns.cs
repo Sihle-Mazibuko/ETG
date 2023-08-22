@@ -21,6 +21,9 @@ public class Guns : MonoBehaviour
 
     RaycastHit2D hit;
     //
+    public GameObject Target;
+    public float ZRotate;
+
     public Slider Ammo;
     public Text TotalAmmo;
 
@@ -43,10 +46,13 @@ public class Guns : MonoBehaviour
     public string weaponShotSfx;
     public string weaponEmptySfx;
 
+    
+
     #endregion
 
     private void Start()
     {
+        Target = GameObject.Find("WeaponHolder");
         Ammo = GameObject.Find("Slider").GetComponent<Slider>();
         CurrentWeapon = GameObject.Find("CURRENT WEAPON IMG").GetComponent<Image>();
         TotalAmmo = GameObject.Find("AMMO TEXT").GetComponent<Text>();
@@ -65,6 +71,17 @@ public class Guns : MonoBehaviour
 
     private void Update()
     {
+        ZRotate = Target.transform.localRotation.z;
+
+        if (ZRotate >-0.7 )
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if(ZRotate < -0.7)
+        {
+            transform.localScale = new Vector3(1, -1, 1);
+        }
+
         if(gameObject.name == "CROSSBOW")
         {
             CurrentWeapon.sprite = Crosbow;
