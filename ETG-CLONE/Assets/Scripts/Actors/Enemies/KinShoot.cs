@@ -17,10 +17,13 @@ public class KinShoot : MonoBehaviour
     
     public GameObject Enemy;
     public GameObject Player;
+    
 
     public GameObject BulletSpawn1;
     public GameObject BulletSpawn2;
     public GameObject BulletSpawn3;
+    public GameObject BulletSpawn4;
+    public GameObject BulletSpawn5;
 
     public bool Close;
 
@@ -40,19 +43,30 @@ public class KinShoot : MonoBehaviour
             Close = false;
             StartCoroutine(BandanaShoot());  
         }
+        if (Player.transform.localPosition.x > Target.transform.localPosition.x)
+        {
+
+            transform.localScale = new Vector3(transform.localScale.x, CurrentY, transform.localPosition.z);
+        }
+        if (Player.transform.localPosition.x < Target.transform.localPosition.x)
+        {
+            transform.localScale = new Vector3(transform.localScale.x, -CurrentY, transform.localPosition.z);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+
         xPosition = Player.transform.localPosition.x;
 
-        if (xPosition > 0)
+        if (Player.transform.localPosition.x > Target.transform.localPosition.x)
         {
-            Debug.Log("Right");
+            
             transform.localScale = new Vector3(transform.localScale.x, CurrentY, transform.localPosition.z);
         }
-        if (xPosition < 0)
+        if (Player.transform.localPosition.x < Target.transform.localPosition.x)
         {
             transform.localScale = new Vector3(transform.localScale.x, -CurrentY, transform.localPosition.z);
         }
@@ -84,6 +98,8 @@ public class KinShoot : MonoBehaviour
         Instantiate(Bullet, BulletSpawn1.transform.position, BulletSpawn1.transform.rotation);
         Instantiate(Bullet, BulletSpawn2.transform.position, BulletSpawn2.transform.rotation);
         Instantiate(Bullet, BulletSpawn3.transform.position, BulletSpawn3.transform.rotation);
+        Instantiate(Bullet, BulletSpawn4.transform.position, BulletSpawn4.transform.rotation);
+        Instantiate(Bullet, BulletSpawn5.transform.position, BulletSpawn5.transform.rotation);
     }
 
     public IEnumerator BandanaShoot()

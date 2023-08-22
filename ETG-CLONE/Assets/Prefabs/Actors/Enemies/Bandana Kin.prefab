@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 2278177430914562613}
   - component: {fileID: 5146863873326495941}
   - component: {fileID: 2177284586970328554}
-  m_Layer: 0
+  - component: {fileID: 3585958780063273223}
+  - component: {fileID: 3456758388390687217}
+  m_Layer: 12
   m_Name: Enemy_GFX
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,6 +108,39 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &3585958780063273223
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5238529902682317069}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.4375, y: 0.71875}
+  m_Direction: 0
+--- !u!114 &3456758388390687217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5238529902682317069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8abc2b7ff97c61444a76fda75b23754e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHealth: 5
+  currentHealth: 0
+  Object: {fileID: 7425295212870926675}
+  duration: 1
+  numOfFlashes: 3
 --- !u!1 &7425295212286752095
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,13 +241,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 9143233633598909406, guid: c5a78e92d350b1547abf86b1b8d3b556, type: 3}
   distanceBetweenObjects: 0
-  timer: 0.15
+  Target: {fileID: 0}
+  xPosition: 0
+  timer: 0.2
+  CurrentY: 0
   Enemy: {fileID: 7425295212870926675}
   Player: {fileID: 0}
-  PlayerPos: {fileID: 0}
   BulletSpawn1: {fileID: 7425295212740199546}
   BulletSpawn2: {fileID: 0}
   BulletSpawn3: {fileID: 0}
+  BulletSpawn4: {fileID: 0}
+  BulletSpawn5: {fileID: 0}
   Close: 0
 --- !u!1 &7425295212740199546
 GameObject:
@@ -343,7 +382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a2efecdabc72048972b0fca16fffed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerObject: {fileID: 0}
+  PlayerAim: {fileID: 0}
   player: 0
 --- !u!1 &7425295212870926675
 GameObject:
@@ -355,7 +394,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7425295212870926636}
   - component: {fileID: 7425295212870926638}
-  - component: {fileID: 7425295212870926639}
   - component: {fileID: 1558392596}
   - component: {fileID: 383376993}
   m_Layer: 0
@@ -394,26 +432,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9adb252878058094893a8c48e086c08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  timer: 2
-  RandomRange: 3
+  speed: 2.5
+  timer: 1
+  RandomRange: 2.5
   WalkPosition: {x: 0, y: 0}
---- !u!70 &7425295212870926639
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7425295212870926675}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.4, y: 0.8}
-  m_Direction: 0
 --- !u!58 &1558392596
 CircleCollider2D:
   m_ObjectHideFlags: 0

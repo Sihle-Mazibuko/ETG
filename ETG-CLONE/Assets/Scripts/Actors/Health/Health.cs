@@ -5,9 +5,10 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] float startHealth;
-    public float currentHealth {  get; private set; }
+    public float currentHealth; 
 
     Rigidbody2D rb;
+    public GameObject Object;
 
     [Header("Invulnerability")]
     [SerializeField] float duration =1;
@@ -29,6 +30,14 @@ public class Health : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if(currentHealth <= 0)
+        {
+            Object.SetActive(false);
+        }
+    }
+
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startHealth);
@@ -40,7 +49,7 @@ public class Health : MonoBehaviour
         }
         else
         {
-            //Kill character
+           
             DisableScripts(transform);
         }
     }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -4830414634110187387}
   - component: {fileID: 6740181264386606960}
   - component: {fileID: 7381527710936423978}
+  - component: {fileID: 4365530269635437135}
   m_Layer: 10
   m_Name: Bandana bullet
   m_TagString: Enemy Bullet
@@ -102,6 +103,7 @@ MonoBehaviour:
   speed: 7.5
   lifetime: 1
   damage: 1
+  Boom: {fileID: 2621373831953554647, guid: 4985b8618e206a84995ff75169f15288, type: 3}
 --- !u!50 &6740181264386606960
 Rigidbody2D:
   serializedVersion: 4
@@ -121,7 +123,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!95 &7381527710936423978
 Animator:
@@ -144,3 +146,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!58 &4365530269635437135
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9143233633598909406}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.14

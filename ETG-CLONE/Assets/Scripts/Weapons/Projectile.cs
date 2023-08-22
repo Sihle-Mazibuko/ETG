@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float lifetime =3;
     [SerializeField] float damage;
-
+    public GameObject Boom;
 
     Rigidbody2D rb;
     //[SerializeField] GameObject bloodSplatter;
@@ -20,20 +20,33 @@ public class Projectile : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(Break());
         rb.velocity = transform.right * speed;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {      
-
-        Health hitCharacter = collision.gameObject.GetComponent<Health>();
-        //Instantiate(bloodSplatter, collision.transform.position, Quaternion.identity);
-
-        if (hitCharacter != null && hitCharacter.tag == "Enemy")
+    public void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "Enemy")
         {
-            hitCharacter.TakeDamage(damage);
+
+            Instantiate(Boom, transform.position, transform.rotation);
+            coll.GetComponent<Health>().currentHealth -= 1;
+            Destroy(gameObject);
         }
-        Destroy(gameObject, .1f);
+        if (coll.gameObject.tag == "Player")
+        {
+
+            Instantiate(Boom, transform.position, transform.rotation);
+            coll.GetComponent<Health>().currentHealth -= 1;
+            Destroy(gameObject);
+        }
+    }
+
+
+    public IEnumerator Break()
+    {
+        yield return new WaitForSeconds(lifetime);
+        Destroy(gameObject);
     }
 
 }

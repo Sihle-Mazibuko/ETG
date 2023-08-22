@@ -5,6 +5,7 @@ using UnityEngine;
 public class LookAtPlayer : MonoBehaviour
 {
     GameObject PlayerObject;
+    public Transform PlayerAim;
 
     public bool player;
 
@@ -29,7 +30,7 @@ public class LookAtPlayer : MonoBehaviour
                 PlayerObject = GameObject.Find("Player ");
 
                 // Get Angle in Radians
-                float AngleRad = Mathf.Atan2(PlayerObject.transform.position.y - transform.position.y, 
+                float AngleRad = Mathf.Atan2((PlayerObject.transform.position.y+0.4f) - transform.position.y, 
                     PlayerObject.transform.position.x - transform.position.x);
 
                 // Get Angle in Degrees

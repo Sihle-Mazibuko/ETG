@@ -25,7 +25,7 @@ public class ShotMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Chase == true)
+        if (Chase == true && shot.distanceBetweenObjects > 1.5f)
         {
             transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);
         }
@@ -40,7 +40,7 @@ public class ShotMove : MonoBehaviour
     {
         if(coll.gameObject.name == "Player " && first == false)
         {
-            Debug.Log("Player");
+            
             Chase = true;
             first = true;
             play.player = true;

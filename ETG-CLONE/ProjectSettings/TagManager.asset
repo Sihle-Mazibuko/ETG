@@ -8,6 +8,7 @@ TagManager:
   - Enemy Bullet
   - Enemy
   - Enemy Gun
+  - Player Bullet
   layers:
   - Default
   - TransparentFX
@@ -19,9 +20,9 @@ TagManager:
   - SolidObjects
   - LevelGeo
   - hand
-  - 
-  - 
-  - 
+  - Enemy Bullet
+  - Player Bullet
+  - Enemy
   - 
   - 
   - 
