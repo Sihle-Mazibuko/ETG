@@ -47,12 +47,12 @@ public class KinShoot : MonoBehaviour
     {
         xPosition = Player.transform.localPosition.x;
 
-        if (xPosition > Target.transform.localPosition.x)
+        if (xPosition > 0)
         {
             Debug.Log("Right");
             transform.localScale = new Vector3(transform.localScale.x, CurrentY, transform.localPosition.z);
         }
-        if (xPosition < Target.transform.localPosition.x)
+        if (xPosition < 0)
         {
             transform.localScale = new Vector3(transform.localScale.x, -CurrentY, transform.localPosition.z);
         }
