@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Guns : MonoBehaviour
 {
@@ -16,9 +17,22 @@ public class Guns : MonoBehaviour
     int currentAmmo, bulletsShot;
     bool shooting, readyToShoot, reloading;
 
+    public float ReloadingTime;
 
     RaycastHit2D hit;
+    //
+    public Slider Ammo;
+    public Text TotalAmmo;
 
+    public GameObject AmmoActive;
+    public Image CurrentWeapon;
+
+    public Sprite Crosbow;
+    public Sprite Shotgun;
+    public Sprite Peashooter;
+    public Sprite AK47;
+    public Sprite RustySidearm;
+    //
     bool isEquipped;
 
     #region Effects
@@ -31,8 +45,19 @@ public class Guns : MonoBehaviour
 
     #endregion
 
+    private void Start()
+    {
+        Ammo = GameObject.Find("Slider").GetComponent<Slider>();
+        CurrentWeapon = GameObject.Find("CURRENT WEAPON IMG").GetComponent<Image>();
+        TotalAmmo = GameObject.Find("AMMO TEXT").GetComponent<Text>();
+        AmmoActive = GameObject.Find("Slider");
+        ReloadingTime = reloadTime;
+
+    }
+
     private void Awake()
     {
+        
         currentAmmo = clipSize;
         readyToShoot = true;
     }
@@ -40,7 +65,42 @@ public class Guns : MonoBehaviour
 
     private void Update()
     {
+        if(gameObject.name == "CROSSBOW")
+        {
+            CurrentWeapon.sprite = Crosbow;
+        }
+        if (gameObject.name == "AK-47")
+        {
+            CurrentWeapon.sprite = AK47;
+        }
+        if (gameObject.name == "PeaShooter")
+        {
+            CurrentWeapon.sprite = Peashooter;
+        }
+        if (gameObject.name == "RustySidearm")
+        {
+            CurrentWeapon.sprite = RustySidearm;
+        }
+        if (gameObject.name == "Shotgun")
+        {
+            CurrentWeapon.sprite = Shotgun;
+        }
 
+        TotalAmmo.text = (currentAmmo.ToString()+"/"+ totalBullets.ToString());
+        
+
+        if(ReloadingTime > 0)
+        {
+            ReloadingTime -= Time.deltaTime;
+            AmmoActive.SetActive(true);
+        }
+        else
+        {
+            AmmoActive.SetActive(false);
+        }
+       
+        Ammo.maxValue = reloadTime;
+        Ammo.value = ReloadingTime;
         if (transform.parent != null)
         {
             isEquipped = true;
@@ -73,6 +133,7 @@ public class Guns : MonoBehaviour
     void Reload() 
     { 
         reloading = true;
+        ReloadingTime = reloadTime;
 
         Invoke("ReloadFinished", reloadTime);
     }
@@ -111,6 +172,7 @@ public class Guns : MonoBehaviour
 
 
             currentAmmo--;
+            
             bulletsShot++;
 
 
@@ -137,6 +199,7 @@ public class Guns : MonoBehaviour
     private void ResetShot()
     {
         readyToShoot = true;
+        totalBullets--;
     }
 
 }

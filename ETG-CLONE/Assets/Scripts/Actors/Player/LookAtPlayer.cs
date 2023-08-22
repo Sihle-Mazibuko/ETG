@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LookAtPlayer : MonoBehaviour
 {
-    public GameObject PlayerObject;
+    GameObject PlayerObject;
 
     public bool player;
 

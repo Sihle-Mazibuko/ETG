@@ -9,11 +9,11 @@ public class EnemyMovement : MonoBehaviour
 
     public float RandomRange;
 
-    public GameObject Player;
+    GameObject Player;
 
     public Vector2 WalkPosition;
 
-    public KinShoot kin;
+    
 
     private void Start()
     {
@@ -28,6 +28,8 @@ public class EnemyMovement : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, WalkPosition, speed * Time.deltaTime);
     }
+
+
 
     public IEnumerator Walking()
     {
