@@ -9,10 +9,24 @@ public class Health : MonoBehaviour
 
     Rigidbody2D rb;
 
+    [Header("Invulnerability")]
+    [SerializeField] float duration =1;
+    [SerializeField] int numOfFlashes =3;
+    SpriteRenderer spriteRen;
+
+
     private void Awake()
     {
         currentHealth = startHealth;
         rb = GetComponent<Rigidbody2D>();
+
+        if(transform.tag == "Player")
+        {
+            spriteRen = GetComponent<SpriteRenderer>();
+        }else if(transform.tag == "Enemy")
+        {
+            spriteRen = GetComponentInChildren<SpriteRenderer>();
+        }
     }
 
     public void TakeDamage(float _damage)
@@ -22,6 +36,7 @@ public class Health : MonoBehaviour
         if (currentHealth > 0)
         {
             //Hurt character
+            StartCoroutine(Invunerability());
         }
         else
         {
@@ -59,6 +74,22 @@ public class Health : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startHealth);
 
     }
+
+    //Character colour flash + invulnerability
+    IEnumerator Invunerability()
+    {
+        Physics2D.IgnoreLayerCollision(10,22,true);
+        for (int i = 0; i < numOfFlashes; i++)
+        {
+            spriteRen.color = new Color(1, 0, 0, 0.5f);
+            yield return new WaitForSeconds(duration/(numOfFlashes * 2));
+            spriteRen.color = Color.white;
+            yield return new WaitForSeconds(duration/(numOfFlashes *2));
+        }
+        Physics2D.IgnoreLayerCollision(10, 22,false);
+
+    }
+
 
     ////This was for testing
     //void DamagePlayer()

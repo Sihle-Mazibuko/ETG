@@ -42,7 +42,6 @@ public class UIUpdater : MonoBehaviour
 
     void HealthLowered()
     {
-        Debug.Log(playerHealth);
         switch(playerHealth)
         {
             case 6:

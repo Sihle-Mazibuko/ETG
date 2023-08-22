@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -4830414634110187387}
   - component: {fileID: 6740181264386606960}
   - component: {fileID: 6106631945033054702}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BuckShot
   m_TagString: Enemy Bullet
   m_Icon: {fileID: 0}
