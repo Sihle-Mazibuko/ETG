@@ -140,6 +140,7 @@ void HanldeRotation()
         float angle = Mathf.Atan2(displacement.y, displacement.x) * Mathf.Rad2Deg;
         weaponHolder.rotation = Quaternion.Euler(0, 0, angle - 180);
 
+        Debug.Log(angle);
     }
     #endregion
 

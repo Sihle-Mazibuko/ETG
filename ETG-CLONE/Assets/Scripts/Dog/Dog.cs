@@ -1,10 +1,11 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Dog : MonoBehaviour
 {
-    [SerializeField] float stopDistance =1;
+    [SerializeField] float stopDistance = 1;
     Transform target;
     float dogSpeed = 7;
     Rigidbody2D rb;
@@ -21,7 +22,7 @@ public class Dog : MonoBehaviour
     private void FixedUpdate()
     {
 
-        if(Vector2.Distance(transform.position, target.position) > stopDistance)
+        if (Vector2.Distance(transform.position, target.position) > stopDistance)
         {
             HandleMove();
             animator.SetTrigger("isWalking");

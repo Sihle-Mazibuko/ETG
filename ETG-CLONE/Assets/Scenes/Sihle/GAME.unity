@@ -241,7 +241,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cabee0ccec2c09843b4a43f7fd4e4f11, type: 3}
-<<<<<<< Updated upstream
 --- !u!1001 &507985300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -372,8 +371,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6289872594814350382, guid: 75f28b6630dd7234eaa63d87d52b0f1c, type: 3}
   m_PrefabInstance: {fileID: 507985300}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> Stashed changes
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +573,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa72406ef5249524692e920180b14af0, type: 3}
-<<<<<<< Updated upstream
 --- !u!1 &919713634
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,7 +583,9 @@ GameObject:
   m_Component:
   - component: {fileID: 919713636}
   - component: {fileID: 919713635}
+  - component: {fileID: 919713638}
   - component: {fileID: 919713637}
+  - component: {fileID: 919713639}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Untagged
@@ -636,12 +634,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: -807133002, guid: 56fb71b57b6ba724db5f3b70641cbfc1, type: 3}
+  m_Sprite: {fileID: -659787276, guid: 6102cfce1fe389d4f9f765f7a9a7e652, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.18, y: 0.13}
+  m_Size: {x: 0.75, y: 0.5416667}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -662,7 +660,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &919713637
+--- !u!95 &919713637
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919713634}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ee6b5882e05246f4a9425dde02dd9a71, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &919713638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -671,17 +690,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 919713634}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e216963d6262de244bcaed9a2a40e5d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 461bb2d6f0e9abe4b9ab62e9f2e17bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stopDistance: 1
-=======
+--- !u!50 &919713639
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919713634}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!4 &929948714 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6289872594814350382, guid: 75f28b6630dd7234eaa63d87d52b0f1c, type: 3}
   m_PrefabInstance: {fileID: 171235496}
   m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!1001 &932594262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1053,8 +1091,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   _input: {x: 0, y: 0}
-  _weaponHolder: {fileID: 0}
-  _offset: 0
 --- !u!114 &1668724125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1202,6 +1238,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 929948714}
+  - {fileID: 507985301}
   m_Father: {fileID: 1668724127}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
