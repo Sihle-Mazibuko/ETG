@@ -26,6 +26,7 @@ public class KinShoot : MonoBehaviour
     void Start()
     {
         Player = GameObject.Find("Player");
+
         if (Enemy.name == "Bullet Kin")
         {
             StartCoroutine(Shoot());

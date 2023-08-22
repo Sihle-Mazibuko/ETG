@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Puleng/0.3. Adding Collisions.unity
-    guid: ca4fbb4327316214d809c38269194791
-  - enabled: 1
     path: Assets/Scenes/Sihle/GAME.unity
     guid: 224aef13723b81a4e9a959d3844c76bb
   m_configObjects: {}

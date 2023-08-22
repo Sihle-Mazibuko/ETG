@@ -32,6 +32,9 @@ public class PlayerController : MonoBehaviour
     // Player
     private GameObject _player;
 
+    // Weapon Holder
+    private Transform _weaponHolder;
+
     #endregion
 
     #region Intialisations
@@ -41,7 +44,7 @@ public class PlayerController : MonoBehaviour
         // Get References
         _player = GameObject.FindGameObjectWithTag("Player");
         _animator = _player.GetComponentInChildren<Animator>();
-        weaponHolder = gameObject.transform.Find("WEAPON HOLDER");
+        _weaponHolder = gameObject.transform.Find("WeaponHolder");
     }
 
     #endregion
@@ -85,7 +88,8 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        HanldeRotation();
+        HandleRotation();
+
         // Set the _isMoving parameter for Walk
         _animator.SetBool("isMoving", _isMoving);
     }
@@ -131,20 +135,25 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
 
-    #region Aim
-    //Aim
-    Transform weaponHolder;
-void HanldeRotation()
-    {
-        Vector3 displacement = weaponHolder.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        float angle = Mathf.Atan2(displacement.y, displacement.x) * Mathf.Rad2Deg;
-        weaponHolder.rotation = Quaternion.Euler(0, 0, angle - 180);
+    #region Dodge
 
-        Debug.Log(angle);
+    IEnumerator Dodge()
+    {
+        yield return null;
     }
+
     #endregion
 
+    #region Aim
+
+    private void HandleRotation()
+    {
+        Vector3 displacement = _weaponHolder.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        float angle = Mathf.Atan2(displacement.y, displacement.x) * Mathf.Rad2Deg;
+        _weaponHolder.rotation = Quaternion.Euler(0, 0, angle - 180);
+
+        // Debug.Log(angle);
+    }
+
+    #endregion
 }
-
-
-

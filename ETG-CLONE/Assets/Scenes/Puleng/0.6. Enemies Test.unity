@@ -254,6 +254,14 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1945078156}
+    - target: {fileID: 7425295212870926638, guid: 2bdc7959ceb8e7d4f823e92608dab41c, type: 3}
+      propertyPath: levelGeoLayer.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7425295212870926638, guid: 2bdc7959ceb8e7d4f823e92608dab41c, type: 3}
+      propertyPath: solidObjectsLayer.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 7425295212870926675, guid: 2bdc7959ceb8e7d4f823e92608dab41c, type: 3}
       propertyPath: m_Name
       value: Bullet Kin
@@ -265,6 +273,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7425295212870926636, guid: 2bdc7959ceb8e7d4f823e92608dab41c, type: 3}
   m_PrefabInstance: {fileID: 51985467}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &51985469 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7425295212870926675, guid: 2bdc7959ceb8e7d4f823e92608dab41c, type: 3}
+  m_PrefabInstance: {fileID: 51985467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &51985470
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51985469}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &59662949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1302,6 +1336,14 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1945078156}
+    - target: {fileID: 7425295212870926638, guid: 49e7f8ae57147034e8bc0739233a1084, type: 3}
+      propertyPath: levelGeoLayer.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7425295212870926638, guid: 49e7f8ae57147034e8bc0739233a1084, type: 3}
+      propertyPath: solidObjectsLayer.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 7425295212870926675, guid: 49e7f8ae57147034e8bc0739233a1084, type: 3}
       propertyPath: m_Name
       value: Bandana Kin
@@ -8474,7 +8516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1334942507}
   m_Layer: 6
-  m_Name: Weapon Holder
+  m_Name: WeaponHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12104,7 +12146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1715610224}
   m_Layer: 0
-  m_Name: References
+  m_Name: Reference Images
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13635,7 +13677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bbacf2883a399544b98e8121e35f8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 3.5
   solidObjectsLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -13643,8 +13685,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   _input: {x: 0, y: 0}
-  _weaponHolder: {fileID: 0}
-  _offset: 0
 --- !u!58 &1945078163
 CircleCollider2D:
   m_ObjectHideFlags: 0

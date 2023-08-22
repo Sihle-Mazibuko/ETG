@@ -461,6 +461,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   _input: {x: 0, y: 0}
+  _weaponHolder: {fileID: 0}
+  _offset: 0
 --- !u!114 &417020548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,7 +704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1726761258}
   m_Layer: 0
-  m_Name: WEAPON HOLDER
+  m_Name: WeaponHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
