@@ -25,43 +25,61 @@ public class PlayerController : MonoBehaviour
 
     // Input
     public Vector2 _input;
+    public float x;
+    public float y;
 
     // Animator controller
     private Animator _animator;
 
     // Player
     private GameObject _player;
+    private Rigidbody2D rb;
 
-    // Weapon Holder
-    private Transform _weaponHolder;
+
+
 
     #endregion
 
     #region Intialisations
 
+    private void Start()
+    {
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        weaponHolder = transform.GetChild(0).gameObject;
+    }
+
     private void Awake()
     {
         // Get References
         _player = GameObject.FindGameObjectWithTag("Player");
-        _animator = _player.GetComponentInChildren<Animator>(); 
-        _weaponHolder = gameObject.transform.Find("WeaponHolder");
+        _animator = _player.GetComponentInChildren<Animator>();
     }
 
     #endregion
 
     #region Move the Player
+    
 
     private void Update()
     {
+        _input.x = Input.GetAxisRaw("Horizontal");
+        _input.y = Input.GetAxisRaw("Vertical");
+        x = Input.GetAxisRaw("Horizontal");
+        y = Input.GetAxisRaw("Vertical");
+
+        if (x != 0 || y != 0)
+        {
+            
+        }
         // If Player is not moving
         if (!_isMoving)
         {
             // Check for _input to move the Player
             // Left arrow = -1, Right arrow = +1
-            _input.x = Input.GetAxisRaw("Horizontal");
+            
 
             // Down arrow = -1, Up arrow = +1
-            _input.y = Input.GetAxisRaw("Vertical");
+           
 
             // If _input is not 0
             if (_input != Vector2.zero)
@@ -73,18 +91,7 @@ public class PlayerController : MonoBehaviour
                 _animator.SetFloat("moveY", _input.y);
 
 
-                // Calculate the target position to which the Player should move to
-                // The target postion = the current position of the Player + the _input
-                var targetPos = transform.position;
-                targetPos.x += _input.x;
-                targetPos.y += _input.y;
-
-                // If tile is walkable
-                if (isWalkable(targetPos))
-                {
-                    // Move the Player from her current position to his target position
-                    StartCoroutine(Move(targetPos));
-                }
+               
             }
         }
 
@@ -96,27 +103,17 @@ public class PlayerController : MonoBehaviour
 
     #region Move
 
-    IEnumerator Move(Vector3 targetPos)
+    private void FixedUpdate()
     {
-        // Move the Player from her current position to her target position
-        while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
-        {
-            // The Player is moving
-            _isMoving = true;
-
-            // If there is a difference which is greater than a small value between the two positions,
-            // We use the MoveTowards() function to move the Player towards his target position by a very small amount
-            transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
-
-            // This will stop the execution of the Coroutine and resume it in the next Update() function
-            yield return null;
-        }
-
-        // Set the current position of the Player to the target position
-        transform.position = targetPos;
-
-        // The Player is not moving
-        _isMoving = false;
+        //if (x != 0 && y != 0)
+        //{
+        //    rb.velocity = new Vector2(x * (moveSpeed/2), y * (moveSpeed/2));
+        //}
+        //else if (x != 0 || y != 0)
+        //{
+            rb.velocity = new Vector2(x * moveSpeed, y * moveSpeed);
+        //}
+       
     }
 
     private bool isWalkable(Vector3 targetPos)
@@ -135,13 +132,19 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Aim
-    
-    private void HanldeRotation()
+    //Aim
+    GameObject weaponHolder;
+    void HanldeRotation()
     {
-        Vector3 displacement = _weaponHolder.transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 displacement = weaponHolder.transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         float angle = Mathf.Atan2(displacement.y, displacement.x) * Mathf.Rad2Deg;
-        _weaponHolder.transform.rotation = Quaternion.Euler(0, 0, angle - 180);
-    }
+        weaponHolder.transform.rotation = Quaternion.Euler(0, 0, angle - 180);
 
+    }
     #endregion
+
+   
 }
+
+
+

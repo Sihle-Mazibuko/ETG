@@ -429,9 +429,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
-  timer: 1
-  RandomRange: 2.5
+  timer: 2
+  RandomRange: 3
+  Player: {fileID: 0}
   WalkPosition: {x: 0, y: 0}
+  PlayerPosition: {x: 0, y: 0}
 --- !u!58 &1558392596
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -467,7 +469,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!1 &7425295213652852522
 GameObject:
