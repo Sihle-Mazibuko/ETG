@@ -8,6 +8,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] float lifetime =3;
     [SerializeField] float damage;
     public GameObject Boom;
+    public BulletController controller;
 
     Rigidbody2D rb;
     //[SerializeField] GameObject bloodSplatter;
@@ -44,8 +45,25 @@ public class Projectile : MonoBehaviour
         {
 
             Instantiate(Boom, transform.position, transform.rotation);
-            coll.GetComponent<Health>().currentHealth -= 1;
-            Destroy(gameObject);
+            if (gameObject.name != "BuckShot")
+            {
+                coll.GetComponent<Health>().currentHealth -= 1;
+            }
+            else if (controller.Hit == false)
+            {
+                coll.GetComponent<Health>().currentHealth -= 1;
+            }
+
+            if (gameObject.name == "BuckShot")
+            {
+                controller.Hit = true;
+                Destroy(gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+            
         }
     }
 

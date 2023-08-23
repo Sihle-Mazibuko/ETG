@@ -36,7 +36,7 @@ public class Guns : MonoBehaviour
     public Sprite AK47;
     public Sprite RustySidearm;
     //
-    bool isEquipped;
+    public bool isEquipped;
 
     #region Effects
 

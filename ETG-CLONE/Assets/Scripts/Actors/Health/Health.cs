@@ -107,7 +107,7 @@ public class Health : MonoBehaviour
                 Heart5.SetActive(false);
                 Heart6.SetActive(false);
             }
-            else if (currentHealth == 0)
+            else if (currentHealth <= 0)
             {
                 Heart1.SetActive(false);
                 Heart2.SetActive(false);

@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Enemy Gun
   - Player Bullet
+  - Structure
   layers:
   - Default
   - TransparentFX
