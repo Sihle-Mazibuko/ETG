@@ -23,12 +23,19 @@ public class Projectile : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy" && collision.GetComponent<Health>() != null)
+        if (transform.gameObject.name == "PILLOW")
         {
-            collision.GetComponent<Health>().TakeDamage(damage);
+            transform.gameObject.GetComponent<Projectile>().enabled = false;
 
+
+            if (collision.gameObject.tag == "Enemy" && collision.GetComponent<Health>() != null)
+            {
+                collision.GetComponent<Health>().TakeDamage(damage);
+
+
+            }
+            Destroy(gameObject, .1f);
         }
-        Destroy(gameObject,.5f);
     }
 
 }

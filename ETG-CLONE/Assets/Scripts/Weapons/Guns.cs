@@ -17,7 +17,7 @@ public class Guns : MonoBehaviour
     int currentAmmo, bulletsShot;
     bool shooting, readyToShoot, reloading;
 
-    public float ReloadingTime;
+    //public float ReloadingTime;
 
     RaycastHit2D hit;
     ////
