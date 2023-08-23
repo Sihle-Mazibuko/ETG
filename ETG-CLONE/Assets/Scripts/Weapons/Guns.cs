@@ -36,7 +36,7 @@ public class Guns : MonoBehaviour
     public Sprite AK47;
     public Sprite RustySidearm;
     //
-    bool isEquipped;
+    private bool isEquipped;
 
     #region Effects
 
@@ -54,16 +54,14 @@ public class Guns : MonoBehaviour
     {
         Target = GameObject.Find("WeaponHolder");
         Ammo = GameObject.Find("Slider").GetComponent<Slider>();
-        CurrentWeapon = GameObject.Find("CURRENT WEAPON IMG").GetComponent<Image>();
-        TotalAmmo = GameObject.Find("AMMO TEXT").GetComponent<Text>();
+        // CurrentWeapon = GameObject.Find("CURRENT WEAPON IMG").GetComponent<Image>();
+        // TotalAmmo = GameObject.Find("AMMO TEXT").GetComponent<Text>();
         AmmoActive = GameObject.Find("Slider");
         ReloadingTime = reloadTime;
-
     }
 
     private void Awake()
     {
-        
         currentAmmo = clipSize;
         readyToShoot = true;
     }
@@ -103,10 +101,10 @@ public class Guns : MonoBehaviour
             CurrentWeapon.sprite = Shotgun;
         }
 
-        TotalAmmo.text = (currentAmmo.ToString()+"/"+ totalBullets.ToString());
+        TotalAmmo.text = (currentAmmo.ToString()+ "/" + totalBullets.ToString());
         
 
-        if(ReloadingTime > 0)
+        if (ReloadingTime > 0)
         {
             ReloadingTime -= Time.deltaTime;
             AmmoActive.SetActive(true);
@@ -118,6 +116,7 @@ public class Guns : MonoBehaviour
        
         Ammo.maxValue = reloadTime;
         Ammo.value = ReloadingTime;
+
         if (transform.parent != null)
         {
             isEquipped = true;

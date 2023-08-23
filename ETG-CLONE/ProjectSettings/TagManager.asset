@@ -19,11 +19,11 @@ TagManager:
   - Player
   - SolidObjects
   - LevelGeo
-  - hand
+  - Hand
   - Enemy Bullet
   - Player Bullet
   - Enemy
-  - 
+  - Enemy Collider
   - 
   - 
   - 
@@ -66,4 +66,10 @@ TagManager:
     locked: 0
   - name: Projectile
     uniqueID: 3652078797
+    locked: 0
+  - name: Front Walls
+    uniqueID: 2307201419
+    locked: 0
+  - name: UI
+    uniqueID: 1132564985
     locked: 0

@@ -29,6 +29,7 @@ public class UIUpdater : MonoBehaviour
         Blanks = 1;
 
     }
+
     private void LateUpdate()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -40,7 +41,7 @@ public class UIUpdater : MonoBehaviour
         HealthLowered();
     }
 
-    void HealthLowered()
+    private void HealthLowered()
     {
         switch(playerHealth)
         {
@@ -52,6 +53,7 @@ public class UIUpdater : MonoBehaviour
                 Heart5.SetActive(true);
                 Heart6.SetActive(true);
                 break;
+
             case 5:
                 Heart1.SetActive(true);
                 Heart2.SetActive(true);
@@ -68,6 +70,7 @@ public class UIUpdater : MonoBehaviour
                 Heart5.SetActive(false);
                 Heart6.SetActive(false);
                 break; 
+
             case 3:
                 Heart1.SetActive(true);
                 Heart2.SetActive(true);
@@ -76,6 +79,7 @@ public class UIUpdater : MonoBehaviour
                 Heart5.SetActive(false);
                 Heart6.SetActive(false);
                 break;
+
             case 2:
                 Heart1.SetActive(true);
                 Heart2.SetActive(true);
@@ -84,6 +88,7 @@ public class UIUpdater : MonoBehaviour
                 Heart5.SetActive(false);
                 Heart6.SetActive(false);
                 break;
+
             case 1:
                 Heart1.SetActive(true);
                 Heart2.SetActive(false);
@@ -92,6 +97,7 @@ public class UIUpdater : MonoBehaviour
                 Heart5.SetActive(false);
                 Heart6.SetActive(false);
                 break;
+
             case 0:
                 Heart1.SetActive(false);
                 Heart2.SetActive(false);
@@ -100,10 +106,10 @@ public class UIUpdater : MonoBehaviour
                 Heart5.SetActive(false);
                 Heart6.SetActive(false);
                 break;
+
             default:
                 Debug.Log("something is wrong");
                 break;
         }
     }
-
 }

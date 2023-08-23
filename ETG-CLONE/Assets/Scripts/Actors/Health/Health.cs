@@ -11,8 +11,8 @@ public class Health : MonoBehaviour
     public GameObject Object;
 
     [Header("Invulnerability")]
-    [SerializeField] float duration =1;
-    [SerializeField] int numOfFlashes =3;
+    [SerializeField] float duration = 1;
+    [SerializeField] int numOfFlashes = 3;
     SpriteRenderer spriteRen;
 
 
@@ -24,7 +24,8 @@ public class Health : MonoBehaviour
         if(transform.tag == "Player")
         {
             spriteRen = GetComponent<SpriteRenderer>();
-        }else if(transform.tag == "Enemy")
+        }
+        else if(transform.tag == "Enemy")
         {
             spriteRen = GetComponentInChildren<SpriteRenderer>();
         }
@@ -32,7 +33,7 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Object.SetActive(false);
         }
@@ -77,7 +78,6 @@ public class Health : MonoBehaviour
         }
     }
 
-
     public void AddHealth(float _value)
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startHealth);
@@ -98,7 +98,6 @@ public class Health : MonoBehaviour
         Physics2D.IgnoreLayerCollision(10, 22,false);
 
     }
-
 
     ////This was for testing
     //void DamagePlayer()
