@@ -5,7 +5,14 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] float startHealth;
-    public float currentHealth; 
+    public float currentHealth;
+
+    public GameObject Heart1;
+    public GameObject Heart2;
+    public GameObject Heart3;
+    public GameObject Heart4;
+    public GameObject Heart5;
+    public GameObject Heart6;
 
     Rigidbody2D rb;
     public GameObject Object;
@@ -15,7 +22,15 @@ public class Health : MonoBehaviour
     [SerializeField] int numOfFlashes =3;
     SpriteRenderer spriteRen;
 
-
+    private void Start()
+    {
+        Heart1 = GameObject.Find("Heart 1");
+        Heart2 = GameObject.Find("Heart 2");
+        Heart3 = GameObject.Find("Heart 3");
+        Heart4 = GameObject.Find("Heart 4");
+        Heart5 = GameObject.Find("Heart 5");
+        Heart6 = GameObject.Find("Heart 6");
+    }
     private void Awake()
     {
         currentHealth = startHealth;
@@ -35,6 +50,72 @@ public class Health : MonoBehaviour
         if(currentHealth <= 0)
         {
             Object.SetActive(false);
+        }
+        if (transform.tag == "Player")
+        {
+            if(currentHealth == 6)
+            {
+                Heart1.SetActive(true);
+                Heart2.SetActive(true);
+                Heart3.SetActive(true);
+                Heart4.SetActive(true);
+                Heart5.SetActive(true);
+                Heart6.SetActive(true);
+            }
+            else if (currentHealth == 5)
+            {
+                Heart1.SetActive(true);
+                Heart2.SetActive(true);
+                Heart3.SetActive(true);
+                Heart4.SetActive(true);
+                Heart5.SetActive(true);
+                Heart6.SetActive(false);
+            }
+            else if (currentHealth == 4)
+            {
+                Heart1.SetActive(true);
+                Heart2.SetActive(true);
+                Heart3.SetActive(true);
+                Heart4.SetActive(true);
+                Heart5.SetActive(false);
+                Heart6.SetActive(false);
+            }
+            else if (currentHealth == 3)
+            {
+                Heart1.SetActive(true);
+                Heart2.SetActive(true);
+                Heart3.SetActive(true);
+                Heart4.SetActive(false);
+                Heart5.SetActive(false);
+                Heart6.SetActive(false);
+            }
+            else if (currentHealth == 2)
+            {
+                Heart1.SetActive(true);
+                Heart2.SetActive(true);
+                Heart3.SetActive(false);
+                Heart4.SetActive(false);
+                Heart5.SetActive(false);
+                Heart6.SetActive(false);
+            }
+            else if (currentHealth == 1)
+            {
+                Heart1.SetActive(true);
+                Heart2.SetActive(false);
+                Heart3.SetActive(false);
+                Heart4.SetActive(false);
+                Heart5.SetActive(false);
+                Heart6.SetActive(false);
+            }
+            else if (currentHealth == 0)
+            {
+                Heart1.SetActive(false);
+                Heart2.SetActive(false);
+                Heart3.SetActive(false);
+                Heart4.SetActive(false);
+                Heart5.SetActive(false);
+                Heart6.SetActive(false);
+            }
         }
     }
 
