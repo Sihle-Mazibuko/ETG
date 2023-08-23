@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 6289872594814350417}
   - component: {fileID: 6289872594814350383}
   m_Layer: 0
-  m_Name: Crossbow
+  m_Name: CROSSBOW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,5 +139,6 @@ MonoBehaviour:
   bulletSpawnInterval: 0
   reloadTime: 0.75
   allowButtonHold: 0
+  ReloadingTime: 2
   weaponShotSfx: Crossbow Fire
   weaponEmptySfx: 

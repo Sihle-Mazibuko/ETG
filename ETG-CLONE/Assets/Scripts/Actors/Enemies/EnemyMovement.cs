@@ -17,7 +17,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void Start()
     {
-        Player = GameObject.Find("Player ");
+        Player = GameObject.Find("Player");
         WalkPosition = new Vector3(Player.transform.localPosition.x + Random.Range(-RandomRange, RandomRange), 
             Player.transform.localPosition.y + Random.Range(-RandomRange, RandomRange), 0);
         //WalkPosition = new Vector2(Random.Range(2, 5), Random.Range(2, 5));

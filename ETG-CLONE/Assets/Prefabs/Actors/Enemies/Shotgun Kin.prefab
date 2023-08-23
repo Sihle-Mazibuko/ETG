@@ -199,8 +199,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHealth: 7
-  currentHealth: 0
-  Object: {fileID: 7425295212870926675}
   duration: 1
   numOfFlashes: 3
 --- !u!1 &7425295212286752095
@@ -311,8 +309,6 @@ MonoBehaviour:
   xPosition: 0
   timer: 1.5
   CurrentY: 0
-  Enemy: {fileID: 7425295212870926675}
-  Player: {fileID: 0}
   BulletSpawn1: {fileID: 7425295212740199546}
   BulletSpawn2: {fileID: 8629635992786044016}
   BulletSpawn3: {fileID: 4142549340545927939}
@@ -460,9 +456,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7425295212870926636}
   - component: {fileID: 3932754116185664398}
-  - component: {fileID: 6891608512011126668}
   - component: {fileID: 565492752}
   - component: {fileID: -130299901990662341}
+  - component: {fileID: 5838195152675447160}
   m_Layer: 0
   m_Name: Shotgun Kin
   m_TagString: Untagged
@@ -508,22 +504,6 @@ MonoBehaviour:
   Move: {x: 0, y: 0}
   play: {fileID: 7425295212847980755}
   shot: {fileID: 7238715555914245894}
---- !u!58 &6891608512011126668
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7425295212870926675}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 4
 --- !u!50 &565492752
 Rigidbody2D:
   serializedVersion: 4
@@ -557,11 +537,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8abc2b7ff97c61444a76fda75b23754e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealth: 0
-  currentHealth: 0
-  Object: {fileID: 0}
+  startHealth: 30
   duration: 1
   numOfFlashes: 3
+--- !u!70 &5838195152675447160
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7425295212870926675}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
 --- !u!1 &7425295213652852522
 GameObject:
   m_ObjectHideFlags: 0
