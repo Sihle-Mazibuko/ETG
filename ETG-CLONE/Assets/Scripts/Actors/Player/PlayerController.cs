@@ -25,16 +25,28 @@ public class PlayerController : MonoBehaviour
 
     // Input
     public Vector2 _input;
+    public float x;
+    public float y;
 
     // Animator controller
     private Animator _animator;
 
     // Player
     private GameObject _player;
+    private Rigidbody2D rb;
+
+
+
 
     #endregion
 
     #region Intialisations
+
+    private void Start()
+    {
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        weaponHolder = transform.GetChild(0).gameObject;
+    }
 
     private void Awake()
     {
@@ -46,18 +58,28 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Move the Player
+    
 
     private void Update()
     {
+        _input.x = Input.GetAxisRaw("Horizontal");
+        _input.y = Input.GetAxisRaw("Vertical");
+        x = Input.GetAxisRaw("Horizontal");
+        y = Input.GetAxisRaw("Vertical");
+
+        if (x != 0 || y != 0)
+        {
+            
+        }
         // If Player is not moving
         if (!_isMoving)
         {
             // Check for _input to move the Player
             // Left arrow = -1, Right arrow = +1
-            _input.x = Input.GetAxisRaw("Horizontal");
+            
 
             // Down arrow = -1, Up arrow = +1
-            _input.y = Input.GetAxisRaw("Vertical");
+           
 
             // If _input is not 0
             if (_input != Vector2.zero)
@@ -69,18 +91,7 @@ public class PlayerController : MonoBehaviour
                 _animator.SetFloat("moveY", _input.y);
 
 
-                // Calculate the target position to which the Player should move to
-                // The target postion = the current position of the Player + the _input
-                var targetPos = transform.position;
-                targetPos.x += _input.x;
-                targetPos.y += _input.y;
-
-                // If tile is walkable
-                if (isWalkable(targetPos))
-                {
-                    // Move the Player from her current position to his target position
-                    StartCoroutine(Move(targetPos));
-                }
+               
             }
         }
 
@@ -92,27 +103,9 @@ public class PlayerController : MonoBehaviour
 
     #region Move
 
-    IEnumerator Move(Vector3 targetPos)
+    private void FixedUpdate()
     {
-        // Move the Player from her current position to her target position
-        while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
-        {
-            // The Player is moving
-            _isMoving = true;
-
-            // If there is a difference which is greater than a small value between the two positions,
-            // We use the MoveTowards() function to move the Player towards his target position by a very small amount
-            transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
-
-            // This will stop the execution of the Coroutine and resume it in the next Update() function
-            yield return null;
-        }
-
-        // Set the current position of the Player to the target position
-        transform.position = targetPos;
-
-        // The Player is not moving
-        _isMoving = false;
+        rb.velocity = new Vector2(x * moveSpeed, y * moveSpeed);
     }
 
     private bool isWalkable(Vector3 targetPos)
@@ -142,10 +135,7 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
 
-    private void Start()
-    {
-        weaponHolder = transform.GetChild(0).gameObject;
-    }
+   
 }
 
 

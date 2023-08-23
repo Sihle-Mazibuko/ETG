@@ -462,7 +462,6 @@ GameObject:
   - component: {fileID: 3932754116185664398}
   - component: {fileID: 6891608512011126668}
   - component: {fileID: 565492752}
-  - component: {fileID: -130299901990662341}
   m_Layer: 0
   m_Name: Shotgun Kin
   m_TagString: Untagged
@@ -545,23 +544,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &-130299901990662341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7425295212870926675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8abc2b7ff97c61444a76fda75b23754e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startHealth: 0
-  currentHealth: 0
-  Object: {fileID: 0}
-  duration: 1
-  numOfFlashes: 3
 --- !u!1 &7425295213652852522
 GameObject:
   m_ObjectHideFlags: 0

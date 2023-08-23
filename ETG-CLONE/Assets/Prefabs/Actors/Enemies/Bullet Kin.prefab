@@ -291,8 +291,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.75
-  timer: 2.5
-  RandomRange: 6
+  timer: 2
+  RandomRange: 4
   WalkPosition: {x: 0, y: 0}
 --- !u!50 &1759932466
 Rigidbody2D:
