@@ -4677,19 +4677,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6982216177664848647, guid: 3104180141d87fe4ca265e15af2db794, type: 3}
       propertyPath: m_Size.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6982216177664848647, guid: 3104180141d87fe4ca265e15af2db794, type: 3}
       propertyPath: m_Size.y
-      value: 0.8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6982216177664848647, guid: 3104180141d87fe4ca265e15af2db794, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: d1311e27c6e16274eab0a2a6caefdb66, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6982216177664848647, guid: 3104180141d87fe4ca265e15af2db794, type: 3}
       propertyPath: m_Offset.y
-      value: 0.36
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9217105370606747851, guid: 3104180141d87fe4ca265e15af2db794, type: 3}
       propertyPath: m_AnchorMax.y

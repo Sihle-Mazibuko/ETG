@@ -105,7 +105,15 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(x * moveSpeed, y * moveSpeed);
+        if (x != 0 && y != 0)
+        {
+            rb.velocity = new Vector2(x * (moveSpeed/2), y * (moveSpeed/2));
+        }
+        else if (x != 0 || y != 0)
+        {
+            rb.velocity = new Vector2(x * moveSpeed, y * moveSpeed);
+        }
+       
     }
 
     private bool isWalkable(Vector3 targetPos)
