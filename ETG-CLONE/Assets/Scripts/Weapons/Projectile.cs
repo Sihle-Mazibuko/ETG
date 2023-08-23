@@ -33,6 +33,13 @@ public class Projectile : MonoBehaviour
             coll.GetComponent<Health>().currentHealth -= 1;
             Destroy(gameObject);
         }
+        if (coll.gameObject.tag == "Structure")
+        {
+
+            Instantiate(Boom, transform.position, transform.rotation);
+           
+            Destroy(gameObject);
+        }
         if (coll.gameObject.tag == "Player")
         {
 
