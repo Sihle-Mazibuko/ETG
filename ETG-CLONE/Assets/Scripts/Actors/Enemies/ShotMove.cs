@@ -6,7 +6,7 @@ public class ShotMove : MonoBehaviour
 {
     public bool Chase;
     public bool first;
-    public GameObject Player;
+    GameObject Player;
     public float speed = 1f;
     public float Range;
     public float time;
@@ -17,7 +17,7 @@ public class ShotMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.Find("Player ");
+        Player = GameObject.Find("Player");
         StartCoroutine(Walk());
         first = false;
     }

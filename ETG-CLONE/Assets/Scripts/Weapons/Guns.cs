@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Guns : MonoBehaviour
 {
@@ -15,29 +14,23 @@ public class Guns : MonoBehaviour
     public bool allowButtonHold;
 
     int currentAmmo, bulletsShot;
-    bool shooting, readyToShoot, reloading;
+    bool shooting, readyToShoot, reloading, isEquipped;
+    
+    //public GameObject Target;
+    //public float ZRotate;
 
-    public float ReloadingTime;
+    //public Slider Ammo;
+    //public Text TotalAmmo;
 
-    RaycastHit2D hit;
-    //
-    public GameObject Target;
-    public float ZRotate;
+    //public GameObject AmmoActive;
+    //public Image CurrentWeapon;
 
-    public Slider Ammo;
-    public Text TotalAmmo;
-
-    public GameObject AmmoActive;
-    public Image CurrentWeapon;
-
-    public Sprite Crosbow;
-    public Sprite Shotgun;
-    public Sprite Peashooter;
-    public Sprite AK47;
-    public Sprite RustySidearm;
-    //
-    bool isEquipped;
-
+    //public Sprite Crosbow;
+    //public Sprite Shotgun;
+    //public Sprite Peashooter;
+    //public Sprite AK47;
+    //public Sprite RustySidearm;
+    
     #region Effects
 
     [Header("EFFECTS")]
@@ -50,20 +43,19 @@ public class Guns : MonoBehaviour
 
     #endregion
 
-    private void Start()
-    {
-        Target = GameObject.Find("WeaponHolder");
-        Ammo = GameObject.Find("Slider").GetComponent<Slider>();
-        CurrentWeapon = GameObject.Find("CURRENT WEAPON IMG").GetComponent<Image>();
-        TotalAmmo = GameObject.Find("AMMO TEXT").GetComponent<Text>();
-        AmmoActive = GameObject.Find("Slider");
-        ReloadingTime = reloadTime;
+    //private void Start()
+    //{
+    //    Target = GameObject.Find("WeaponHolder");
+    //    Ammo = GameObject.Find("Slider").GetComponent<Slider>();
+    //    CurrentWeapon = GameObject.Find("CURRENT WEAPON IMG").GetComponent<Image>();
+    //    TotalAmmo = GameObject.Find("AMMO TEXT").GetComponent<Text>();
+    //    AmmoActive = GameObject.Find("Slider");
+    //    ReloadingTime = reloadTime;
 
-    }
+    //}
 
     private void Awake()
-    {
-        
+    { 
         currentAmmo = clipSize;
         readyToShoot = true;
     }
@@ -71,53 +63,56 @@ public class Guns : MonoBehaviour
 
     private void Update()
     {
-        ZRotate = Target.transform.localRotation.z;
+        #region dont add these here.
+        //ZRotate = Target.transform.localRotation.z;
 
-        if (ZRotate >-0.7 )
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-        else if(ZRotate < -0.7)
-        {
-            transform.localScale = new Vector3(1, -1, 1);
-        }
+        //if (ZRotate >-0.7 )
+        //{
+        //    transform.localScale = new Vector3(1, 1, 1);
+        //}
+        //else if(ZRotate < -0.7)
+        //{
+        //    transform.localScale = new Vector3(1, -1, 1);
+        //}
 
-        if(gameObject.name == "CROSSBOW")
-        {
-            CurrentWeapon.sprite = Crosbow;
-        }
-        if (gameObject.name == "AK-47")
-        {
-            CurrentWeapon.sprite = AK47;
-        }
-        if (gameObject.name == "PeaShooter")
-        {
-            CurrentWeapon.sprite = Peashooter;
-        }
-        if (gameObject.name == "RustySidearm")
-        {
-            CurrentWeapon.sprite = RustySidearm;
-        }
-        if (gameObject.name == "Shotgun")
-        {
-            CurrentWeapon.sprite = Shotgun;
-        }
+        //if(gameObject.name == "CROSSBOW")
+        //{
+        //    CurrentWeapon.sprite = Crosbow;
+        //}
+        //if (gameObject.name == "AK-47")
+        //{
+        //    CurrentWeapon.sprite = AK47;
+        //}
+        //if (gameObject.name == "PeaShooter")
+        //{
+        //    CurrentWeapon.sprite = Peashooter;
+        //}
+        //if (gameObject.name == "RustySidearm")
+        //{
+        //    CurrentWeapon.sprite = RustySidearm;
+        //}
+        //if (gameObject.name == "Shotgun")
+        //{
+        //    CurrentWeapon.sprite = Shotgun;
+        //}
 
-        TotalAmmo.text = (currentAmmo.ToString()+"/"+ totalBullets.ToString());
-        
+        //TotalAmmo.text = (currentAmmo.ToString()+"/"+ totalBullets.ToString());
 
-        if(ReloadingTime > 0)
-        {
-            ReloadingTime -= Time.deltaTime;
-            AmmoActive.SetActive(true);
-        }
-        else
-        {
-            AmmoActive.SetActive(false);
-        }
-       
-        Ammo.maxValue = reloadTime;
-        Ammo.value = ReloadingTime;
+
+        //if(ReloadingTime > 0)
+        //{
+        //    ReloadingTime -= Time.deltaTime;
+        //    AmmoActive.SetActive(true);
+        //}
+        //else
+        //{
+        //    AmmoActive.SetActive(false);
+        //}
+
+        //Ammo.maxValue = reloadTime;
+        //Ammo.value = ReloadingTime;
+        #endregion
+
         if (transform.parent != null)
         {
             isEquipped = true;
@@ -150,7 +145,6 @@ public class Guns : MonoBehaviour
     void Reload() 
     { 
         reloading = true;
-        ReloadingTime = reloadTime;
 
         Invoke("ReloadFinished", reloadTime);
     }

@@ -15,8 +15,8 @@ public class KinShoot : MonoBehaviour
     public float timer = 1.5f;
     public float CurrentY;
     
-    public GameObject Enemy;
-    public GameObject Player;
+    GameObject Enemy;
+    GameObject Player;
     
 
     public GameObject BulletSpawn1;
@@ -32,13 +32,13 @@ public class KinShoot : MonoBehaviour
     {
         Target = GameObject.Find("Hand_Pivot");
         CurrentY = transform.localScale.y;
-        Player = GameObject.Find("Player ");
-
-        if (Enemy.name == "Bullet Kin(Clone)")
+        Player = GameObject.Find("Player");
+        if (Enemy.name == "Bullet Kin")
         {
+            Debug.Log(Enemy.name);
             StartCoroutine(Shoot());
         }
-        if (Enemy.name == "Bandana Kin(Clone)")
+        if (Enemy.name == "Bandana Kin")
         {
             Close = false;
             StartCoroutine(BandanaShoot());  
@@ -57,8 +57,6 @@ public class KinShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
         xPosition = Player.transform.localPosition.x;
 
         if (Player.transform.localPosition.x > Target.transform.localPosition.x)

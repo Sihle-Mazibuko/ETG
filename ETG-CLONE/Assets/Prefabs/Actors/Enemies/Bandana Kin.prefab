@@ -137,8 +137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHealth: 5
-  currentHealth: 0
-  Object: {fileID: 7425295212870926675}
   duration: 1
   numOfFlashes: 3
 --- !u!1 &7425295212286752095
@@ -245,8 +243,6 @@ MonoBehaviour:
   xPosition: 0
   timer: 0.2
   CurrentY: 0
-  Enemy: {fileID: 7425295212870926675}
-  Player: {fileID: 0}
   BulletSpawn1: {fileID: 7425295212740199546}
   BulletSpawn2: {fileID: 0}
   BulletSpawn3: {fileID: 0}
@@ -451,7 +447,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 0.4
 --- !u!50 &383376993
 Rigidbody2D:
   serializedVersion: 4

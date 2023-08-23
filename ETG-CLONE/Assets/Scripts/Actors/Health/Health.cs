@@ -5,10 +5,9 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] float startHealth;
-    public float currentHealth; 
+    public float currentHealth { get; private set; }
 
     Rigidbody2D rb;
-    public GameObject Object;
 
     [Header("Invulnerability")]
     [SerializeField] float duration =1;
@@ -27,14 +26,6 @@ public class Health : MonoBehaviour
         }else if(transform.tag == "Enemy")
         {
             spriteRen = GetComponentInChildren<SpriteRenderer>();
-        }
-    }
-
-    private void Update()
-    {
-        if(currentHealth <= 0)
-        {
-            Object.SetActive(false);
         }
     }
 
@@ -70,11 +61,11 @@ public class Health : MonoBehaviour
             DisableScripts(child);
         }
         // Disable shoot
-        for (int i = 0; i < parent.childCount; i++)
-        {
-            Transform shoot = GameObject.FindGameObjectWithTag("Enemy Gun").transform;
-            shoot.gameObject.SetActive(false);
-        }
+        //for (int i = 0; i < parent.childCount; i++)
+        //{
+        //    Transform shoot = parent.FindChild("Gun").transform;
+        //    shoot.gameObject.SetActive(false);
+        //}
     }
 
 
@@ -117,6 +108,5 @@ public class Health : MonoBehaviour
     //    DamagePlayer();
     //    Heal();
     //}
-
 
 }
