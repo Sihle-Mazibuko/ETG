@@ -105,14 +105,14 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (x != 0 && y != 0)
-        {
-            rb.velocity = new Vector2(x * (moveSpeed/2), y * (moveSpeed/2));
-        }
-        else if (x != 0 || y != 0)
-        {
+        //if (x != 0 && y != 0)
+        //{
+        //    rb.velocity = new Vector2(x * (moveSpeed/2), y * (moveSpeed/2));
+        //}
+        //else if (x != 0 || y != 0)
+        //{
             rb.velocity = new Vector2(x * moveSpeed, y * moveSpeed);
-        }
+        //}
        
     }
 

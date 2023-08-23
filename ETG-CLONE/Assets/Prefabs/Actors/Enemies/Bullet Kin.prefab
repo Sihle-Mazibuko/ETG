@@ -291,9 +291,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.75
-  timer: 2
+  timer: 3
   RandomRange: 4
+  Player: {fileID: 0}
   WalkPosition: {x: 0, y: 0}
+  PlayerPosition: {x: 0, y: 0}
 --- !u!50 &1759932466
 Rigidbody2D:
   serializedVersion: 4
@@ -313,7 +315,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!1 &7425295213652852522
 GameObject:

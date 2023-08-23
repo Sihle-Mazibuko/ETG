@@ -6,6 +6,8 @@ public class Room : MonoBehaviour
 {
     #region Fields
 
+    public GameObject Doors;
+
     private GameObject _player;
     public GameObject _virtualCam;
 
@@ -17,6 +19,7 @@ public class Room : MonoBehaviour
     {
         // Get references.
         _player = GameObject.FindGameObjectWithTag("Player");
+        Doors.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -24,6 +27,7 @@ public class Room : MonoBehaviour
         if (collision.gameObject == _player)
         {
             _virtualCam.SetActive(true);
+            
         }
     }
     
@@ -32,6 +36,7 @@ public class Room : MonoBehaviour
         if (collision.gameObject == _player)
         {
             _virtualCam.SetActive(false);
+            Doors.SetActive(true);
         }
     }
 
