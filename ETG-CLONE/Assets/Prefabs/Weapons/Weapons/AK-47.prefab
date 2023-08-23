@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3095164833426243985}
   - component: {fileID: 4044051159985923107}
-  m_Layer: 13
+  m_Layer: 6
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 8482237479881762939}
   - component: {fileID: 1268620113566435264}
   - component: {fileID: 5378989238652350890}
-  m_Layer: 13
+  m_Layer: 6
   m_Name: AK-47
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -167,6 +167,7 @@ MonoBehaviour:
   reloadTime: 0.5
   timeBetweenShots: 0
   allowButtonHold: 1
+  ReloadingTime: 0
   weaponShotSfx: 
   weaponEmptySfx: 
 --- !u!61 &1268620113566435264

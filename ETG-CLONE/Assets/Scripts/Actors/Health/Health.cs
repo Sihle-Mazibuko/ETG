@@ -5,11 +5,9 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] float startHealth;
-    public float currentHealth; 
+    public float currentHealth { get; private set; }
 
     Rigidbody2D rb;
-    public GameObject Object;
-
     [Header("Invulnerability")]
     [SerializeField] float duration = 1;
     [SerializeField] int numOfFlashes = 3;
@@ -28,14 +26,6 @@ public class Health : MonoBehaviour
         else if(transform.tag == "Enemy")
         {
             spriteRen = GetComponentInChildren<SpriteRenderer>();
-        }
-    }
-
-    private void Update()
-    {
-        if (currentHealth <= 0)
-        {
-            Object.SetActive(false);
         }
     }
 

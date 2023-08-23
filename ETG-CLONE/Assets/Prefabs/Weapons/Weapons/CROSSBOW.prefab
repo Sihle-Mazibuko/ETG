@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7088433675298347269}
-  m_Layer: 13
+  m_Layer: 6
   m_Name: BulletSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6289872594814350383}
   - component: {fileID: -9000900286457166887}
   - component: {fileID: -5339298764564195188}
-  m_Layer: 13
+  m_Layer: 6
   m_Name: CROSSBOW
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1882389467
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bd4f6b24332a2604d8b303a42ab8cf4c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -140,6 +140,7 @@ MonoBehaviour:
   reloadTime: 0.75
   timeBetweenShots: 0
   allowButtonHold: 0
+  ReloadingTime: 0
   weaponShotSfx: 
   weaponEmptySfx: 
 --- !u!61 &-9000900286457166887

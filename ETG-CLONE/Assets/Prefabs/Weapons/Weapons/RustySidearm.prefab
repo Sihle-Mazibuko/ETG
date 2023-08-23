@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5383303394965118570}
-  m_Layer: 13
+  m_Layer: 6
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7230848614897585117}
   - component: {fileID: -1579848029520544337}
   - component: {fileID: 349768465768974675}
-  m_Layer: 13
+  m_Layer: 6
   m_Name: RustySidearm
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -140,6 +140,7 @@ MonoBehaviour:
   reloadTime: 1.2
   timeBetweenShots: 0
   allowButtonHold: 0
+  ReloadingTime: 0
   weaponShotSfx: 
   weaponEmptySfx: 
 --- !u!61 &-1579848029520544337
