@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Guns : MonoBehaviour
 {
@@ -15,7 +16,11 @@ public class Guns : MonoBehaviour
 
     int currentAmmo, bulletsShot;
     bool shooting, readyToShoot, reloading;
-    
+
+    public float ReloadingTime;
+
+    RaycastHit2D hit;
+    ////
     //public GameObject Target;
     //public float ZRotate;
 
@@ -30,7 +35,9 @@ public class Guns : MonoBehaviour
     //public Sprite Peashooter;
     //public Sprite AK47;
     //public Sprite RustySidearm;
-    
+    ////
+    private bool isEquipped;
+
     #region Effects
 
     [Header("EFFECTS")]
@@ -43,16 +50,14 @@ public class Guns : MonoBehaviour
 
     #endregion
 
-    //private void Start()
-    //{
-    //    Target = GameObject.Find("WeaponHolder");
-    //    Ammo = GameObject.Find("Slider").GetComponent<Slider>();
-    //    CurrentWeapon = GameObject.Find("CURRENT WEAPON IMG").GetComponent<Image>();
-    //    TotalAmmo = GameObject.Find("AMMO TEXT").GetComponent<Text>();
-    //    AmmoActive = GameObject.Find("Slider");
-    //    ReloadingTime = reloadTime;
-
-    //}
+    private void Start()
+    {
+        //Target = GameObject.Find("WeaponHolder");
+        //Ammo = GameObject.Find("Slider").GetComponent<Slider>();
+        //// CurrentWeapon = GameObject.Find("CURRENT WEAPON IMG").GetComponent<Image>();
+        //// TotalAmmo = GameObject.Find("AMMO TEXT").GetComponent<Text>();
+        //AmmoActive = GameObject.Find("Slider");
+    }
 
     private void Awake()
     {
@@ -63,7 +68,6 @@ public class Guns : MonoBehaviour
 
     private void Update()
     {
-        #region dont add these here.
         //ZRotate = Target.transform.localRotation.z;
 
         //if (ZRotate >-0.7 )
@@ -96,10 +100,10 @@ public class Guns : MonoBehaviour
         //    CurrentWeapon.sprite = Shotgun;
         //}
 
-        //TotalAmmo.text = (currentAmmo.ToString()+"/"+ totalBullets.ToString());
+        //TotalAmmo.text = (currentAmmo.ToString()+ "/" + totalBullets.ToString());
+        
 
-
-        //if(ReloadingTime > 0)
+        //if (ReloadingTime > 0)
         //{
         //    ReloadingTime -= Time.deltaTime;
         //    AmmoActive.SetActive(true);
@@ -108,10 +112,9 @@ public class Guns : MonoBehaviour
         //{
         //    AmmoActive.SetActive(false);
         //}
-
+       
         //Ammo.maxValue = reloadTime;
         //Ammo.value = ReloadingTime;
-        #endregion
 
             MyInput();
     }
@@ -135,6 +138,7 @@ public class Guns : MonoBehaviour
     void Reload() 
     { 
         reloading = true;
+
         Invoke("ReloadFinished", reloadTime);
     }
 

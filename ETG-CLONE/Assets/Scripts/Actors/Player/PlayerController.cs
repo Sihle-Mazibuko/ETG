@@ -32,6 +32,9 @@ public class PlayerController : MonoBehaviour
     // Player
     private GameObject _player;
 
+    // Weapon Holder
+    private Transform _weaponHolder;
+
     #endregion
 
     #region Intialisations
@@ -40,7 +43,8 @@ public class PlayerController : MonoBehaviour
     {
         // Get References
         _player = GameObject.FindGameObjectWithTag("Player");
-        _animator = _player.GetComponentInChildren<Animator>();
+        _animator = _player.GetComponentInChildren<Animator>(); 
+        _weaponHolder = gameObject.transform.Find("WeaponHolder");
     }
 
     #endregion
@@ -131,22 +135,13 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Aim
-    //Aim
-    GameObject weaponHolder;
-    void HanldeRotation()
+    
+    private void HanldeRotation()
     {
-        Vector3 displacement = weaponHolder.transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 displacement = _weaponHolder.transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         float angle = Mathf.Atan2(displacement.y, displacement.x) * Mathf.Rad2Deg;
-        weaponHolder.transform.rotation = Quaternion.Euler(0, 0, angle - 180);
-
+        _weaponHolder.transform.rotation = Quaternion.Euler(0, 0, angle - 180);
     }
+
     #endregion
-
-    private void Start()
-    {
-        weaponHolder = transform.GetChild(0).gameObject;
-    }
 }
-
-
-

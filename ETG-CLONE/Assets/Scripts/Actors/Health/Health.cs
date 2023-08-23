@@ -5,13 +5,14 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] float startHealth;
-    public float currentHealth { get; private set; }
+    public float currentHealth; 
 
     Rigidbody2D rb;
+    public GameObject Object;
 
     [Header("Invulnerability")]
-    [SerializeField] float duration =1;
-    [SerializeField] int numOfFlashes =3;
+    [SerializeField] float duration = 1;
+    [SerializeField] int numOfFlashes = 3;
     SpriteRenderer spriteRen;
 
 
@@ -23,9 +24,18 @@ public class Health : MonoBehaviour
         if(transform.tag == "Player")
         {
             spriteRen = GetComponent<SpriteRenderer>();
-        }else if(transform.tag == "Enemy")
+        }
+        else if(transform.tag == "Enemy")
         {
             spriteRen = GetComponentInChildren<SpriteRenderer>();
+        }
+    }
+
+    private void Update()
+    {
+        if (currentHealth <= 0)
+        {
+            Object.SetActive(false);
         }
     }
 
@@ -82,8 +92,13 @@ public class Health : MonoBehaviour
         {
             script.enabled = false;
         }
+        // Disable shoot
+        //for (int i = 0; i < parent.childCount; i++)
+        //{
+        //    Transform shoot = parent.FindChild("Gun").transform;
+        //    shoot.gameObject.SetActive(false);
+        //}
     }
-
 
     public void AddHealth(float _value)
     {
@@ -106,7 +121,6 @@ public class Health : MonoBehaviour
 
     }
 
-
     ////This was for testing
     //void DamagePlayer()
     //{
@@ -124,5 +138,6 @@ public class Health : MonoBehaviour
     //    DamagePlayer();
     //    Heal();
     //}
+
 
 }

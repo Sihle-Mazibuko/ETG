@@ -15,8 +15,8 @@ public class KinShoot : MonoBehaviour
     public float timer = 1.5f;
     public float CurrentY;
     
-    GameObject Enemy;
-    GameObject Player;
+    public GameObject Enemy;
+    public GameObject Player;
     
 
     public GameObject BulletSpawn1;
@@ -27,43 +27,44 @@ public class KinShoot : MonoBehaviour
 
     public bool Close;
 
-    // Start is called before the first frame update
     void Start()
     {
         Target = GameObject.Find("Hand_Pivot");
+
         CurrentY = transform.localScale.y;
+
         Player = GameObject.Find("Player");
-        if (Enemy.name == "Bullet Kin")
+
+        if (Enemy.name == "Bullet Kin(Clone)")
         {
-            Debug.Log(Enemy.name);
             StartCoroutine(Shoot());
         }
-        if (Enemy.name == "Bandana Kin")
+
+        if (Enemy.name == "Bandana Kin(Clone)")
         {
             Close = false;
             StartCoroutine(BandanaShoot());  
         }
+
         if (Player.transform.localPosition.x > Target.transform.localPosition.x)
         {
-
             transform.localScale = new Vector3(transform.localScale.x, CurrentY, transform.localPosition.z);
         }
+
         if (Player.transform.localPosition.x < Target.transform.localPosition.x)
         {
             transform.localScale = new Vector3(transform.localScale.x, -CurrentY, transform.localPosition.z);
         }
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         xPosition = Player.transform.localPosition.x;
 
         if (Player.transform.localPosition.x > Target.transform.localPosition.x)
         {
-            
             transform.localScale = new Vector3(transform.localScale.x, CurrentY, transform.localPosition.z);
         }
+
         if (Player.transform.localPosition.x < Target.transform.localPosition.x)
         {
             transform.localScale = new Vector3(transform.localScale.x, -CurrentY, transform.localPosition.z);
