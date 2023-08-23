@@ -62,11 +62,4 @@ public class Dog : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, target.position, dogSpeed * Time.deltaTime);
     }
 
-    //bool facingRight = true;
-
-    //void Flip()
-    //{
-    //    facingRight = !facingRight;
-    //    transform.Rotate(0, 180, 0);
-    //}
 }

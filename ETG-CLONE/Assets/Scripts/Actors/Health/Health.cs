@@ -5,11 +5,9 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] float startHealth;
-    public float currentHealth; 
+    public float currentHealth { get; private set; }
 
     Rigidbody2D rb;
-    public GameObject Object;
-
     [Header("Invulnerability")]
     [SerializeField] float duration = 1;
     [SerializeField] int numOfFlashes = 3;
@@ -31,14 +29,6 @@ public class Health : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (currentHealth <= 0)
-        {
-            Object.SetActive(false);
-        }
-    }
-
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startHealth);
@@ -50,12 +40,18 @@ public class Health : MonoBehaviour
         }
         else
         {
-           
-            DisableScripts(transform);
+            if (transform.gameObject.tag == "Enemy")
+            {
+                DisableEnemyScripts(transform);
+            }
+            else if(transform.gameObject.tag == "Player")
+            {
+                DisablePlayerScripts(transform);
+            }
         }
     }
 
-    private void DisableScripts(Transform parent)
+    private void DisableEnemyScripts(Transform parent)
     {
         // Disable scripts on the current object
         MonoBehaviour[] scripts = parent.GetComponents<MonoBehaviour>();
@@ -68,14 +64,30 @@ public class Health : MonoBehaviour
         for (int i = 0; i < parent.childCount; i++)
         {
             Transform child = parent.GetChild(i);
-            DisableScripts(child);
+            DisableEnemyScripts(child);
         }
-        // Disable shoot
+        //Disable shoot
         for (int i = 0; i < parent.childCount; i++)
         {
-            Transform shoot = GameObject.FindGameObjectWithTag("Enemy Gun").transform;
-            shoot.gameObject.SetActive(false);
+            MonoBehaviour gun = parent.GetComponentInChildren<KinShoot>();
+            gun.enabled = false;
         }
+    }
+
+    private void DisablePlayerScripts(Transform parent)
+    {
+        MonoBehaviour[] player = GetComponents<MonoBehaviour>();
+
+        foreach(MonoBehaviour script in player)
+        {
+            script.enabled = false;
+        }
+        // Disable shoot
+        //for (int i = 0; i < parent.childCount; i++)
+        //{
+        //    Transform shoot = parent.FindChild("Gun").transform;
+        //    shoot.gameObject.SetActive(false);
+        //}
     }
 
     public void AddHealth(float _value)
@@ -102,7 +114,7 @@ public class Health : MonoBehaviour
     ////This was for testing
     //void DamagePlayer()
     //{
-    //    if (Input.GetKeyDown(KeyCode.G))  TakeDamage(1);
+    //    if (Input.GetKeyDown(KeyCode.G)) TakeDamage(3);
     //}
 
     //void Heal()
