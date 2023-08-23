@@ -5,11 +5,23 @@ using UnityEngine;
 
 public class Dog : MonoBehaviour
 {
-    [SerializeField] float stopDistance = 1;
-    Transform target;
-    float dogSpeed = 7;
-    Rigidbody2D rb;
+    #region Fields
+
+    [SerializeField] 
+    private float stopDistance = 1;
+    private Transform target;
+    private float dogSpeed = 7;
+    private Rigidbody2D rigidBody;
     Animator animator;
+
+    #endregion
+
+    private void Awake()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        rigidBody = GetComponent<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>();
+    }
 
     private void Update()
     {
@@ -18,7 +30,7 @@ public class Dog : MonoBehaviour
 
         }
 
-        if(target.transform.localPosition.x < transform.localPosition.x)
+        if (target.transform.localPosition.x < transform.localPosition.x)
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
@@ -27,12 +39,7 @@ public class Dog : MonoBehaviour
             transform.localScale = new Vector3(1, 1, 1);
         }
     }
-    private void Awake()
-    {
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-    }
+    
 
     private void FixedUpdate()
     {
@@ -41,11 +48,9 @@ public class Dog : MonoBehaviour
         {
             HandleMove();
             animator.SetBool("isWalking", true);
-            
         }
         else
         {
-            
             animator.SetBool("isWalking", false);
             //Play idle animation
         }
