@@ -40,12 +40,18 @@ public class Health : MonoBehaviour
         }
         else
         {
-           
-            DisableScripts(transform);
+            if (transform.gameObject.tag == "Enemy")
+            {
+                DisableEnemyScripts(transform);
+            }
+            else if(transform.gameObject.tag == "Player")
+            {
+                DisablePlayerScripts(transform);
+            }
         }
     }
 
-    private void DisableScripts(Transform parent)
+    private void DisableEnemyScripts(Transform parent)
     {
         // Disable scripts on the current object
         MonoBehaviour[] scripts = parent.GetComponents<MonoBehaviour>();
@@ -58,14 +64,24 @@ public class Health : MonoBehaviour
         for (int i = 0; i < parent.childCount; i++)
         {
             Transform child = parent.GetChild(i);
-            DisableScripts(child);
+            DisableEnemyScripts(child);
         }
-        // Disable shoot
-        //for (int i = 0; i < parent.childCount; i++)
-        //{
-        //    Transform shoot = parent.FindChild("Gun").transform;
-        //    shoot.gameObject.SetActive(false);
-        //}
+        //Disable shoot
+        for (int i = 0; i < parent.childCount; i++)
+        {
+            MonoBehaviour gun = parent.GetComponentInChildren<KinShoot>();
+            gun.enabled = false;
+        }
+    }
+
+    private void DisablePlayerScripts(Transform parent)
+    {
+        MonoBehaviour[] player = GetComponents<MonoBehaviour>();
+
+        foreach(MonoBehaviour script in player)
+        {
+            script.enabled = false;
+        }
     }
 
 
@@ -94,7 +110,7 @@ public class Health : MonoBehaviour
     ////This was for testing
     //void DamagePlayer()
     //{
-    //    if (Input.GetKeyDown(KeyCode.G))  TakeDamage(1);
+    //    if (Input.GetKeyDown(KeyCode.G)) TakeDamage(3);
     //}
 
     //void Heal()

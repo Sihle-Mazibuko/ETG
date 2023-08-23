@@ -9,12 +9,12 @@ public class Guns : MonoBehaviour
     [SerializeField] Transform bulletSpawnPoint;
 
 
-    public int clipSize, bulletsPerTap, totalBullets;
-    public float fireRate, spread, bulletSpawnInterval, reloadTime;
+    public int clipSize, bulletsPerTap, totalAmmo;
+    public float fireRate, reloadTime, timeBetweenShots;
     public bool allowButtonHold;
 
     int currentAmmo, bulletsShot;
-    bool shooting, readyToShoot, reloading, isEquipped;
+    bool shooting, readyToShoot, reloading;
     
     //public GameObject Target;
     //public float ZRotate;
@@ -55,7 +55,7 @@ public class Guns : MonoBehaviour
     //}
 
     private void Awake()
-    { 
+    {
         currentAmmo = clipSize;
         readyToShoot = true;
     }
@@ -113,16 +113,7 @@ public class Guns : MonoBehaviour
         //Ammo.value = ReloadingTime;
         #endregion
 
-        if (transform.parent != null)
-        {
-            isEquipped = true;
-            readyToShoot = true;
             MyInput();
-        }
-        else
-        {
-            isEquipped = false;
-        }
     }
 
     void MyInput()
@@ -130,14 +121,13 @@ public class Guns : MonoBehaviour
         if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
         else shooting = Input.GetKeyDown(KeyCode.Mouse0);
 
-        if ((Input.GetKeyDown(KeyCode.R) && currentAmmo < clipSize && !reloading) || (currentAmmo < clipSize && !reloading))
+        if ((Input.GetKeyDown(KeyCode.R) && currentAmmo < clipSize && !reloading) || (currentAmmo <= 0 && !reloading))
         {
             Reload();
         }
 
         if (readyToShoot && shooting && !reloading && currentAmmo > 0)
         {
-            bulletsShot = bulletsPerTap;
             Shoot();
         }
     }
@@ -145,7 +135,6 @@ public class Guns : MonoBehaviour
     void Reload() 
     { 
         reloading = true;
-
         Invoke("ReloadFinished", reloadTime);
     }
 
@@ -159,7 +148,7 @@ public class Guns : MonoBehaviour
     void Shoot()
     {
 
-        if (bulletsShot < totalBullets)
+        if (totalAmmo >= 1)
         {
             readyToShoot = false;
 
@@ -170,31 +159,24 @@ public class Guns : MonoBehaviour
 
             #endregion
 
-            ////Bullet Spread
-            //float x = Random.Range(-spread, spread);
-            //float y = Random.Range(-spread, spread);
-
-            //Vector3 _direction = transform.position + new Vector3(x, y, 0);
-
-
-
             //Prefab shooting
             Instantiate(bulletPref, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
 
 
             currentAmmo--;
-            
-            bulletsShot++;
+            bulletsShot--;
+            totalAmmo--;
 
 
             Invoke("ResetShot", fireRate);
 
-            if (currentAmmo > 0)
+            if (currentAmmo > 0 && bulletsShot > 0)
             {
                 //Sounds
-                Invoke("Shoot", bulletSpawnInterval);
+                Invoke("Shoot", timeBetweenShots);
 
             }
+
         }
         else
         {
@@ -204,13 +186,13 @@ public class Guns : MonoBehaviour
             GlobalAudioPlayer.PlaySFX(weaponEmptySfx);
 
             #endregion
+
         }
     }
 
-    private void ResetShot()
+        private void ResetShot()
     {
         readyToShoot = true;
-        totalBullets--;
     }
 
 }

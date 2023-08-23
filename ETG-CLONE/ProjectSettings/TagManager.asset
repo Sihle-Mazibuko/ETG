@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Enemy Gun
   - Player Bullet
+  - Chest
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Enemy Bullet
   - Player Bullet
   - Enemy
-  - 
+  - Guns
   - 
   - 
   - 

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5383303394965118570}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5383303394965118581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.362, y: 0.108, z: 0}
+  m_LocalPosition: {x: 0.397, y: 0.108, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42,9 +42,11 @@ GameObject:
   - component: {fileID: 5286878023279378953}
   - component: {fileID: 5353412792649260593}
   - component: {fileID: 7230848614897585117}
-  m_Layer: 0
+  - component: {fileID: -1579848029520544337}
+  - component: {fileID: 349768465768974675}
+  m_Layer: 13
   m_Name: RustySidearm
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,15 +131,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e1fc85d171021478deb62cafaa299b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPref: {fileID: 0}
+  bulletPref: {fileID: 3649637640105835171, guid: e2bfd65a86da8a74682eb87c9a99f0d9, type: 3}
   bulletSpawnPoint: {fileID: 5383303394965118570}
   clipSize: 6
   bulletsPerTap: 1
-  totalBullets: 9999999
+  totalAmmo: 999999
   fireRate: 0.2
-  spread: 0
-  bulletSpawnInterval: 0
   reloadTime: 1.2
+  timeBetweenShots: 0
   allowButtonHold: 0
-  weaponShotSfx: Shotgun Fire
-  weaponEmptySfx: Weapon Empty
+  weaponShotSfx: 
+  weaponEmptySfx: 
+--- !u!61 &-1579848029520544337
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7230848614897585116}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5625, y: 0.3125}
+    newSize: {x: 0.72, y: 0.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5625, y: 0.3125}
+  m_EdgeRadius: 0
+--- !u!50 &349768465768974675
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7230848614897585116}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
