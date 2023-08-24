@@ -20,12 +20,14 @@ public class KinShoot : MonoBehaviour
     
 
     public GameObject BulletSpawn1;
-    public GameObject BulletSpawn2;
-    public GameObject BulletSpawn3;
-    public GameObject BulletSpawn4;
-    public GameObject BulletSpawn5;
+
 
     public bool Close;
+    public float Distance;
+    public float TriggerDistance;
+    private float distanceX;
+    private float distanceY;
+   
 
     void Start()
     {
@@ -70,10 +72,14 @@ public class KinShoot : MonoBehaviour
             transform.localScale = new Vector3(transform.localScale.x, -CurrentY, transform.localPosition.z);
         }
 
-        distanceBetweenObjects = Vector3.Distance(transform.position, Player.transform.position);
         Debug.DrawLine(transform.position, Player.transform.position, Color.green);
+        Vector2 delta = transform.position - Player.transform.position;
+        distanceX = delta.x;
+        distanceY = delta.y;
+        
+        Distance = delta.magnitude;
 
-        if(distanceBetweenObjects <= 5)
+        if (Distance <= TriggerDistance)
         {
             Close = true;
         }
@@ -93,18 +99,16 @@ public class KinShoot : MonoBehaviour
     public IEnumerator ShotShoot()
     {
         yield return new WaitForSeconds(timer);
+        
         StartCoroutine(ShotShoot());
         Instantiate(Bullet, BulletSpawn1.transform.position, BulletSpawn1.transform.rotation);
-        Instantiate(Bullet, BulletSpawn2.transform.position, BulletSpawn2.transform.rotation);
-        Instantiate(Bullet, BulletSpawn3.transform.position, BulletSpawn3.transform.rotation);
-        Instantiate(Bullet, BulletSpawn4.transform.position, BulletSpawn4.transform.rotation);
-        Instantiate(Bullet, BulletSpawn5.transform.position, BulletSpawn5.transform.rotation);
+       
     }
 
     public IEnumerator BandanaShoot()
     {
         yield return new WaitForSeconds(timer);
-        
+        Debug.Log("Bang");
         if (Close == true)
         {
             Instantiate(Bullet, BulletSpawn1.transform.position, BulletSpawn1.transform.rotation);

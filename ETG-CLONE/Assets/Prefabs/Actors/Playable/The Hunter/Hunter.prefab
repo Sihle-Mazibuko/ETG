@@ -44,6 +44,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5090097711359595220, guid: e9f1b470cf13a754593afab0396605b7, type: 3}
+      propertyPath: Object
+      value: 
+      objectReference: {fileID: 9217105372195379043}
+    - target: {fileID: 5090097711359595221, guid: e9f1b470cf13a754593afab0396605b7, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5090097711359595222, guid: e9f1b470cf13a754593afab0396605b7, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -94,6 +102,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9f1b470cf13a754593afab0396605b7, type: 3}
+--- !u!1 &9217105372195379043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5090097711359595224, guid: e9f1b470cf13a754593afab0396605b7, type: 3}
+  m_PrefabInstance: {fileID: 4128134436935091643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9217105372195379053 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5090097711359595222, guid: e9f1b470cf13a754593afab0396605b7, type: 3}
@@ -153,6 +166,14 @@ PrefabInstance:
     - target: {fileID: 4772905651401218156, guid: 17ad4bf2be15fa34fb92e5e5784a1a52, type: 3}
       propertyPath: m_Name
       value: Dog
+      objectReference: {fileID: 0}
+    - target: {fileID: 4772905651401218157, guid: 17ad4bf2be15fa34fb92e5e5784a1a52, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4772905651401218157, guid: 17ad4bf2be15fa34fb92e5e5784a1a52, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2135618103
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17ad4bf2be15fa34fb92e5e5784a1a52, type: 3}

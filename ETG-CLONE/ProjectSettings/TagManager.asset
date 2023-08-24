@@ -5,10 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Weapon
-  - Player Bullet
-  - Enemy
   - Enemy Bullet
+  - Enemy
   - Enemy Gun
+  - Player Bullet
+  - Structure
   layers:
   - Default
   - TransparentFX
@@ -16,13 +17,13 @@ TagManager:
   - 
   - Water
   - UI
-  - Guns
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - SolidObjects
+  - LevelGeo
+  - hand
+  - Enemy Bullet
+  - Player Bullet
+  - Enemy
   - 
   - 
   - 
@@ -45,4 +46,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 346376233
+    locked: 0
+  - name: Player
+    uniqueID: 2159349193
+    locked: 0
+  - name: Player
+    uniqueID: 804200649
+    locked: 0
+  - name: Enemy Hand
+    uniqueID: 2784724503
+    locked: 0
+  - name: Gun
+    uniqueID: 1965013535
+    locked: 0
+  - name: Projectile
+    uniqueID: 3652078797
+    locked: 0
+  - name: Foreground
+    uniqueID: 2412577829
     locked: 0

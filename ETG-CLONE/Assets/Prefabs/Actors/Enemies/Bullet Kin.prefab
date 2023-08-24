@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1965013535
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -162525584, guid: 1df7c3a3e7a8fdb4fb752f8aabb72946, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -104,12 +104,16 @@ MonoBehaviour:
   xPosition: 0
   timer: 1.5
   CurrentY: 0
+  Enemy: {fileID: 7425295212870926675}
+  Player: {fileID: 0}
   BulletSpawn1: {fileID: 7425295212740199546}
   BulletSpawn2: {fileID: 0}
   BulletSpawn3: {fileID: 0}
   BulletSpawn4: {fileID: 0}
   BulletSpawn5: {fileID: 0}
   Close: 0
+  Distance: 0
+  TriggerDistance: 0
 --- !u!1 &7425295212740199546
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +218,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2135618103
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -252,8 +256,6 @@ GameObject:
   - component: {fileID: 7425295212870926636}
   - component: {fileID: 7425295212870926638}
   - component: {fileID: 1759932466}
-  - component: {fileID: 588391824617731260}
-  - component: {fileID: 1502107901902103210}
   m_Layer: 0
   m_Name: Bullet Kin
   m_TagString: Untagged
@@ -291,9 +293,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.75
-  timer: 2.5
-  RandomRange: 6
+  timer: 2
+  RandomRange: 3
+  Player: {fileID: 0}
   WalkPosition: {x: 0, y: 0}
+  PlayerPosition: {x: 0, y: 0}
+  Chase: 0
+  first: 0
+  Range: 0
+  Move: {x: 0, y: 0}
+  play: {fileID: 0}
+  shot: {fileID: 0}
+  Close: 0
+  Distance: 0
+  TriggerDistance: 0
 --- !u!50 &1759932466
 Rigidbody2D:
   serializedVersion: 4
@@ -313,39 +326,8 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &588391824617731260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7425295212870926675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8abc2b7ff97c61444a76fda75b23754e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startHealth: 15
-  duration: 1
-  numOfFlashes: 3
---- !u!58 &1502107901902103210
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7425295212870926675}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.4
 --- !u!1 &7425295213652852522
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,7 +400,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1510242793
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -146387273, guid: 6bbf87575a1518d4880f5c7e9c812055, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -505,7 +487,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2135618103
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1487740152, guid: 6bbf87575a1518d4880f5c7e9c812055, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -568,5 +550,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHealth: 3
+  currentHealth: 0
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
+  Heart4: {fileID: 0}
+  Heart5: {fileID: 0}
+  Heart6: {fileID: 0}
+  Object: {fileID: 7425295212870926675}
   duration: 1
   numOfFlashes: 3
