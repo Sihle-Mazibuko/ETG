@@ -29,45 +29,44 @@ public class KinShoot : MonoBehaviour
     private float distanceY;
    
 
-    // Start is called before the first frame update
     void Start()
     {
         Target = GameObject.Find("Hand_Pivot");
+
         CurrentY = transform.localScale.y;
-        Player = GameObject.Find("Player ");
+
+        Player = GameObject.Find("Player");
 
         if (Enemy.name == "Bullet Kin(Clone)")
         {
             StartCoroutine(Shoot());
         }
+
         if (Enemy.name == "Bandana Kin(Clone)")
         {
             Close = false;
             StartCoroutine(BandanaShoot());  
         }
+
         if (Player.transform.localPosition.x > Target.transform.localPosition.x)
         {
-
             transform.localScale = new Vector3(transform.localScale.x, CurrentY, transform.localPosition.z);
         }
+
         if (Player.transform.localPosition.x < Target.transform.localPosition.x)
         {
             transform.localScale = new Vector3(transform.localScale.x, -CurrentY, transform.localPosition.z);
         }
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
-
         xPosition = Player.transform.localPosition.x;
 
         if (Player.transform.localPosition.x > Target.transform.localPosition.x)
         {
-            
             transform.localScale = new Vector3(transform.localScale.x, CurrentY, transform.localPosition.z);
         }
+
         if (Player.transform.localPosition.x < Target.transform.localPosition.x)
         {
             transform.localScale = new Vector3(transform.localScale.x, -CurrentY, transform.localPosition.z);
