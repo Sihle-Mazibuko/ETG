@@ -14,8 +14,10 @@ public class Guns : MonoBehaviour
     public float fireRate, spread, bulletSpawnInterval, reloadTime;
     public bool allowButtonHold;
 
-    int currentAmmo, bulletsShot;
+    int bulletsShot;
     bool shooting, readyToShoot, reloading;
+
+    public int currentAmmo { get; private set; }
 
 
     RaycastHit2D hit;

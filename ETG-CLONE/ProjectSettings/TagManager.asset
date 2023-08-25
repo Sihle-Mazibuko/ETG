@@ -10,6 +10,10 @@ TagManager:
   - Enemy Gun
   - Player Bullet
   - Structure
+  - Room
+  - Health
+  - Key
+  - Ammo
   layers:
   - Default
   - TransparentFX

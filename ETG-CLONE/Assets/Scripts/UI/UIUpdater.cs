@@ -13,7 +13,7 @@ public class UIUpdater : MonoBehaviour
     public GameObject Heart5;
     public GameObject Heart6;
 
-    public int Keys;
+    public int Keys { get; private set; }
     public Text KeyAmount;
 
     public int Blanks;
@@ -26,7 +26,7 @@ public class UIUpdater : MonoBehaviour
     private void Start()
     {
         Keys = 0;
-        Blanks = 1;
+        Blanks = 0;
 
     }
     private void LateUpdate()
