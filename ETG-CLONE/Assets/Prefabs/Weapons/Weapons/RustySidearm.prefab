@@ -103,8 +103,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2135618103
+  m_SortingLayer: 2
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 9ecbd33683b1fd54394498db86542e70, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e1fc85d171021478deb62cafaa299b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPref: {fileID: 0}
+  bulletPref: {fileID: 3649637640105835171, guid: 6accbfef1245cd84bb598a5240fe4720, type: 3}
   bulletSpawnPoint: {fileID: 5383303394965118570}
   clipSize: 6
   bulletsPerTap: 1
@@ -139,5 +139,17 @@ MonoBehaviour:
   bulletSpawnInterval: 0
   reloadTime: 1.2
   allowButtonHold: 0
+  Target: {fileID: 0}
+  ZRotate: 0
+  Ammo: {fileID: 0}
+  TotalAmmo: {fileID: 0}
+  AmmoActive: {fileID: 0}
+  CurrentWeapon: {fileID: 0}
+  Crosbow: {fileID: 0}
+  Shotgun: {fileID: 0}
+  Peashooter: {fileID: 0}
+  AK47: {fileID: 0}
+  RustySidearm: {fileID: 0}
+  isEquipped: 0
   weaponShotSfx: Shotgun Fire
   weaponEmptySfx: Weapon Empty

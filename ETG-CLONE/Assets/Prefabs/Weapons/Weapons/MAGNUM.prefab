@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2135618103
+  m_SortingLayer: 2
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: f8065f6441096454ea256b69cacad63d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -104,11 +104,24 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 7932821988862737027}
   clipSize: 7
   bulletsPerTap: 1
-  totalAmmo: 200
+  totalBullets: 0
   fireRate: 0.15
+  spread: 0
+  bulletSpawnInterval: 0
   reloadTime: 1.25
-  timeBetweenShots: 0
   allowButtonHold: 1
+  Target: {fileID: 0}
+  ZRotate: 0
+  Ammo: {fileID: 0}
+  TotalAmmo: {fileID: 0}
+  AmmoActive: {fileID: 0}
+  CurrentWeapon: {fileID: 0}
+  Crosbow: {fileID: 0}
+  Shotgun: {fileID: 0}
+  Peashooter: {fileID: 0}
+  AK47: {fileID: 0}
+  RustySidearm: {fileID: 0}
+  isEquipped: 0
   weaponShotSfx: 
   weaponEmptySfx: 
 --- !u!50 &1028287065960254136

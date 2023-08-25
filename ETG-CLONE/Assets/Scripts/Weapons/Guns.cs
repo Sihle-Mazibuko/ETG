@@ -17,7 +17,6 @@ public class Guns : MonoBehaviour
     int currentAmmo, bulletsShot;
     bool shooting, readyToShoot, reloading;
 
-    //public float ReloadingTime;
 
     RaycastHit2D hit;
     //
@@ -57,7 +56,6 @@ public class Guns : MonoBehaviour
         CurrentWeapon = GameObject.Find("CURRENT WEAPON IMG").GetComponent<Image>();
         TotalAmmo = GameObject.Find("AMMO TEXT").GetComponent<Text>();
         AmmoActive = GameObject.Find("Slider");
-        ReloadingTime = reloadTime;
 
     }
 
@@ -103,21 +101,9 @@ public class Guns : MonoBehaviour
             CurrentWeapon.sprite = Shotgun;
         }
 
-        TotalAmmo.text = (currentAmmo.ToString()+"/"+ totalBullets.ToString());
+        TotalAmmo.text = (currentAmmo.ToString()+"/"+ clipSize.ToString());
         
 
-        if(ReloadingTime > 0)
-        {
-            ReloadingTime -= Time.deltaTime;
-            AmmoActive.SetActive(true);
-        }
-        else
-        {
-            AmmoActive.SetActive(false);
-        }
-       
-        Ammo.maxValue = reloadTime;
-        Ammo.value = ReloadingTime;
         if (transform.parent != null)
         {
             isEquipped = true;
@@ -150,7 +136,6 @@ public class Guns : MonoBehaviour
     void Reload() 
     { 
         reloading = true;
-        ReloadingTime = reloadTime;
 
         Invoke("ReloadFinished", reloadTime);
     }
@@ -195,7 +180,7 @@ public class Guns : MonoBehaviour
 
             Invoke("ResetShot", fireRate);
 
-            if (currentAmmo > 0)
+            if (currentAmmo > 0 && bulletsShot > 0)
             {
                 //Sounds
                 Invoke("Shoot", bulletSpawnInterval);

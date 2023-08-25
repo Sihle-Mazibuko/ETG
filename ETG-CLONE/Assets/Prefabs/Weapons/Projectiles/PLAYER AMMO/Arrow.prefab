@@ -72,6 +72,7 @@ MonoBehaviour:
   lifetime: 2
   damage: 22
   Boom: {fileID: 2621373831953554647, guid: 4985b8618e206a84995ff75169f15288, type: 3}
+  controller: {fileID: 0}
 --- !u!61 &5117721339548920811
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -136,8 +137,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -642888499
-  m_SortingLayer: 7
+  m_SortingLayerID: -2135618103
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8f40854ad54888243b22ec85e55ec59b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

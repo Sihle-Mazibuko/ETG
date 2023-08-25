@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -4778428992827240529}
   - component: {fileID: 7793930702117777914}
   m_Layer: 11
-  m_Name: MAGNUM BULLET
+  m_Name: SHOTGUN
   m_TagString: Player Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
