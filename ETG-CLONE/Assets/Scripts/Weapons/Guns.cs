@@ -60,8 +60,7 @@ public class Guns : MonoBehaviour
     }
 
     private void Awake()
-    {
-        
+    {  
         currentAmmo = clipSize;
         readyToShoot = true;
     }
@@ -121,13 +120,14 @@ public class Guns : MonoBehaviour
         if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
         else shooting = Input.GetKeyDown(KeyCode.Mouse0);
 
-        if ((Input.GetKeyDown(KeyCode.R) && currentAmmo < clipSize && !reloading) || (currentAmmo < clipSize && !reloading))
+        if ((Input.GetKeyDown(KeyCode.R) && currentAmmo < clipSize && !reloading) || (currentAmmo < 1 && !reloading))
         {
             Reload();
         }
 
         if (readyToShoot && shooting && !reloading && currentAmmo > 0)
         {
+            bulletsShot = bulletsPerTap;
             Shoot();
         }
     }
@@ -174,7 +174,7 @@ public class Guns : MonoBehaviour
 
             currentAmmo--;
             
-            bulletsShot++;
+            bulletsShot--;
 
 
             Invoke("ResetShot", fireRate);
