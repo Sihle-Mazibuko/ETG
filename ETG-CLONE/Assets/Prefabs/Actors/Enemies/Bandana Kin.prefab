@@ -249,18 +249,14 @@ MonoBehaviour:
   distanceBetweenObjects: 0
   Target: {fileID: 0}
   xPosition: 0
-  timer: 0.2
+  timer: 0.25
   CurrentY: 0
   Enemy: {fileID: 7425295212870926675}
   Player: {fileID: 0}
   BulletSpawn1: {fileID: 7425295212740199546}
-  BulletSpawn2: {fileID: 0}
-  BulletSpawn3: {fileID: 0}
-  BulletSpawn4: {fileID: 0}
-  BulletSpawn5: {fileID: 0}
   Close: 0
   Distance: 0
-  TriggerDistance: 4
+  TriggerDistance: 5
 --- !u!1 &7425295212740199546
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,7 +436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9adb252878058094893a8c48e086c08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 1.5
   timer: 1.5
   RandomRange: 2
   Player: {fileID: 0}

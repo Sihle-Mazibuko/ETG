@@ -437,7 +437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   timer: 3
-  RandomRange: 5
+  RandomRange: 4.5
   Player: {fileID: 0}
   WalkPosition: {x: 0, y: 0}
   PlayerPosition: {x: 0, y: 0}
