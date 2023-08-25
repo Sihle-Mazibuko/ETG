@@ -78,7 +78,7 @@ public class Weapon : MonoBehaviour
     void Shoot()
     {
 
-        if (totalBullets != 0)
+        if (totalBullets >= 1)
         {
             readyToShoot = false;
 
