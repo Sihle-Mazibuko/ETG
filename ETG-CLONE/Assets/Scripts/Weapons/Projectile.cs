@@ -31,7 +31,7 @@ public class Projectile : MonoBehaviour
         {
 
             Instantiate(Boom, transform.position, transform.rotation);
-            coll.GetComponent<Health>().currentHealth -= 1;
+            coll.GetComponent<Health>().TakeDamage(1);
             Destroy(gameObject);
         }
         if (coll.gameObject.tag == "Structure")
@@ -47,11 +47,11 @@ public class Projectile : MonoBehaviour
             Instantiate(Boom, transform.position, transform.rotation);
             if (gameObject.name != "BuckShot")
             {
-                coll.GetComponent<Health>().currentHealth -= 1;
+                coll.GetComponent<Health>().TakeDamage(1);
             }
             else if (controller.Hit == false)
             {
-                coll.GetComponent<Health>().currentHealth -= 1;
+                coll.GetComponent<Health>().TakeDamage(1);
             }
 
             if (gameObject.name == "BuckShot")

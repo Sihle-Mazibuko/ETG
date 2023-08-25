@@ -24,7 +24,8 @@ public class Guns : MonoBehaviour
     public float ZRotate;
 
     public Slider Ammo;
-    public Text TotalAmmo;
+    public Text ammoTexts;
+    public Text maxAmmo;
 
     public GameObject AmmoActive;
     public Image CurrentWeapon;
@@ -54,7 +55,8 @@ public class Guns : MonoBehaviour
         Target = GameObject.Find("WeaponHolder");
         Ammo = GameObject.Find("Slider").GetComponent<Slider>();
         CurrentWeapon = GameObject.Find("CURRENT WEAPON IMG").GetComponent<Image>();
-        TotalAmmo = GameObject.Find("AMMO TEXT").GetComponent<Text>();
+        ammoTexts = GameObject.Find("AMMO TEXT").GetComponent<Text>();
+        maxAmmo = GameObject.Find("MAX AMMO").GetComponent<Text>();
         AmmoActive = GameObject.Find("Slider");
 
     }
@@ -100,8 +102,8 @@ public class Guns : MonoBehaviour
             CurrentWeapon.sprite = Shotgun;
         }
 
-        TotalAmmo.text = (currentAmmo.ToString()+"/"+ clipSize.ToString());
-        
+        ammoTexts.text = (currentAmmo.ToString()+"/"+ clipSize.ToString());
+        maxAmmo.text = totalBullets.ToString();
 
         if (transform.parent != null)
         {

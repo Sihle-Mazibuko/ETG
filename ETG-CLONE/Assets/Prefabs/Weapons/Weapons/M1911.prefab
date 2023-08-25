@@ -42,8 +42,6 @@ GameObject:
   - component: {fileID: 5121135627257258337}
   - component: {fileID: 5121135627257258270}
   - component: {fileID: 5121135627257258336}
-  - component: {fileID: 2719312687864712643}
-  - component: {fileID: 6288269466155030088}
   m_Layer: 6
   m_Name: M1911
   m_TagString: Weapon
@@ -105,8 +103,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2135618103
-  m_SortingLayer: 2
+  m_SortingLayerID: 1965013535
+  m_SortingLayer: 5
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 1e08ac3863c82ae45b42bfa77f1ca451, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -135,7 +133,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 8215934249560738890}
   clipSize: 7
   bulletsPerTap: 1
-  totalBullets: 0
+  totalBullets: 200
   fireRate: 0.2
   spread: 0
   bulletSpawnInterval: 0
@@ -144,7 +142,8 @@ MonoBehaviour:
   Target: {fileID: 0}
   ZRotate: 0
   Ammo: {fileID: 0}
-  TotalAmmo: {fileID: 0}
+  ammoTexts: {fileID: 0}
+  maxAmmo: {fileID: 0}
   AmmoActive: {fileID: 0}
   CurrentWeapon: {fileID: 0}
   Crosbow: {fileID: 0}
@@ -155,50 +154,3 @@ MonoBehaviour:
   isEquipped: 0
   weaponShotSfx: 
   weaponEmptySfx: 
---- !u!50 &2719312687864712643
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5121135627257258271}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!61 &6288269466155030088
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5121135627257258271}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.265625, y: 0.171875}
-    newSize: {x: 0.52, y: 0.4}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.265625, y: 0.171875}
-  m_EdgeRadius: 0
