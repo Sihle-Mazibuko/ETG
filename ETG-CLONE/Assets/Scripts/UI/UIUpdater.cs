@@ -22,7 +22,10 @@ public class UIUpdater : MonoBehaviour
     GameObject player;
     float playerHealth;
 
-    [SerializeField] Text currentAmmo;
+    [SerializeField] Text ammoTxt;
+
+    bool isEquipped;
+
 
     private void Start()
     {
@@ -113,4 +116,6 @@ public class UIUpdater : MonoBehaviour
                 break;
         }
     }
+
+
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,12 +14,22 @@ public class Weapon : MonoBehaviour
     public float fireRate, bulletSpawnInterval, reloadTime;
     public bool allowButtonHold;
 
-    int currentAmmo, bulletsShot;
-    bool shooting, readyToShoot, reloading;
+    int bulletsShot;
+    bool shooting, readyToShoot, reloading, isEquipped;
+    public int currentAmmo { get; private set; }
 
     Text ammoText;
-    Image currentImage;
+    Text totalAmmoTxt;
 
+    Image CurrentWeapon;
+
+    public Sprite Crosbow;
+    public Sprite Peashooter;
+    public Sprite AK47;
+    public Sprite RustySidearm;
+    public Sprite M1911;
+    public Sprite Silencer;
+    public Sprite Magnum;
     #region Effects
 
     [Header("EFFECTS")]
@@ -35,8 +46,10 @@ public class Weapon : MonoBehaviour
     {
         currentAmmo = clipSize;
         readyToShoot = true;
+        ammoText = GameObject.Find("AMMO TEXT").GetComponent<Text>();
+        totalAmmoTxt = GameObject.Find("total ammo").GetComponent<Text>();
+        CurrentWeapon = GameObject.Find("CURRENT WEAPON IMG").GetComponent<Image>();
 
-        
     }
 
 
@@ -46,7 +59,49 @@ public class Weapon : MonoBehaviour
         {
             readyToShoot = true;
             MyInput();
+            isEquipped = true;
+            ammoText.text = currentAmmo.ToString() + "/" + clipSize.ToString();
+            totalAmmoTxt.text = totalBullets.ToString();
+            Changeimg();
         }
+        else
+        {
+            isEquipped=false;
+        }
+    }
+
+    void Changeimg()
+    {
+        if (gameObject.name == "CROSSBOW")
+        {
+            CurrentWeapon.sprite = Crosbow;
+        }
+        if (gameObject.name == "AK-47")
+        {
+            CurrentWeapon.sprite = AK47;
+        }
+        if (gameObject.name == "PeaShooter")
+        {
+            CurrentWeapon.sprite = Peashooter;
+        }
+        if (gameObject.name == "M1911")
+        {
+            CurrentWeapon.sprite = M1911;
+        }
+        if (gameObject.name == "SILENCER")
+        {
+            CurrentWeapon.sprite = Silencer;
+        }
+        if (gameObject.name == "RustySidearm")
+        {
+            CurrentWeapon.sprite = RustySidearm;
+        }
+
+        if (gameObject.name == "MAGNUM")
+        {
+            CurrentWeapon.sprite = Magnum;
+        }
+
     }
 
     void MyInput()
@@ -99,8 +154,6 @@ public class Weapon : MonoBehaviour
 
             currentAmmo--;
 
-            totalBullets--;
-
 
             Invoke("ResetShot", fireRate);
 
@@ -108,6 +161,7 @@ public class Weapon : MonoBehaviour
             {
                 //Sounds
                 Invoke("Shoot", bulletSpawnInterval);
+                totalBullets--;
 
             }
         }

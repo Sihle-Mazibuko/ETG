@@ -187,5 +187,12 @@ MonoBehaviour:
   bulletSpawnInterval: 0
   reloadTime: 1.2
   allowButtonHold: 0
+  Crosbow: {fileID: 21300000, guid: bd4f6b24332a2604d8b303a42ab8cf4c, type: 3}
+  Peashooter: {fileID: 21300000, guid: 14ce1353ea3fca14fa2aeba03e236d79, type: 3}
+  AK47: {fileID: 21300000, guid: dd1745eb6161c2746afef131fad9bb7e, type: 3}
+  RustySidearm: {fileID: 21300000, guid: 9ecbd33683b1fd54394498db86542e70, type: 3}
+  M1911: {fileID: 21300000, guid: 1e08ac3863c82ae45b42bfa77f1ca451, type: 3}
+  Silencer: {fileID: 21300000, guid: 36ea17899d078b7408a7dd5d465a2168, type: 3}
+  Magnum: {fileID: 21300000, guid: f8065f6441096454ea256b69cacad63d, type: 3}
   weaponShotSfx: 
   weaponEmptySfx: 

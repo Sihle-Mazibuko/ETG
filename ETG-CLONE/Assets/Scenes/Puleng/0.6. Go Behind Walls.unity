@@ -1405,7 +1405,7 @@ MonoBehaviour:
   KeyAmount: {fileID: 1719332410}
   Blanks: 0
   BlankAmount: {fileID: 1823018659}
-  currentAmmo: {fileID: 0}
+  ammoTxt: {fileID: 0}
 --- !u!1 &199612059
 GameObject:
   m_ObjectHideFlags: 0
@@ -11674,6 +11674,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 038b6453401641f4e841a300749d99eb, type: 3}
+    - target: {fileID: 4031121603083305053, guid: 719b36f8ca543614b8044b500e101c8a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4031121603083305053, guid: 719b36f8ca543614b8044b500e101c8a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.177
+      objectReference: {fileID: 0}
     - target: {fileID: 4031121603083305054, guid: 719b36f8ca543614b8044b500e101c8a, type: 3}
       propertyPath: m_Type
       value: 1
@@ -11698,6 +11706,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 964372959, guid: b24024ff74f66bb40bafe349977d49d7, type: 3}
+    - target: {fileID: 5598773045681393481, guid: 719b36f8ca543614b8044b500e101c8a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598773045681393481, guid: 719b36f8ca543614b8044b500e101c8a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 144.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598773045681393481, guid: 719b36f8ca543614b8044b500e101c8a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4031121603005570812, guid: 719b36f8ca543614b8044b500e101c8a, type: 3}
     - {fileID: 4031121601663650986, guid: 719b36f8ca543614b8044b500e101c8a, type: 3}
@@ -17198,7 +17218,6 @@ GameObject:
   - component: {fileID: 9217105371924385015}
   - component: {fileID: 6982216178481227920}
   - component: {fileID: 9217105371924385020}
-  - component: {fileID: 9217105371924385021}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -17370,23 +17389,6 @@ MonoBehaviour:
   weapons: []
   weaponHolder: {fileID: 9217105372263532711}
   currentWeapon: {fileID: 0}
---- !u!114 &9217105371924385021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9217105371924385012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48fad95cca688e04881e6e48404bec5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponHolder: {fileID: 9217105372263532710}
-  rayPoint: {fileID: 9217105372263532710}
-  rayDistance: 5
-  grabbedObj: {fileID: 0}
-  index: 0
 --- !u!224 &9217105372088826962
 RectTransform:
   m_ObjectHideFlags: 0

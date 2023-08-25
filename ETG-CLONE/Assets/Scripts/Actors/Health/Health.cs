@@ -91,23 +91,23 @@ public class Health : MonoBehaviour
     }
 
 
-    //This was for testing
-    void DamagePlayer()
-    {
-        if (Input.GetKeyDown(KeyCode.G)) TakeDamage(1);
-    }
+    ////This was for testing
+    //void DamagePlayer()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.G)) TakeDamage(1);
+    //}
 
-    void Heal()
-    {
-        if (Input.GetKeyDown(KeyCode.H)) AddHealth(1);
+    //void Heal()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.H)) AddHealth(1);
 
-    }
+    //}
 
-    private void Update()
-    {
-        DamagePlayer();
-        Heal();
-    }
+    //private void Update()
+    //{
+    //    DamagePlayer();
+    //    Heal();
+    //}
 
 
 }
