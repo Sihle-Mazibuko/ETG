@@ -128,7 +128,6 @@ public class Guns : MonoBehaviour
 
         if (readyToShoot && shooting && !reloading && currentAmmo > 0)
         {
-            bulletsShot = bulletsPerTap;
             Shoot();
         }
     }
@@ -150,7 +149,7 @@ public class Guns : MonoBehaviour
     void Shoot()
     {
 
-        if (bulletsShot < totalBullets)
+        if (totalBullets >=1)
         {
             readyToShoot = false;
 

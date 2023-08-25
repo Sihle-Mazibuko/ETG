@@ -1343,7 +1343,6 @@ MonoBehaviour:
   KeyAmount: {fileID: 1719332410}
   Blanks: 0
   BlankAmount: {fileID: 1823018659}
-  currentAmmo: {fileID: 0}
 --- !u!1 &199612059
 GameObject:
   m_ObjectHideFlags: 0
@@ -11630,29 +11629,11 @@ Transform:
   m_Father: {fileID: 1107306452}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1661445052 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4772905651401218156, guid: 17ad4bf2be15fa34fb92e5e5784a1a52, type: 3}
-  m_PrefabInstance: {fileID: 8115648767029043846}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1661445053 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4772905651401218154, guid: 17ad4bf2be15fa34fb92e5e5784a1a52, type: 3}
   m_PrefabInstance: {fileID: 8115648767029043846}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1661445058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1661445052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9075724f6af1a4429744f046e160167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stopDistance: 1
 --- !u!1 &1666902381
 GameObject:
   m_ObjectHideFlags: 3
@@ -16681,8 +16662,7 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -2135618103
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4772905651401218152, guid: 17ad4bf2be15fa34fb92e5e5784a1a52, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17ad4bf2be15fa34fb92e5e5784a1a52, type: 3}
 --- !u!224 &9217105370361431078
 RectTransform:
@@ -17092,7 +17072,6 @@ GameObject:
   - component: {fileID: 9217105371924385014}
   - component: {fileID: 9217105371924385015}
   - component: {fileID: 6982216178481227920}
-  - component: {fileID: 9217105371924385020}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -17155,6 +17134,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHealth: 6
+  currentHealth: 0
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
+  Heart4: {fileID: 0}
+  Heart5: {fileID: 0}
+  Heart6: {fileID: 0}
+  Object: {fileID: 0}
   duration: 1
   numOfFlashes: 3
 --- !u!114 &9217105371924385017
@@ -17248,21 +17235,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9217105371924385020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9217105371924385012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e74ad738fbc39e4492ee473e17d0b02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapons: []
-  weaponHolder: {fileID: 9217105372263532711}
-  currentWeapon: {fileID: 0}
 --- !u!224 &9217105372088826962
 RectTransform:
   m_ObjectHideFlags: 0
