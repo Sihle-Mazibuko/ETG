@@ -95,12 +95,12 @@ public class Weapon : MonoBehaviour
 
             currentAmmo--;
 
-            bulletsShot++;
+            totalBullets--;
 
 
             Invoke("ResetShot", fireRate);
 
-            if (currentAmmo > 0)
+            if (currentAmmo > 0 && bulletsShot > 0)
             {
                 //Sounds
                 Invoke("Shoot", bulletSpawnInterval);
