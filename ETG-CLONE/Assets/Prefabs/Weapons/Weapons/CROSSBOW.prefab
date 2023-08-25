@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647411292617133083}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2601, y: 0.013000011, z: 0}
+  m_LocalPosition: {x: 0.409, y: 0.013000011, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41,9 +41,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6289872594814350382}
   - component: {fileID: 6289872594814350417}
-  - component: {fileID: 6289872594814350383}
   - component: {fileID: -9000900286457166887}
   - component: {fileID: -5339298764564195188}
+  - component: {fileID: 4830299158928993879}
   m_Layer: 6
   m_Name: CROSSBOW
   m_TagString: Weapon
@@ -105,9 +105,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingLayerID: -2135618103
+  m_SortingLayer: 2
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: bd4f6b24332a2604d8b303a42ab8cf4c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -119,29 +119,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6289872594814350383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6289872594814350416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46e1fc85d171021478deb62cafaa299b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPref: {fileID: 1129451009653455440, guid: a2a918ea71700e94f901e9d2985be09e, type: 3}
-  bulletSpawnPoint: {fileID: 7088433675298347269}
-  clipSize: 1
-  bulletsPerTap: 1
-  totalAmmo: 500
-  fireRate: 0.5
-  reloadTime: 0.75
-  timeBetweenShots: 0
-  allowButtonHold: 0
-  weaponShotSfx: 
-  weaponEmptySfx: 
 --- !u!61 &-9000900286457166887
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -189,3 +166,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4830299158928993879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6289872594814350416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b9739f3a11d9148abb7893f7513606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPref: {fileID: 1129451009653455440, guid: a2a918ea71700e94f901e9d2985be09e, type: 3}
+  bulletSpawnPoint: {fileID: 7088433675298347269}
+  clipSize: 1
+  bulletsPerTap: 1
+  totalBullets: 100
+  fireRate: 0.5
+  bulletSpawnInterval: 0
+  reloadTime: 0.75
+  allowButtonHold: 0
+  weaponShotSfx: 
+  weaponEmptySfx: 

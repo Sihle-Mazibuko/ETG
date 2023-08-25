@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4060225653868035035}
   - component: {fileID: 5830911892937954174}
-  - component: {fileID: 3554960347409306473}
   - component: {fileID: 1028287065960254136}
   - component: {fileID: 2295320654140432723}
+  - component: {fileID: 5354772305402606268}
   m_Layer: 6
   m_Name: MAGNUM
   m_TagString: Weapon
@@ -74,9 +74,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingLayerID: -2135618103
+  m_SortingLayer: 2
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: f8065f6441096454ea256b69cacad63d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -88,29 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3554960347409306473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 205899146896907268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46e1fc85d171021478deb62cafaa299b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPref: {fileID: 3649637640105835171, guid: 8f8281d3d3b5d0a46949363323e527b4, type: 3}
-  bulletSpawnPoint: {fileID: 7932821988862737027}
-  clipSize: 7
-  bulletsPerTap: 1
-  totalAmmo: 200
-  fireRate: 0.15
-  reloadTime: 1.25
-  timeBetweenShots: 0
-  allowButtonHold: 1
-  weaponShotSfx: 
-  weaponEmptySfx: 
 --- !u!50 &1028287065960254136
 Rigidbody2D:
   serializedVersion: 4
@@ -158,6 +135,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.265625, y: 0.203125}
   m_EdgeRadius: 0
+--- !u!114 &5354772305402606268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205899146896907268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b9739f3a11d9148abb7893f7513606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPref: {fileID: 3649637640105835171, guid: 8f8281d3d3b5d0a46949363323e527b4, type: 3}
+  bulletSpawnPoint: {fileID: 7932821988862737027}
+  clipSize: 6
+  bulletsPerTap: 1
+  totalBullets: 140
+  fireRate: 0.2
+  bulletSpawnInterval: 0
+  reloadTime: 1
+  allowButtonHold: 0
+  weaponShotSfx: 
+  weaponEmptySfx: 
 --- !u!1 &371066212656188058
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,7 +183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371066212656188058}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2455, y: 0.033, z: 0}
+  m_LocalPosition: {x: 0.307, y: 0.033, z: 0}
   m_LocalScale: {x: 0.05, y: 0.05, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

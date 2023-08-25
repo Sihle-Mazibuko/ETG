@@ -107,10 +107,6 @@ MonoBehaviour:
   Enemy: {fileID: 7425295212870926675}
   Player: {fileID: 0}
   BulletSpawn1: {fileID: 7425295212740199546}
-  BulletSpawn2: {fileID: 0}
-  BulletSpawn3: {fileID: 0}
-  BulletSpawn4: {fileID: 0}
-  BulletSpawn5: {fileID: 0}
   Close: 0
   Distance: 0
   TriggerDistance: 0
@@ -256,9 +252,11 @@ GameObject:
   - component: {fileID: 7425295212870926636}
   - component: {fileID: 7425295212870926638}
   - component: {fileID: 1759932466}
+  - component: {fileID: 8168308444046101630}
+  - component: {fileID: 7459832886552749808}
   m_Layer: 0
   m_Name: Bullet Kin
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -328,6 +326,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!70 &8168308444046101630
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7425295212870926675}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.375, y: 0.71875}
+  m_Direction: 0
+--- !u!114 &7459832886552749808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7425295212870926675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8abc2b7ff97c61444a76fda75b23754e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHealth: 15
+  duration: 0.5
+  numOfFlashes: 2
 --- !u!1 &7425295213652852522
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,7 +453,6 @@ GameObject:
   - component: {fileID: 891434509205539920}
   - component: {fileID: 1357035247990749416}
   - component: {fileID: 3751721318903650935}
-  - component: {fileID: 7742287451871383797}
   - component: {fileID: 8217977196127246916}
   m_Layer: 12
   m_Name: Enemy_GFX
@@ -521,22 +549,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!70 &7742287451871383797
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8236441596592197973}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.375, y: 0.71875}
-  m_Direction: 0
 --- !u!114 &8217977196127246916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,14 +561,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8abc2b7ff97c61444a76fda75b23754e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealth: 3
-  currentHealth: 0
-  Heart1: {fileID: 0}
-  Heart2: {fileID: 0}
-  Heart3: {fileID: 0}
-  Heart4: {fileID: 0}
-  Heart5: {fileID: 0}
-  Heart6: {fileID: 0}
-  Object: {fileID: 7425295212870926675}
+  startHealth: 15
   duration: 1
   numOfFlashes: 3

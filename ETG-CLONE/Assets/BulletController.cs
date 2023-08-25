@@ -44,10 +44,6 @@ public class BulletController : MonoBehaviour
                 Destroy(Bullet5);
             }
             
-            
-            
-           
-            
         }
     }
 }

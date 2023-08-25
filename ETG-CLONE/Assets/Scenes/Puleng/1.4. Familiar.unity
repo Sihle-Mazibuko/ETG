@@ -153,7 +153,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d30adaa16a36a0546a971c1cc658263d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Doors: {fileID: 0}
   _virtualCam: {fileID: 1671405201}
+  Cam: {fileID: 0}
+  Enemy: {fileID: 0}
+  RangeX: 0
+  RangeY: 0
+  EnemySpawn: {x: 0, y: 0}
+  SpawnAmount1: 0
+  SpawnAmount2: 0
+  SpawnAmount3: 0
+  SpawnAmount4: 0
+  RoundNumber: 0
+  CurrentRound: 0
+  CombatStart: 0
+  CanFight: 0
+  CanSpawn: 0
 --- !u!60 &14330721
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -620,7 +635,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1132564985
-  m_SortingLayer: 9
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a54572b0a23cf5940994dd5598979fb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -803,7 +818,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2135618103
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1862790502, guid: 21e92446ebb29e148887316993959ed1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1034,7 +1049,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1882389467
-  m_SortingLayer: 2
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1969,7 +1984,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1965013535
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1895764046, guid: bc4b48681675baa4081cf5fdbe9c23ab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2351,7 +2366,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2135618103
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -659787276, guid: 6102cfce1fe389d4f9f765f7a9a7e652, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2564,7 +2579,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1987765877
-  m_SortingLayer: 8
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -3059,7 +3074,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2135618103
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: cb87bb9976df1374fadc110c0de4d7d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3147,7 +3162,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d30adaa16a36a0546a971c1cc658263d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Doors: {fileID: 0}
   _virtualCam: {fileID: 409172702}
+  Cam: {fileID: 0}
+  Enemy: {fileID: 0}
+  RangeX: 0
+  RangeY: 0
+  EnemySpawn: {x: 0, y: 0}
+  SpawnAmount1: 0
+  SpawnAmount2: 0
+  SpawnAmount3: 0
+  SpawnAmount4: 0
+  RoundNumber: 0
+  CurrentRound: 0
+  CombatStart: 0
+  CanFight: 0
+  CanSpawn: 0
 --- !u!1 &235701693
 GameObject:
   m_ObjectHideFlags: 0
@@ -3615,7 +3645,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2135618103
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 256471666, guid: 52e757b1b48542a41bdfcdf62c7d5c98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3794,7 +3824,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1965013535
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1862664429, guid: fa5e523a625d48445a91412e970bea25, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4024,7 +4054,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1987765877
-  m_SortingLayer: 8
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -4359,7 +4389,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1965013535
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -162525584, guid: 1df7c3a3e7a8fdb4fb752f8aabb72946, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4848,7 +4878,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1510242793
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -146387273, guid: 6bbf87575a1518d4880f5c7e9c812055, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4933,7 +4963,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1987765877
-  m_SortingLayer: 8
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -5510,11 +5540,9 @@ MonoBehaviour:
   Enemy: {fileID: 1071600155}
   Player: {fileID: 0}
   BulletSpawn1: {fileID: 959041715}
-  BulletSpawn2: {fileID: 877426742}
-  BulletSpawn3: {fileID: 1642916773}
-  BulletSpawn4: {fileID: 781614808}
-  BulletSpawn5: {fileID: 2103314138}
   Close: 0
+  Distance: 0
+  TriggerDistance: 0
 --- !u!1 &582693713
 GameObject:
   m_ObjectHideFlags: 0
@@ -5572,7 +5600,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2135618103
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1711635990, guid: 5708e0b63a59266489b183306a2e142a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5974,7 +6002,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1965013535
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bd4f6b24332a2604d8b303a42ab8cf4c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6058,7 +6086,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1965013535
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1895764046, guid: bc4b48681675baa4081cf5fdbe9c23ab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6143,7 +6171,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1987765877
-  m_SortingLayer: 8
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -6822,7 +6850,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1882389467
-  m_SortingLayer: 2
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -9228,7 +9256,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1882389467
-  m_SortingLayer: 2
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -11304,6 +11332,7 @@ MonoBehaviour:
   Peashooter: {fileID: 21300000, guid: 14ce1353ea3fca14fa2aeba03e236d79, type: 3}
   AK47: {fileID: 21300000, guid: dd1745eb6161c2746afef131fad9bb7e, type: 3}
   RustySidearm: {fileID: 21300000, guid: 9ecbd33683b1fd54394498db86542e70, type: 3}
+  isEquipped: 0
   weaponShotSfx: Crossbow Fire
   weaponEmptySfx: 
 --- !u!1 &929104554
@@ -11361,11 +11390,9 @@ MonoBehaviour:
   Enemy: {fileID: 734741525}
   Player: {fileID: 0}
   BulletSpawn1: {fileID: 1507066340}
-  BulletSpawn2: {fileID: 0}
-  BulletSpawn3: {fileID: 0}
-  BulletSpawn4: {fileID: 0}
-  BulletSpawn5: {fileID: 0}
   Close: 0
+  Distance: 0
+  TriggerDistance: 0
 --- !u!1 &959041715
 GameObject:
   m_ObjectHideFlags: 0
@@ -11755,7 +11782,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d30adaa16a36a0546a971c1cc658263d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Doors: {fileID: 0}
   _virtualCam: {fileID: 1805393991}
+  Cam: {fileID: 0}
+  Enemy: {fileID: 0}
+  RangeX: 0
+  RangeY: 0
+  EnemySpawn: {x: 0, y: 0}
+  SpawnAmount1: 0
+  SpawnAmount2: 0
+  SpawnAmount3: 0
+  SpawnAmount4: 0
+  RoundNumber: 0
+  CurrentRound: 0
+  CombatStart: 0
+  CanFight: 0
+  CanSpawn: 0
 --- !u!1 &1063124304
 GameObject:
   m_ObjectHideFlags: 0
@@ -12256,7 +12298,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1510242793
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -146387273, guid: 6bbf87575a1518d4880f5c7e9c812055, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12376,7 +12418,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1987765877
-  m_SortingLayer: 8
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -13382,7 +13424,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1987765877
-  m_SortingLayer: 8
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -13886,7 +13928,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1882389467
-  m_SortingLayer: 2
+  m_SortingLayer: 7
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -14529,7 +14571,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2135618103
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1862790502, guid: 21e92446ebb29e148887316993959ed1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -14825,7 +14867,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2135618103
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: cb87bb9976df1374fadc110c0de4d7d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -15203,7 +15245,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1882389467
-  m_SortingLayer: 2
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -16737,7 +16779,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d30adaa16a36a0546a971c1cc658263d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Doors: {fileID: 0}
   _virtualCam: {fileID: 145468281}
+  Cam: {fileID: 0}
+  Enemy: {fileID: 0}
+  RangeX: 0
+  RangeY: 0
+  EnemySpawn: {x: 0, y: 0}
+  SpawnAmount1: 0
+  SpawnAmount2: 0
+  SpawnAmount3: 0
+  SpawnAmount4: 0
+  RoundNumber: 0
+  CurrentRound: 0
+  CombatStart: 0
+  CanFight: 0
+  CanSpawn: 0
 --- !u!1 &1485793301
 GameObject:
   m_ObjectHideFlags: 0
@@ -16810,7 +16867,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1882389467
-  m_SortingLayer: 2
+  m_SortingLayer: 7
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -17299,7 +17356,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1510242793
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -146387273, guid: 6bbf87575a1518d4880f5c7e9c812055, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -19309,11 +19366,9 @@ MonoBehaviour:
   Enemy: {fileID: 821204808}
   Player: {fileID: 0}
   BulletSpawn1: {fileID: 535223364}
-  BulletSpawn2: {fileID: 0}
-  BulletSpawn3: {fileID: 0}
-  BulletSpawn4: {fileID: 0}
-  BulletSpawn5: {fileID: 0}
   Close: 0
+  Distance: 0
+  TriggerDistance: 0
 --- !u!1001 &1709807422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19772,7 +19827,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2135618103
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: a54572b0a23cf5940994dd5598979fb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -20031,7 +20086,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2135618103
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: cb87bb9976df1374fadc110c0de4d7d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -20090,7 +20145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 461bb2d6f0e9abe4b9ab62e9f2e17bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stopDistance: 1
 --- !u!50 &1856336070
 Rigidbody2D:
   serializedVersion: 4
@@ -20580,7 +20634,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2135618103
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1487740152, guid: 6bbf87575a1518d4880f5c7e9c812055, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -20775,7 +20829,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1882389467
-  m_SortingLayer: 2
+  m_SortingLayer: 7
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -21415,7 +21469,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1882389467
-  m_SortingLayer: 2
+  m_SortingLayer: 7
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -22427,6 +22481,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 6
   currentHealth: 0
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
+  Heart4: {fileID: 0}
+  Heart5: {fileID: 0}
+  Heart6: {fileID: 0}
   Object: {fileID: 1945078156}
   duration: 1
   numOfFlashes: 3
@@ -22450,6 +22510,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   _input: {x: 0, y: 0}
+  x: 0
+  y: 0
 --- !u!61 &1945078163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22548,7 +22610,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1510242793
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -146387273, guid: 6bbf87575a1518d4880f5c7e9c812055, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -22716,11 +22778,9 @@ MonoBehaviour:
   Enemy: {fileID: 908794685}
   Player: {fileID: 0}
   BulletSpawn1: {fileID: 195413214}
-  BulletSpawn2: {fileID: 1673559804}
-  BulletSpawn3: {fileID: 1676549154}
-  BulletSpawn4: {fileID: 2003944985}
-  BulletSpawn5: {fileID: 75796114}
   Close: 0
+  Distance: 0
+  TriggerDistance: 0
 --- !u!1 &2003944985
 GameObject:
   m_ObjectHideFlags: 0
@@ -22823,7 +22883,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2135618103
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: a54572b0a23cf5940994dd5598979fb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -22,11 +22,12 @@ public class UIUpdater : MonoBehaviour
     GameObject player;
     float playerHealth;
 
+    [SerializeField] Text currentAmmo;
 
     private void Start()
     {
         Keys = 0;
-        Blanks = 1;
+        Blanks = 0;
 
     }
 

@@ -25,10 +25,6 @@ public class Dog : MonoBehaviour
 
     private void Update()
     {
-        if(target.GetComponent<PlayerController>()._input.x == 0)
-        {
-
-        }
 
         if (target.transform.localPosition.x < transform.localPosition.x)
         {

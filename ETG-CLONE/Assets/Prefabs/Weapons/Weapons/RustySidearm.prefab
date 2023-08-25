@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5383303394965118581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.397, y: 0.108, z: 0}
+  m_LocalPosition: {x: 0.529, y: 0.108, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41,9 +41,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5286878023279378953}
   - component: {fileID: 5353412792649260593}
-  - component: {fileID: 7230848614897585117}
   - component: {fileID: -1579848029520544337}
   - component: {fileID: 349768465768974675}
+  - component: {fileID: 4674974538764872362}
   m_Layer: 6
   m_Name: RustySidearm
   m_TagString: Weapon
@@ -105,9 +105,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingLayerID: -2135618103
+  m_SortingLayer: 2
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 9ecbd33683b1fd54394498db86542e70, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -119,29 +119,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7230848614897585117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7230848614897585116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46e1fc85d171021478deb62cafaa299b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPref: {fileID: 3649637640105835171, guid: e2bfd65a86da8a74682eb87c9a99f0d9, type: 3}
-  bulletSpawnPoint: {fileID: 5383303394965118570}
-  clipSize: 6
-  bulletsPerTap: 1
-  totalAmmo: 999999
-  fireRate: 0.2
-  reloadTime: 1.2
-  timeBetweenShots: 0
-  allowButtonHold: 0
-  weaponShotSfx: 
-  weaponEmptySfx: 
 --- !u!61 &-1579848029520544337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -189,3 +166,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4674974538764872362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7230848614897585116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b9739f3a11d9148abb7893f7513606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPref: {fileID: 3649637640105835171, guid: e2bfd65a86da8a74682eb87c9a99f0d9, type: 3}
+  bulletSpawnPoint: {fileID: 5383303394965118570}
+  clipSize: 6
+  bulletsPerTap: 1
+  totalBullets: 9999
+  fireRate: 0.2
+  bulletSpawnInterval: 0
+  reloadTime: 1.2
+  allowButtonHold: 0
+  weaponShotSfx: 
+  weaponEmptySfx: 

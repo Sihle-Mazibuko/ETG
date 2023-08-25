@@ -33,7 +33,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void Start()
     {
-        Player = GameObject.Find("Player ");
+        Player = GameObject.Find("Player");
         PlayerPosition = Player.transform.position;
         WalkPosition = new Vector3(PlayerPosition.x + Random.Range(-RandomRange, RandomRange), PlayerPosition.y + Random.Range(-RandomRange, RandomRange), 0);
         //WalkPosition = new Vector2(Random.Range(2, 5), Random.Range(2, 5));
@@ -56,11 +56,9 @@ public class EnemyMovement : MonoBehaviour
         if (Chase == true && gameObject.name == "Shotgun Kin(Clone)")
         {
             transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);
-            Debug.Log("Chasing");
         }
         else if (gameObject.name == "Shotgun Kin(Clone)")
         {
-            Debug.Log("Exploring");
            
             transform.position = Vector3.MoveTowards(transform.position, WalkPosition, speed * Time.deltaTime);
             

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2913320242738491418}
   - component: {fileID: 4918601159342043889}
+  - component: {fileID: 5643314503966962258}
   m_Layer: 0
   m_Name: ShotgunBullets
   m_TagString: Untagged
@@ -55,6 +56,20 @@ MonoBehaviour:
   Bullet3: {fileID: 637113846146303359}
   Bullet4: {fileID: 5985972514549638466}
   Bullet5: {fileID: 2369827108188643744}
+--- !u!114 &5643314503966962258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3111657916213309940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1898cd23680b734097c086f205a896c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Boom: {fileID: 2621373831953554647, guid: 4985b8618e206a84995ff75169f15288, type: 3}
+  controller: {fileID: 4918601159342043889}
 --- !u!1001 &3310489609282686620
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66,6 +81,10 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 4918601159342043889}
+    - target: {fileID: -2608337540142775907, guid: 8784d79695179224797726657baa7dbc, type: 3}
+      propertyPath: Boom
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6598329017057246813, guid: 8784d79695179224797726657baa7dbc, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -137,6 +156,10 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 4918601159342043889}
+    - target: {fileID: -2608337540142775907, guid: 8784d79695179224797726657baa7dbc, type: 3}
+      propertyPath: Boom
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6598329017057246813, guid: 8784d79695179224797726657baa7dbc, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -208,6 +231,10 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 4918601159342043889}
+    - target: {fileID: -2608337540142775907, guid: 8784d79695179224797726657baa7dbc, type: 3}
+      propertyPath: Boom
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6598329017057246813, guid: 8784d79695179224797726657baa7dbc, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -279,6 +306,10 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 4918601159342043889}
+    - target: {fileID: -2608337540142775907, guid: 8784d79695179224797726657baa7dbc, type: 3}
+      propertyPath: Boom
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6598329017057246813, guid: 8784d79695179224797726657baa7dbc, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -350,6 +381,10 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: 4918601159342043889}
+    - target: {fileID: -2608337540142775907, guid: 8784d79695179224797726657baa7dbc, type: 3}
+      propertyPath: Boom
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6598329017057246813, guid: 8784d79695179224797726657baa7dbc, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -8,10 +8,8 @@ public class Projectile : MonoBehaviour
     [SerializeField] float lifetime =3;
     [SerializeField] float damage;
     public GameObject Boom;
-    public BulletController controller;
 
     Rigidbody2D rb;
-    //[SerializeField] GameObject bloodSplatter;
 
     private void Awake()
     {
@@ -21,57 +19,32 @@ public class Projectile : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(Break());
         rb.velocity = transform.right * speed;
     }
 
     public void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == "Enemy")
+        if (coll.gameObject.tag == "Room")
         {
-
-            Instantiate(Boom, transform.position, transform.rotation);
-            coll.GetComponent<Health>().currentHealth -= 1;
-            Destroy(gameObject);
+            Debug.Log("im touching the floor");
         }
-        if (coll.gameObject.tag == "Structure")
+        else if(coll.gameObject.tag == "Enemy")
         {
+                Instantiate(Boom, transform.position, transform.rotation);
+                coll.GetComponent<Health>().TakeDamage(damage);
+            Debug.Log("i hurt the enemy");
 
-            Instantiate(Boom, transform.position, transform.rotation);
-           
-            Destroy(gameObject);
-        }
-        if (coll.gameObject.tag == "Player")
+
+            Destroy(gameObject, .1f); 
+        }else if(coll.gameObject.tag == "Structure")
         {
-
             Instantiate(Boom, transform.position, transform.rotation);
-            if (gameObject.name != "BuckShot")
-            {
-                coll.GetComponent<Health>().currentHealth -= 1;
-            }
-            else if (controller.Hit == false)
-            {
-                coll.GetComponent<Health>().currentHealth -= 1;
-            }
-
-            if (gameObject.name == "BuckShot")
-            {
-                controller.Hit = true;
-                Destroy(gameObject);
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
-            
+            Destroy(gameObject, .1f);
         }
+        Destroy(gameObject, .1f);
+
     }
 
 
-    public IEnumerator Break()
-    {
-        yield return new WaitForSeconds(lifetime);
-        Destroy(gameObject);
-    }
 
 }
