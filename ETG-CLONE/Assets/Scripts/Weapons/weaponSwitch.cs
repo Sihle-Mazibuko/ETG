@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class weaponSwitch : MonoBehaviour
 {
-    int totalWeapons = 1;
+    public int totalWeapons = 1;
     int currentWeaponIndex;
 
     [SerializeField] GameObject[] weapons;
@@ -33,13 +33,12 @@ public class weaponSwitch : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-            weapons[currentWeaponIndex].SetActive(false);
-
-            currentWeaponIndex = (currentWeaponIndex + 1) % totalWeapons;
-
-            weapons[currentWeaponIndex].SetActive(true);
-            currentWeapon = weapons[currentWeaponIndex];
-        }
+    weapons[currentWeaponIndex].SetActive(false);
+        
+        currentWeaponIndex = (currentWeaponIndex + 1) % totalWeapons;
+        
+        weapons[currentWeaponIndex].SetActive(true);
+        currentWeapon = weapons[currentWeaponIndex];        }
     }
 
 }

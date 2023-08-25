@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
@@ -15,7 +16,8 @@ public class Weapon : MonoBehaviour
     int currentAmmo, bulletsShot;
     bool shooting, readyToShoot, reloading;
 
-    RaycastHit2D hit;
+    Text ammoText;
+    Image currentImage;
 
     #region Effects
 
@@ -33,6 +35,8 @@ public class Weapon : MonoBehaviour
     {
         currentAmmo = clipSize;
         readyToShoot = true;
+
+        
     }
 
 
