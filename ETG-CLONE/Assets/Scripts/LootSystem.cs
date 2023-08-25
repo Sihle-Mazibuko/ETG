@@ -29,7 +29,6 @@ public class LootSystem : MonoBehaviour
                 itemToSpawn[i].maxSpawnProb = itemToSpawn[i].minSpawnProb + itemToSpawn[i].spawnRate - 1;
             }
         }
-        Spawner();
     }
 
 
