@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Sihle/GAME.unity
     guid: 224aef13723b81a4e9a959d3844c76bb
+  - enabled: 1
+    path: Assets/Scenes/Puleng/0.6. Enemies Test.unity
+    guid: 55b37b7ca52316741bc0ab80d8fdde4f
   m_configObjects: {}
