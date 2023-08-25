@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class weaponSwitch : MonoBehaviour
@@ -23,7 +24,22 @@ public class weaponSwitch : MonoBehaviour
         }
 
         weapons[0].SetActive(true);
+
+        currentWeapon = weapons[0];
+        currentWeaponIndex = 0;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            weapons[currentWeaponIndex].SetActive(false);
+
+            currentWeaponIndex = (currentWeaponIndex + 1) % totalWeapons;
+
+            weapons[currentWeaponIndex].SetActive(true);
+            currentWeapon = weapons[currentWeaponIndex];
+        }
+    }
 
 }
